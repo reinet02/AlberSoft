@@ -1,0 +1,17 @@
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\bin\Debug\net10.0-windows\AlberSoft.exe
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\bin\Debug\net10.0-windows\AlberSoft.deps.json
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\bin\Debug\net10.0-windows\AlberSoft.runtimeconfig.json
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\bin\Debug\net10.0-windows\AlberSoft.dll
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\bin\Debug\net10.0-windows\AlberSoft.pdb
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.Form1.resources
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.csproj.GenerateResource.cache
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.AssemblyInfoInputs.cache
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.AssemblyInfo.cs
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.csproj.CoreCompileInputs.cache
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.dll
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\refint\AlberSoft.dll
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.pdb
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.genruntimeconfig.cache
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\ref\AlberSoft.dll
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft\obj\Debug\net10.0-windows\AlberSoft.Properties.Resources.resources
