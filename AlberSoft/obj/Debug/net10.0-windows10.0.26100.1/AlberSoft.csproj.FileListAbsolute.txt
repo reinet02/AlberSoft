@@ -1,0 +1,13 @@
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.csproj.AssemblyReference.cache
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.fmCapacitacionesIlustradas.resources
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.fmPrimerosAuxilios.resources
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.fmMenu.resources
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.fmRegistro.resources
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.csproj.GenerateResource.cache
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.AssemblyInfoInputs.cache
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.AssemblyInfo.cs
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.csproj.CoreCompileInputs.cache
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.dll
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\refint\AlberSoft.dll
+C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-2\AlberSoft\obj\Debug\net10.0-windows10.0.26100.1\AlberSoft.pdb

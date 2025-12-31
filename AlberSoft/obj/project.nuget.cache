@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sN3fHJfrbes=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-3\\AlberSoft\\AlberSoft.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\antho\\.nuget\\packages\\cuoreui.winforms\\2025.12.14\\cuoreui.winforms.2025.12.14.nupkg.sha512",
+    "C:\\Users\\antho\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": []
+}
