@@ -203,7 +203,8 @@
             // 
             // fmMenu
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleDimensions = new SizeF(10F, 22F);
+            AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1862, 989);
             Controls.Add(logo);
