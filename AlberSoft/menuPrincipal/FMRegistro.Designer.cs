@@ -36,25 +36,31 @@
             linkLabel1 = new LinkLabel();
             linkLabel2 = new LinkLabel();
             cuiButton1 = new CuoreUI.Controls.cuiButton();
+            tableMain = new TableLayoutPanel();
+            tableRight = new TableLayoutPanel();
+            flowRegister = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
+            tableMain.SuspendLayout();
+            tableRight.SuspendLayout();
+            flowRegister.SuspendLayout();
             SuspendLayout();
             // 
             // logo
             // 
-            logo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             logo.BackgroundImageLayout = ImageLayout.Stretch;
+            logo.Dock = DockStyle.Fill;
             logo.Image = (Image)resources.GetObject("logo.Image");
-            logo.Location = new Point(570, 51);
+            logo.Location = new Point(3, 3);
             logo.Name = "logo";
-            logo.Size = new Size(493, 378);
-            logo.SizeMode = PictureBoxSizeMode.StretchImage;
+            logo.Size = new Size(888, 785);
+            logo.SizeMode = PictureBoxSizeMode.Zoom;
             logo.TabIndex = 5;
             logo.TabStop = false;
             logo.Click += pictureBox1_Click;
             // 
             // usuario
             // 
-            usuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            usuario.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             usuario.BackgroundColor = Color.White;
             usuario.Content = "";
             usuario.FocusBackgroundColor = Color.White;
@@ -65,7 +71,7 @@
             usuario.Image = null;
             usuario.ImageExpand = new Point(0, 0);
             usuario.ImageOffset = new Point(0, 0);
-            usuario.Location = new Point(666, 439);
+            usuario.Location = new Point(28, 103);
             usuario.Margin = new Padding(4);
             usuario.Multiline = false;
             usuario.Name = "usuario";
@@ -76,16 +82,16 @@
             usuario.PlaceholderColor = Color.LightGray;
             usuario.PlaceholderText = "Nombre de usuario";
             usuario.Rounding = new Padding(8);
-            usuario.Size = new Size(297, 45);
+            usuario.Size = new Size(534, 45);
             usuario.TabIndex = 7;
             usuario.TextOffset = new Size(0, 0);
             usuario.UnderlinedStyle = true;
             // 
             // contrasena
             // 
-            contrasena.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             contrasena.BackgroundColor = Color.White;
             contrasena.Content = "";
+            contrasena.Dock = DockStyle.Fill;
             contrasena.FocusBackgroundColor = Color.White;
             contrasena.FocusImageTint = Color.White;
             contrasena.FocusOutlineColor = Color.FromArgb(255, 106, 0);
@@ -94,7 +100,7 @@
             contrasena.Image = null;
             contrasena.ImageExpand = new Point(0, 0);
             contrasena.ImageOffset = new Point(0, 0);
-            contrasena.Location = new Point(666, 509);
+            contrasena.Location = new Point(28, 156);
             contrasena.Margin = new Padding(4);
             contrasena.Multiline = false;
             contrasena.Name = "contrasena";
@@ -105,18 +111,18 @@
             contrasena.PlaceholderColor = Color.LightGray;
             contrasena.PlaceholderText = "Contraseña";
             contrasena.Rounding = new Padding(8);
-            contrasena.Size = new Size(297, 45);
+            contrasena.Size = new Size(534, 45);
             contrasena.TabIndex = 8;
             contrasena.TextOffset = new Size(0, 0);
             contrasena.UnderlinedStyle = true;
             // 
             // cuiLabel2
             // 
-            cuiLabel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            cuiLabel2.Anchor = AnchorStyles.Left;
             cuiLabel2.Content = "¿Necesitas\\ una\\ cuenta\\?";
             cuiLabel2.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel2.Location = new Point(666, 639);
-            cuiLabel2.Margin = new Padding(4, 3, 4, 3);
+            cuiLabel2.Location = new Point(4, 12);
+            cuiLabel2.Margin = new Padding(4, 12, 4, 3);
             cuiLabel2.Name = "cuiLabel2";
             cuiLabel2.Size = new Size(149, 23);
             cuiLabel2.TabIndex = 10;
@@ -124,9 +130,9 @@
             // 
             // linkLabel1
             // 
-            linkLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(806, 639);
+            linkLabel1.Location = new Point(161, 12);
+            linkLabel1.Margin = new Padding(4, 12, 4, 3);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(64, 15);
             linkLabel1.TabIndex = 11;
@@ -135,9 +141,10 @@
             // 
             // linkLabel2
             // 
-            linkLabel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            linkLabel2.Anchor = AnchorStyles.Left;
             linkLabel2.AutoSize = true;
-            linkLabel2.Location = new Point(666, 558);
+            linkLabel2.Location = new Point(28, 213);
+            linkLabel2.Margin = new Padding(4, 8, 4, 8);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(159, 15);
             linkLabel2.TabIndex = 12;
@@ -146,7 +153,6 @@
             // 
             // cuiButton1
             // 
-            cuiButton1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             cuiButton1.CheckButton = false;
             cuiButton1.Checked = false;
             cuiButton1.CheckedBackground = Color.FromArgb(255, 106, 0);
@@ -155,6 +161,7 @@
             cuiButton1.CheckedOutline = Color.FromArgb(255, 106, 0);
             cuiButton1.Content = "Iniciar sesión";
             cuiButton1.DialogResult = DialogResult.None;
+            cuiButton1.Dock = DockStyle.Fill;
             cuiButton1.Font = new Font("Microsoft Sans Serif", 9.75F);
             cuiButton1.ForeColor = Color.Black;
             cuiButton1.HoverBackground = Color.White;
@@ -165,7 +172,7 @@
             cuiButton1.ImageAutoCenter = true;
             cuiButton1.ImageExpand = new Point(0, 0);
             cuiButton1.ImageOffset = new Point(0, 0);
-            cuiButton1.Location = new Point(666, 589);
+            cuiButton1.Location = new Point(27, 239);
             cuiButton1.Name = "cuiButton1";
             cuiButton1.NormalBackground = Color.White;
             cuiButton1.NormalForeColor = Color.Black;
@@ -177,11 +184,62 @@
             cuiButton1.PressedImageTint = Color.White;
             cuiButton1.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             cuiButton1.Rounding = new Padding(8);
-            cuiButton1.Size = new Size(297, 45);
+            cuiButton1.Size = new Size(536, 45);
             cuiButton1.TabIndex = 13;
             cuiButton1.TextAlignment = StringAlignment.Center;
             cuiButton1.TextOffset = new Point(0, 0);
             cuiButton1.Click += btnIngresar_Click;
+            // 
+            // tableMain
+            // 
+            tableMain.ColumnCount = 2;
+            tableMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            tableMain.Controls.Add(logo, 0, 0);
+            tableMain.Controls.Add(tableRight, 1, 0);
+            tableMain.Dock = DockStyle.Fill;
+            tableMain.Location = new Point(0, 0);
+            tableMain.Name = "tableMain";
+            tableMain.RowCount = 1;
+            tableMain.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableMain.Size = new Size(1490, 791);
+            tableMain.TabIndex = 0;
+            // 
+            // tableRight
+            // 
+            tableRight.ColumnCount = 1;
+            tableRight.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableRight.Controls.Add(usuario, 0, 1);
+            tableRight.Controls.Add(contrasena, 0, 2);
+            tableRight.Controls.Add(linkLabel2, 0, 3);
+            tableRight.Controls.Add(cuiButton1, 0, 4);
+            tableRight.Controls.Add(flowRegister, 0, 5);
+            tableRight.Dock = DockStyle.Fill;
+            tableRight.Location = new Point(897, 3);
+            tableRight.Name = "tableRight";
+            tableRight.Padding = new Padding(24);
+            tableRight.RowCount = 7;
+            tableRight.RowStyles.Add(new RowStyle(SizeType.Percent, 15F));
+            tableRight.RowStyles.Add(new RowStyle());
+            tableRight.RowStyles.Add(new RowStyle());
+            tableRight.RowStyles.Add(new RowStyle());
+            tableRight.RowStyles.Add(new RowStyle());
+            tableRight.RowStyles.Add(new RowStyle());
+            tableRight.RowStyles.Add(new RowStyle(SizeType.Percent, 85F));
+            tableRight.Size = new Size(590, 785);
+            tableRight.TabIndex = 0;
+            // 
+            // flowRegister
+            // 
+            flowRegister.AutoSize = true;
+            flowRegister.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            flowRegister.Controls.Add(cuiLabel2);
+            flowRegister.Controls.Add(linkLabel1);
+            flowRegister.Dock = DockStyle.Fill;
+            flowRegister.Location = new Point(27, 290);
+            flowRegister.Name = "flowRegister";
+            flowRegister.Size = new Size(536, 38);
+            flowRegister.TabIndex = 14;
             // 
             // fmRegistro
             // 
@@ -189,24 +247,21 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(1490, 791);
-            Controls.Add(logo);
-            Controls.Add(cuiButton1);
-            Controls.Add(linkLabel2);
-            Controls.Add(linkLabel1);
-            Controls.Add(cuiLabel2);
-            Controls.Add(contrasena);
-            Controls.Add(usuario);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Controls.Add(tableMain);
             Name = "fmRegistro";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Iniciar sesión";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)logo).EndInit();
+            tableMain.ResumeLayout(false);
+            tableRight.ResumeLayout(false);
+            tableRight.PerformLayout();
+            flowRegister.ResumeLayout(false);
+            flowRegister.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
+            #endregion
         }
 
-        #endregion
         private PictureBox logo;
         private CuoreUI.Controls.cuiTextBox usuario;
         private CuoreUI.Controls.cuiTextBox contrasena;
@@ -214,5 +269,10 @@
         private LinkLabel linkLabel1;
         private LinkLabel linkLabel2;
         private CuoreUI.Controls.cuiButton cuiButton1;
+
+        // New container fields for responsive layout
+        private TableLayoutPanel tableMain;
+        private TableLayoutPanel tableRight;
+        private FlowLayoutPanel flowRegister;
     }
 }
