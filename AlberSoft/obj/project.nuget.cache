@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sN3fHJfrbes=",
+  "dgSpecHash": "Qyde45lPh1g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-3\\AlberSoft\\AlberSoft.csproj",
+  "projectFilePath": "C:\\Users\\inesd\\OneDrive\\Documentos\\AlberSoft-main\\AlberSoft\\AlberSoft.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\antho\\.nuget\\packages\\cuoreui.winforms\\2025.12.14\\cuoreui.winforms.2025.12.14.nupkg.sha512",
-    "C:\\Users\\antho\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+    "C:\\Users\\inesd\\.nuget\\packages\\cuoreui.winforms\\2025.12.14\\cuoreui.winforms.2025.12.14.nupkg.sha512",
+    "C:\\Users\\inesd\\.nuget\\packages\\microsoft.web.webview2\\1.0.3712-prerelease\\microsoft.web.webview2.1.0.3712-prerelease.nupkg.sha512",
+    "C:\\Users\\inesd\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
   ],
   "logs": []
 }

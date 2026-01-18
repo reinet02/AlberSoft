@@ -98,6 +98,7 @@
             icon4.SizeMode = PictureBoxSizeMode.StretchImage;
             icon4.TabIndex = 0;
             icon4.TabStop = false;
+            icon4.MouseClick += icon4_MouseClick;
             // 
             // op1
             // 
@@ -206,7 +207,7 @@
             AutoScaleDimensions = new SizeF(10F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1862, 989);
+            ClientSize = new Size(1370, 749);
             Controls.Add(logo);
             Controls.Add(bienvenida);
             Controls.Add(panel1);

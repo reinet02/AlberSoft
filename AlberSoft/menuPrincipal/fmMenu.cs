@@ -1,4 +1,5 @@
 ﻿using AlberSoft.alojamientoEInventario;
+using MapaInterc;
 using System.Drawing.Drawing2D;
 
 namespace AlberSoft
@@ -24,6 +25,7 @@ namespace AlberSoft
         // ContextMenuStrip? es una variable que contendrá el menú flotante
         private ContextMenuStrip? menuFlotante1;
         private ContextMenuStrip? menuFlotante2;
+        private ContextMenuStrip? menuFlotante4;
 
         // Creamos una función/método para cerrar toda la aplicación
         private void cerrarApp(object? sender, FormClosingEventArgs e)
@@ -563,5 +565,132 @@ namespace AlberSoft
         private void cuiLabel1_Load(object sender, EventArgs e) { }
         #endregion
 
+        #region Crear menú flotante 4
+        // ContextMenuStrip es un menú que está en las herramientas de Windows Forms, pero aquí fue programado manualmente para ser mejorado
+        private ContextMenuStrip CrearMenuFlotante4()
+        {
+            // Crear el menú flotante en una variable llamada menu
+            var menu4 = new ContextMenuStrip();
+
+            #region Definir propiedades del menú flotante 1
+            //  Mostrar margen para las imágenes del menú flotante
+            menu4.ShowImageMargin = true;
+            // Definir el tamaño de las imágenes del  menú flotante
+            // Nota: Es ancho x alto
+            menu4.ImageScalingSize = new Size(63, 53);
+            // Definir la fuente del  menú flotante
+            // Ajustar el tamaño de la fuente a X puntos
+            // FontFamily mantiene la familia de la fuente actual que esté usando el menú flotante
+            menu4.Font = new Font(menu4.Font.FontFamily, 16F);
+            #endregion
+
+            #region Arreglo que contiene las etiquetas para cada item del menú flotante 4
+            string[] labels4 = {
+                "Mapa Interactivo",
+                "Quiz"
+            };
+            #endregion
+
+            #region Arreglo que contiene las rutas de iconos para cada item del menú flotante 1
+            string[] iconPaths4 = {
+                // rutas absolutas, las rutas relativas no funcionan (ajusta según tu proyecto)
+                @"C:\Users\inesd\OneDrive\Documentos\AlberSoft-main\imgs\mapaInteractivo\iconos\mapaInteractivoIcon1.png",
+                @"C:\Users\inesd\OneDrive\Documentos\AlberSoft-main\imgs\mapaInteractivo\iconos\quizIcon2.png"
+            };
+            #endregion
+
+            #region for para crear cada item del menú con su etiqueta e icono
+            for (int i = 0; i < labels4.Length; i++)
+            {
+                var item = new ToolStripMenuItem(labels4[i]);
+
+                try
+                {
+                    var iconPath = iconPaths4.Length > i ? iconPaths4[i] : null;
+                    if (!string.IsNullOrWhiteSpace(iconPath) && File.Exists(iconPath))
+                    {
+                        item.Image = Image.FromFile(iconPath);
+                        item.ImageScaling = ToolStripItemImageScaling.SizeToFit;
+                    }
+                }
+                catch { }
+
+                #region Cambios - manejador simple por etiqueta
+                // Explicación simple:
+                // - Capturamos la etiqueta en la variable `label`.
+                // - Asignamos un lambda corto a `item.Click` que abre el formulario
+                //   correspondiente o muestra el mensaje "no asignado"
+                var label = labels4[i];
+                item.Click += (s, e) =>
+                {
+                    if (label == "Mapa Interactivo")
+                    {
+                        abrirFormularioHijo(new fmMapa());
+                    }
+                    else
+                    {
+                        noAsignado_Click(s, e);
+                    }
+                };
+                #endregion
+
+                menu4.Items.Add(item);
+            }
+
+            #endregion
+
+            return menu4;
+        }
+        #endregion
+
+        #region Manejador común para items del menú flotante 4
+        // Manejador que decide qué formulario abrir según el Tag del ToolStripMenuItem
+        private void MostrarMenu4Item_Click(object? sender, EventArgs e)
+        {
+            if (sender is not ToolStripMenuItem item) return;
+
+            var key = (item.Tag as string) ?? string.Empty;
+
+            // Normalizamos la clave para evitar problemas con mayúsculas, espacios o acentos
+            var keyNormalized = key.Trim();
+
+            switch (keyNormalized)
+            {
+                case "Mapa Interactivo":
+                    // Abrir el formulario de inventario de ropa
+                    abrirFormularioHijo(new fmInventarioDeRopa());
+                    break;
+
+                case "Quiz":
+                    // Si tuvieras un formulario para Alojamiento podrías abrirlo aquí;
+                    // por ahora mostramos el mensaje genérico
+                    noAsignado_Click(sender, e);
+                    break;
+
+                default:
+                    noAsignado_Click(sender, e);
+                    break;
+            }
+        }
+        #endregion
+
+        #region Creamos un evento para mostrar el menú flotante 4
+        private void icon4_MouseClick(object sender, MouseEventArgs e)
+        {
+            // Ignorar si no es clic izquierdo
+            if (e.Button != MouseButtons.Left) return;
+
+            if (sender is not PictureBox pb) return;
+
+            if (menuFlotante4 == null) menuFlotante4 = CrearMenuFlotante4();
+
+            if (menuFlotante4.Visible) menuFlotante4.Close();
+            else
+            {
+                var showPoint = new Point(0, pb.Height);
+                menuFlotante4.Show(pb, showPoint);
+            }
+        }
+        #endregion
     }
 }
