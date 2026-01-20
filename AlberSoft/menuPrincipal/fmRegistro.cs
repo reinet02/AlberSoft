@@ -2,7 +2,6 @@ namespace AlberSoft
 {
     public partial class fmRegistro : Form
     {
-        #region Constructor
         #region Inicialización
         // Qué: Este método se ejecuta cuando creas la ventana de registro (login).
         // Por qué: InitializeComponent() carga los controles (botones, cajas de texto, etiquetas) creados en el diseñador.
@@ -12,10 +11,8 @@ namespace AlberSoft
             InitializeComponent();
         }
         #endregion
-        #endregion
 
         #region Eventos de carga
-        #region Preparación
         // Evento que ocurre cuando el formulario se carga por primera vez
         // Qué: ejecutar acciones iniciales (inicializar variables, cargar datos)
         // Por qué: preparar la ventana antes de que el usuario interactúe
@@ -35,9 +32,7 @@ namespace AlberSoft
             AlCargarFormulario(sender, e);
         }
         #endregion
-        #endregion
 
-        #region Validación e inicio de sesión
         #region Validaciones
         // Botón de Ingresar: valida campos y abre el menú principal
         // Qué: comprueba que usuario y contraseña no estén vacíos y abre fmMenu
@@ -74,9 +69,7 @@ namespace AlberSoft
             Hide();
         }
         #endregion
-        #endregion
 
-        #region Utilidades y otros eventos
         #region Logo y wrappers
         // Clic en el logo
         // Qué: manejador vacío por defecto. Puedes abrir una web o mostrar información adicional.
@@ -104,15 +97,6 @@ namespace AlberSoft
         {
             Etiqueta_Cargar(sender, e);
         }
-        #endregion
-
-        #region Debug
-        // Método utilizado por DebuggerDisplay para mostrar una representación del objeto
-        private string GetDebuggerDisplay()
-        {
-            return ToString();
-        }
-        #endregion
         #endregion
     }
 }

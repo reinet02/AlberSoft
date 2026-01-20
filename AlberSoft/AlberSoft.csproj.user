@@ -4,14 +4,19 @@
     <Compile Update="alojamientoEInventario\fmInventarioDeRopa.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="menuPrincipal\fmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="menuPrincipal\fmRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="capacitacionesIlustradas\fmPrimerosAuxilios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="menuPrincipal\fmMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

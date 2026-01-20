@@ -118,7 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mapaInteractivoIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapaInteractivoIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="capacitacionesIlustrativas_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\capacitacionesIlustrativas_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\imgs\menu\iconos\capacitacionesIlustrativas_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quizIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\iconos\quizIcon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alojamiento_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\alojamientoEInventario\iconos\alojamiento_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asignaciónDeCamas_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\alojamientoEInventario\iconos\asignaciónDeCamas_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inventarioDeComida_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\alojamientoEInventario\iconos\inventarioDeComida_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inventarioDeRopa_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\alojamientoEInventario\iconos\inventarioDeRopa_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="capacitacionesIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\capacitacionesIlustrativas\iconos\capacitacionesIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="capacitacionesIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\capacitacionesIlustrativas\iconos\capacitacionesIcon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="capacitacionesIcon3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\capacitacionesIlustrativas\iconos\capacitacionesIcon3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="capacitacionesIcon4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\capacitacionesIlustrativas\iconos\capacitacionesIcon4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cocinaComunitariaIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\iconos\cocinaComunitariaIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="huertoComunitarioIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\iconos\huertoComunitarioIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tallerDeReciclajeIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\iconos\tallerDeReciclajeIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

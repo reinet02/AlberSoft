@@ -41,11 +41,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-3\\AlberSoft\\AlberSoft.csproj",
+      "projectUniqueName": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-4\\AlberSoft\\AlberSoft.csproj",
       "projectName": "AlberSoft",
-      "projectPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-3\\AlberSoft\\AlberSoft.csproj",
+      "projectPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-4\\AlberSoft\\AlberSoft.csproj",
       "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-3\\AlberSoft\\obj\\",
+      "outputPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-4\\AlberSoft\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\antho\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,7 +113,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

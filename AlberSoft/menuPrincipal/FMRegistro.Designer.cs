@@ -195,8 +195,8 @@
             tableMain.ColumnCount = 2;
             tableMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
             tableMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            tableMain.Controls.Add(logo, 0, 0);
             tableMain.Controls.Add(tableRight, 1, 0);
+            tableMain.Controls.Add(logo, 0, 0);
             tableMain.Dock = DockStyle.Fill;
             tableMain.Location = new Point(0, 0);
             tableMain.Name = "tableMain";
