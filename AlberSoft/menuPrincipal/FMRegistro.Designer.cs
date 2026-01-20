@@ -52,7 +52,7 @@
             logo.Image = (Image)resources.GetObject("logo.Image");
             logo.Location = new Point(3, 3);
             logo.Name = "logo";
-            logo.Size = new Size(888, 785);
+            logo.Size = new Size(1111, 983);
             logo.SizeMode = PictureBoxSizeMode.Zoom;
             logo.TabIndex = 5;
             logo.TabStop = false;
@@ -71,7 +71,7 @@
             usuario.Image = null;
             usuario.ImageExpand = new Point(0, 0);
             usuario.ImageOffset = new Point(0, 0);
-            usuario.Location = new Point(28, 103);
+            usuario.Location = new Point(28, 133);
             usuario.Margin = new Padding(4);
             usuario.Multiline = false;
             usuario.Name = "usuario";
@@ -82,7 +82,7 @@
             usuario.PlaceholderColor = Color.LightGray;
             usuario.PlaceholderText = "Nombre de usuario";
             usuario.Rounding = new Padding(8);
-            usuario.Size = new Size(534, 45);
+            usuario.Size = new Size(683, 45);
             usuario.TabIndex = 7;
             usuario.TextOffset = new Size(0, 0);
             usuario.UnderlinedStyle = true;
@@ -100,7 +100,7 @@
             contrasena.Image = null;
             contrasena.ImageExpand = new Point(0, 0);
             contrasena.ImageOffset = new Point(0, 0);
-            contrasena.Location = new Point(28, 156);
+            contrasena.Location = new Point(28, 186);
             contrasena.Margin = new Padding(4);
             contrasena.Multiline = false;
             contrasena.Name = "contrasena";
@@ -111,7 +111,7 @@
             contrasena.PlaceholderColor = Color.LightGray;
             contrasena.PlaceholderText = "Contraseña";
             contrasena.Rounding = new Padding(8);
-            contrasena.Size = new Size(534, 45);
+            contrasena.Size = new Size(683, 45);
             contrasena.TabIndex = 8;
             contrasena.TextOffset = new Size(0, 0);
             contrasena.UnderlinedStyle = true;
@@ -143,7 +143,7 @@
             // 
             linkLabel2.Anchor = AnchorStyles.Left;
             linkLabel2.AutoSize = true;
-            linkLabel2.Location = new Point(28, 213);
+            linkLabel2.Location = new Point(28, 243);
             linkLabel2.Margin = new Padding(4, 8, 4, 8);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(159, 15);
@@ -172,7 +172,7 @@
             cuiButton1.ImageAutoCenter = true;
             cuiButton1.ImageExpand = new Point(0, 0);
             cuiButton1.ImageOffset = new Point(0, 0);
-            cuiButton1.Location = new Point(27, 239);
+            cuiButton1.Location = new Point(27, 269);
             cuiButton1.Name = "cuiButton1";
             cuiButton1.NormalBackground = Color.White;
             cuiButton1.NormalForeColor = Color.Black;
@@ -184,7 +184,7 @@
             cuiButton1.PressedImageTint = Color.White;
             cuiButton1.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             cuiButton1.Rounding = new Padding(8);
-            cuiButton1.Size = new Size(536, 45);
+            cuiButton1.Size = new Size(685, 45);
             cuiButton1.TabIndex = 13;
             cuiButton1.TextAlignment = StringAlignment.Center;
             cuiButton1.TextOffset = new Point(0, 0);
@@ -202,7 +202,7 @@
             tableMain.Name = "tableMain";
             tableMain.RowCount = 1;
             tableMain.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableMain.Size = new Size(1490, 791);
+            tableMain.Size = new Size(1862, 989);
             tableMain.TabIndex = 0;
             // 
             // tableRight
@@ -215,7 +215,7 @@
             tableRight.Controls.Add(cuiButton1, 0, 4);
             tableRight.Controls.Add(flowRegister, 0, 5);
             tableRight.Dock = DockStyle.Fill;
-            tableRight.Location = new Point(897, 3);
+            tableRight.Location = new Point(1120, 3);
             tableRight.Name = "tableRight";
             tableRight.Padding = new Padding(24);
             tableRight.RowCount = 7;
@@ -226,7 +226,7 @@
             tableRight.RowStyles.Add(new RowStyle());
             tableRight.RowStyles.Add(new RowStyle());
             tableRight.RowStyles.Add(new RowStyle(SizeType.Percent, 85F));
-            tableRight.Size = new Size(590, 785);
+            tableRight.Size = new Size(739, 983);
             tableRight.TabIndex = 0;
             // 
             // flowRegister
@@ -236,9 +236,9 @@
             flowRegister.Controls.Add(cuiLabel2);
             flowRegister.Controls.Add(linkLabel1);
             flowRegister.Dock = DockStyle.Fill;
-            flowRegister.Location = new Point(27, 290);
+            flowRegister.Location = new Point(27, 320);
             flowRegister.Name = "flowRegister";
-            flowRegister.Size = new Size(536, 38);
+            flowRegister.Size = new Size(685, 38);
             flowRegister.TabIndex = 14;
             // 
             // fmRegistro
@@ -246,7 +246,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(1490, 791);
+            ClientSize = new Size(1862, 989);
             Controls.Add(tableMain);
             Name = "fmRegistro";
             StartPosition = FormStartPosition.CenterScreen;

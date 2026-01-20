@@ -121,7 +121,7 @@
             op2.Dock = DockStyle.Fill;
             op2.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             op2.ForeColor = SystemColors.Control;
-            op2.HorizontalAlignment = StringAlignment.Near;
+            op2.HorizontalAlignment = StringAlignment.Center;
             op2.Location = new Point(95, 152);
             op2.Margin = new Padding(4, 5, 4, 5);
             op2.Name = "op2";
@@ -150,7 +150,7 @@
             op4.Dock = DockStyle.Fill;
             op4.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             op4.ForeColor = SystemColors.Control;
-            op4.HorizontalAlignment = StringAlignment.Near;
+            op4.HorizontalAlignment = StringAlignment.Center;
             op4.Location = new Point(95, 446);
             op4.Margin = new Padding(4, 5, 4, 5);
             op4.Name = "op4";
@@ -166,7 +166,7 @@
             op1.Dock = DockStyle.Fill;
             op1.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             op1.ForeColor = SystemColors.Control;
-            op1.HorizontalAlignment = StringAlignment.Near;
+            op1.HorizontalAlignment = StringAlignment.Center;
             op1.Location = new Point(95, 5);
             op1.Margin = new Padding(4, 5, 4, 5);
             op1.Name = "op1";
@@ -194,7 +194,7 @@
             op3.Dock = DockStyle.Fill;
             op3.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             op3.ForeColor = SystemColors.Control;
-            op3.HorizontalAlignment = StringAlignment.Near;
+            op3.HorizontalAlignment = StringAlignment.Center;
             op3.Location = new Point(95, 299);
             op3.Margin = new Padding(4, 5, 4, 5);
             op3.Name = "op3";
