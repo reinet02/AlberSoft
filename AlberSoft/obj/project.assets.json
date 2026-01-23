@@ -163,11 +163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\inesd\\OneDrive\\Documentos\\AlberSoft-main\\AlberSoft\\AlberSoft.csproj",
+      "projectUniqueName": "C:\\Users\\inesd\\OneDrive\\Documentos\\AlbertSoft\\AlberSoft-3\\AlberSoft\\AlberSoft.csproj",
       "projectName": "AlberSoft",
-      "projectPath": "C:\\Users\\inesd\\OneDrive\\Documentos\\AlberSoft-main\\AlberSoft\\AlberSoft.csproj",
+      "projectPath": "C:\\Users\\inesd\\OneDrive\\Documentos\\AlbertSoft\\AlberSoft-3\\AlberSoft\\AlberSoft.csproj",
       "packagesPath": "C:\\Users\\inesd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\inesd\\OneDrive\\Documentos\\AlberSoft-main\\AlberSoft\\obj\\",
+      "outputPath": "C:\\Users\\inesd\\OneDrive\\Documentos\\AlbertSoft\\AlberSoft-3\\AlberSoft\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\inesd\\AppData\\Roaming\\NuGet\\NuGet.Config",

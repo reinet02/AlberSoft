@@ -7,6 +7,9 @@
     <Compile Update="mapaInteractivo\fmMapa.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="mapaInteractivo\fmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="menuPrincipal\fmRegistro.cs">
       <SubType>Form</SubType>
     </Compile>

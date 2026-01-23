@@ -217,6 +217,7 @@
             Name = "fmMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio";
+            Load += fmMenu_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)icon4).EndInit();
             ((System.ComponentModel.ISupportInitialize)icon1).EndInit();

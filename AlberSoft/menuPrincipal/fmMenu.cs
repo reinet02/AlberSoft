@@ -1,7 +1,7 @@
 ﻿using AlberSoft.alojamientoEInventario;
 using MapaInterc;
 using System.Drawing.Drawing2D;
-
+using AlberSoft.mapaInteractivo;
 namespace AlberSoft
 {
     public partial class fmMenu : Form
@@ -627,6 +627,11 @@ namespace AlberSoft
                     {
                         abrirFormularioHijo(new fmMapa());
                     }
+                    else if(label =="Quiz")
+                    {
+                        abrirFormularioHijo(new fmQuiz()); 
+                       
+                    }
                     else
                     {
                         noAsignado_Click(s, e);
@@ -692,5 +697,10 @@ namespace AlberSoft
             }
         }
         #endregion
+
+        private void fmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

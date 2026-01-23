@@ -17,10 +17,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="albergue-pichincha.html" />
     <None Remove="mapaInteractivo\mapa.html" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="albergue-pichincha.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="mapa.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

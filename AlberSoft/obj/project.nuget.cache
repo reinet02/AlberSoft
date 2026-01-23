@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qyde45lPh1g=",
+  "dgSpecHash": "UbbFWb5NAzw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\inesd\\OneDrive\\Documentos\\AlberSoft-main\\AlberSoft\\AlberSoft.csproj",
+  "projectFilePath": "C:\\Users\\inesd\\OneDrive\\Documentos\\AlbertSoft\\AlberSoft-3\\AlberSoft\\AlberSoft.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\inesd\\.nuget\\packages\\cuoreui.winforms\\2025.12.14\\cuoreui.winforms.2025.12.14.nupkg.sha512",
     "C:\\Users\\inesd\\.nuget\\packages\\microsoft.web.webview2\\1.0.3712-prerelease\\microsoft.web.webview2.1.0.3712-prerelease.nupkg.sha512",
