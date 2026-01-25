@@ -163,95 +163,8 @@
   <data name="regresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\imgs\regresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cartaReciclajePeligrosos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasReciclaje\cartaReciclajePeligrosos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaReciclajePlástico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasReciclaje\cartaReciclajePlástico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaReciclajeVidrio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasReciclaje\cartaReciclajeVidrio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="parteTraseraDeCartasReciclaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasReciclaje\parteTraseraDeCartasReciclaje.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaReciclajeGeneral1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasReciclaje\cartaReciclajeGeneral1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaReciclajeGeneral2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasReciclaje\cartaReciclajeGeneral2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaReciclajeMetales" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasReciclaje\cartaReciclajeMetales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaReciclajeOrgánicos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasReciclaje\cartaReciclajeOrgánicos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaReciclajePapel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasReciclaje\cartaReciclajePapel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaMatarta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaMatarta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaPolloBrocoli" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaPolloBrocoli.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaPollo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaPollo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaPescado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaPescado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaPanqueques" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaPanqueques.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaHelado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaHelado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaGranola" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaGranola.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaChampiñones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaChampiñones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaAvena" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaAvena.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="parteTraseraDeCartasCocina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\parteTraseraDeCartasCocina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaTostadas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaTostadas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaTortilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasCocina\cartaTortilla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaLechuga" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasHuerto\cartaLechuga.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaMaracuya" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasHuerto\cartaMaracuya.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaOregano" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasHuerto\cartaOregano.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaPapaya" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasHuerto\cartaPapaya.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaRabano" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasHuerto\cartaRabano.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaZanahoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasHuerto\cartaZanahoria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="parteTraseraDeCartasHuerto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasHuerto\parteTraseraDeCartasHuerto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cartaAlbahaca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasHuerto\cartaAlbahaca.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cartaHierbabuena" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\JuegoMemorema - 2\imgs\cartasHuerto\cartaHierbabuena.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaAvena.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="juegoDeParesIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\imgs\actividadesRecreativas\iconos\juegoDeParesIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -264,5 +177,86 @@
   </data>
   <data name="logoCocinaComunitaria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\imgs\actividadesRecreativas\iconos\logoCocinaComunitaria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaChampiñones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaChampiñones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaGranola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaGranola.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaHelado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaHelado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaMatarta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaMatarta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaPanqueques" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaPanqueques.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaPescado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaPescado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaPollo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaPollo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaPolloBrocoli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaPolloBrocoli.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaTortilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaTortilla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaTostadas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaTostadas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parteTraseraDeCartasHuerto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasHuerto\parteTraseraDeCartasHuerto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaHierbabuena" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasHuerto\cartaHierbabuena.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaLechuga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasHuerto\cartaLechuga.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaMaracuya" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasHuerto\cartaMaracuya.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaOregano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasHuerto\cartaOregano.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaPapaya" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasHuerto\cartaPapaya.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaRabano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasHuerto\cartaRabano.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaZanahoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasHuerto\cartaZanahoria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parteTraseraDeCartasReciclaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasReciclaje\parteTraseraDeCartasReciclaje.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaReciclajeGeneral1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasReciclaje\cartaReciclajeGeneral1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaReciclajeGeneral2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasReciclaje\cartaReciclajeGeneral2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaReciclajeMetales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasReciclaje\cartaReciclajeMetales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaReciclajeOrgánicos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasReciclaje\cartaReciclajeOrgánicos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaReciclajePapel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasReciclaje\cartaReciclajePapel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaReciclajePeligrosos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasReciclaje\cartaReciclajePeligrosos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaReciclajePlástico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasReciclaje\cartaReciclajePlástico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaReciclajeVidrio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasReciclaje\cartaReciclajeVidrio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
