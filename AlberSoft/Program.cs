@@ -17,7 +17,7 @@ namespace AlberSoft
             Application.SetCompatibleTextRenderingDefault(false);
 
             ApplicationConfiguration.Initialize();
-            Application.Run(new fmRegistro());
+            Application.Run(new fmInicioDeSesión());
         }
     }
 }

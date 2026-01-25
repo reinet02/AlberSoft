@@ -42,7 +42,6 @@
             tituloE = new Label();
             tabControl1 = new TabControl();
             tabPage0 = new TabPage();
-            back = new PictureBox();
             cuiLabel4 = new CuoreUI.Controls.cuiLabel();
             cuiLabel3 = new CuoreUI.Controls.cuiLabel();
             cuiLabel2 = new CuoreUI.Controls.cuiLabel();
@@ -54,6 +53,8 @@
             cuiButton2 = new CuoreUI.Controls.cuiButton();
             cuiButton1 = new CuoreUI.Controls.cuiButton();
             tabPage1 = new TabPage();
+            regresar = new PictureBox();
+            tabPage2 = new TabPage();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -62,7 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             tabControl1.SuspendLayout();
             tabPage0.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)back).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)regresar).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -200,8 +201,9 @@
             tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.Controls.Add(tabPage0);
             tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
             tabControl1.Font = new Font("Segoe UI", 13F);
-            tabControl1.Location = new Point(13, 4);
+            tabControl1.Location = new Point(0, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(1070, 776);
@@ -210,7 +212,6 @@
             // 
             // tabPage0
             // 
-            tabPage0.Controls.Add(back);
             tabPage0.Controls.Add(tableLayoutPanel1);
             tabPage0.Controls.Add(cuiLabel4);
             tabPage0.Controls.Add(tituloE);
@@ -229,22 +230,11 @@
             tabPage0.Controls.Add(cuiButton1);
             tabPage0.Location = new Point(4, 35);
             tabPage0.Name = "tabPage0";
-            tabPage0.Padding = new Padding(3, 3, 3, 3);
+            tabPage0.Padding = new Padding(3);
             tabPage0.Size = new Size(1062, 737);
             tabPage0.TabIndex = 1;
             tabPage0.Text = "ABCDE";
             tabPage0.UseVisualStyleBackColor = true;
-            // 
-            // back
-            // 
-            back.Image = (Image)resources.GetObject("back.Image");
-            back.Location = new Point(982, 672);
-            back.Name = "back";
-            back.Size = new Size(69, 61);
-            back.SizeMode = PictureBoxSizeMode.StretchImage;
-            back.TabIndex = 8;
-            back.TabStop = false;
-            back.Click += back_Click;
             // 
             // cuiLabel4
             // 
@@ -514,11 +504,33 @@
             tabPage1.Text = "Traumatismo";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // regresar
+            // 
+            regresar.BackColor = Color.Transparent;
+            regresar.Image = Properties.Resources.regresar;
+            regresar.Location = new Point(988, 787);
+            regresar.Name = "regresar";
+            regresar.Size = new Size(83, 93);
+            regresar.SizeMode = PictureBoxSizeMode.Zoom;
+            regresar.TabIndex = 8;
+            regresar.TabStop = false;
+            regresar.Click += regresar_Click;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Location = new Point(4, 35);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Size = new Size(1062, 737);
+            tabPage2.TabIndex = 3;
+            tabPage2.Text = "Manualidades";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
             // fmPrimerosAuxilios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1076, 790);
+            ClientSize = new Size(1076, 885);
+            Controls.Add(regresar);
             Controls.Add(tabControl1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "fmPrimerosAuxilios";
@@ -534,7 +546,7 @@
             tabControl1.ResumeLayout(false);
             tabPage0.ResumeLayout(false);
             tabPage0.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)back).EndInit();
+            ((System.ComponentModel.ISupportInitialize)regresar).EndInit();
             ResumeLayout(false);
         }
 
@@ -564,6 +576,7 @@
         private CuoreUI.Controls.cuiLabel cuiLabel5;
         private PictureBox pictureBox3;
         private TabPage tabPage1;
-        private PictureBox back;
+        private PictureBox regresar;
+        private TabPage tabPage2;
     }
 }

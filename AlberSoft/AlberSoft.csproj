@@ -20,10 +20,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="activadesRecreativas\Cocina Comunitaria\fmCocinaComunitaria.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CuoreUI.Winforms" Version="2025.12.14" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="activadesRecreativas\JuegoDePares\fmJuegoDeParesHuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

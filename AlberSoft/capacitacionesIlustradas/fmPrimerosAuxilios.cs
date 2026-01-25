@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using AlberSoft.menuPrincipal;
+using System.Linq;
 
 namespace AlberSoft
 {
@@ -7,19 +8,12 @@ namespace AlberSoft
 
     public partial class fmPrimerosAuxilios : Form
     {
-        #region CONSTRUCTOR
-        #region Inicialización
-        // Qué: este método se ejecuta cuando creas una nueva ventana de Primeros Auxilios.
-        // Por qué: InitializeComponent() carga todos los controles (botones, imágenes, etiquetas) creados en el diseñador.
-        // Cómo usar: no borres InitializeComponent(); si lo quitas el formulario no tendrá controles.
+
         public fmPrimerosAuxilios()
         {
             InitializeComponent();
         }
-        #endregion
-        #endregion
 
-        #region EVENTOS DE CONTROLES
         #region Carga y paint
         // Evento que ocurre cuando el formulario carga
         // Qué: se ejecuta una vez, cuando el formulario aparece por primera vez.
@@ -38,20 +32,10 @@ namespace AlberSoft
         #endregion
 
         #region Clicks y botones
-        // Click en etiquetas (ejemplos vacíos)
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            // Ejemplo: MessageBox.Show("Has pulsado la etiqueta 1");
-        }
 
         private void label4_Click(object sender, EventArgs e)
         {
             // Ejemplo: otra acción al pulsar etiqueta
-        }
-
-        private void infoC_Click(object sender, EventArgs e)
-        {
-            // Ejemplo: mostrar detalles adicionales
         }
 
         private void cuiButton1_Click(object sender, EventArgs e)
@@ -69,38 +53,39 @@ namespace AlberSoft
             // Acciones que quieras al pulsar titulo D
         }
         #endregion
-        #endregion
 
-        #region NAVEGACIÓN Y CIERRE
-        #region Botón volver
-        // Botón "volver" (imagen back) — mostrar el menú principal y cerrar este formulario
-        // Qué: este método busca si ya está abierta la ventana principal y la muestra; si no, crea una nueva.
-        // Por qué: evitar crear múltiples instancias del menú principal y regresar a la pantalla anterior.
-        // Cómo usar: el diseñador asocia este método al evento Click del PictureBox `back`.
-        private void back_Click(object sender, EventArgs e)
+        #region Botón para regresar
+        // Botón "volver" — cerrar este formulario y mostrar otro
+        private void regresar_Click(object sender, EventArgs e)
         {
-            // 1) Buscar en la colección de ventanas abiertas si ya existe una de tipo fmMenu
-            var menuExistente = Application.OpenForms.OfType<fmMenu>().FirstOrDefault();
-
-            // 2) Si no existe, crear una nueva instancia del menú principal
-            if (menuExistente == null)
+            // Si este formulario está embebido dentro de un Panel (por ejemplo panel2 en fmMenu),
+            // reemplazamos su contenido por el formulario fmBienvenida
+            var parentPanel = this.Parent as Panel;
+            try
             {
-                menuExistente = new fmMenu();
+                parentPanel.Controls.Clear();
+
+                var bienvenida = new menuPrincipal.fmBienvenida();
+                bienvenida.TopLevel = false;
+                bienvenida.FormBorderStyle = FormBorderStyle.None;
+                bienvenida.Dock = DockStyle.Fill;
+
+                parentPanel.Controls.Add(bienvenida);
+                bienvenida.Show();
             }
-
-            // 3) Mostrar el menú (si ya estaba abierto lo traemos al frente)
-            menuExistente.Show();
-
-            // 4) Cerrar este formulario actual para volver al menú
-            Close();
+            catch
+            {
+                // Fallback: abrir como ventana independiente
+                var bienvenida = new menuPrincipal.fmBienvenida();
+                bienvenida.Show();
+            }
+            
         }
         #endregion
-        #endregion
 
-        #region NOTAS
         // Nota para principiantes: este archivo contiene la lógica del formulario; los controles visuales y los nombres
         // (como `pictureBox`, `tituloA`, `cuiButton1`) están definidos en el archivo `fmPrimerosAuxilios.Designer.cs`.
         // Si necesitas cambiar nombres visibles, edita el diseñador o usa propiedades públicas para exponer valores.
-        #endregion
+
     }
 }

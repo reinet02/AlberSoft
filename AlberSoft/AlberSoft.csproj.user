@@ -1,13 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="activadesRecreativas\Cocina Comunitaria\fmCocinaComunitaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="activadesRecreativas\JuegoDePares\fmJuegoDeParesCocina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="activadesRecreativas\Cocina Comunitaria\fmLogoCocinaComunitaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="activadesRecreativas\JuegoDePares\fmLogoJuegoDePares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="activadesRecreativas\JuegoDePares\fmNivelesDeDificultad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="activadesRecreativas\Recetas\fmReceta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="alojamientoEInventario\fmInventarioDeRopa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\fmQuiz1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\fmQuiz2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="menuPrincipal\fmBienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="menuPrincipal\fmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="menuPrincipal\fmRegistro.cs">
+    <Compile Update="menuPrincipal\fmInicioDeSesión.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="capacitacionesIlustradas\fmPrimerosAuxilios.cs">
@@ -18,5 +45,10 @@
     <EmbeddedResource Update="Properties\Resources.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="activadesRecreativas\Cocina Comunitaria\fmCocinaComunitaria.cs">
+      <SubType>Form</SubType>
+    </None>
   </ItemGroup>
 </Project>
