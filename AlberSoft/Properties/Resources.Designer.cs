@@ -483,6 +483,16 @@ namespace AlberSoft.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap parteTraseraDeCartasCocina {
+            get {
+                object obj = ResourceManager.GetObject("parteTraseraDeCartasCocina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap parteTraseraDeCartasHuerto {
             get {
                 object obj = ResourceManager.GetObject("parteTraseraDeCartasHuerto", resourceCulture);
