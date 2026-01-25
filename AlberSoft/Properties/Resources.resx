@@ -164,7 +164,7 @@
     <value>..\..\imgs\regresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cartaAlbahaca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaAvena.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasHuerto\cartaAlbahaca.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="juegoDeParesIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\imgs\actividadesRecreativas\iconos\juegoDeParesIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -261,5 +261,8 @@
   </data>
   <data name="parteTraseraDeCartasCocina" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\parteTraseraDeCartasCocina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartaAvena" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\cartas\cartasCocina\cartaAvena.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
