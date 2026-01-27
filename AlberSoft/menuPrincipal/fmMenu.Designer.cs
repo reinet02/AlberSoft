@@ -1,4 +1,4 @@
-ï»¿using System.Drawing.Drawing2D;
+using System.Drawing.Drawing2D;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AlberSoft
@@ -261,13 +261,13 @@ namespace AlberSoft
 
         private void logo_Click(object sender, EventArgs e)
         {
-            // AquÃ­ puedes agregar la lÃ³gica que desees ejecutar al hacer clic en el logo.
+            // Aquí puedes agregar la lógica que desees ejecutar al hacer clic en el logo.
         }
 
-        // Agrega este mÃ©todo al archivo para manejar el evento Load de los cuiLabel
+        // Agrega este método al archivo para manejar el evento Load de los cuiLabel
         private void cuiLabel2_Load(object sender, EventArgs e)
         {
-            // Puedes dejarlo vacÃ­o o agregar lÃ³gica especÃ­fica si lo necesitas.
+            // Puedes dejarlo vacío o agregar lógica específica si lo necesitas.
         }
 
         #endregion
@@ -286,3 +286,4 @@ namespace AlberSoft
         private Panel panel2;
     }
 }
+

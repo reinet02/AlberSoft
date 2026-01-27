@@ -5,32 +5,38 @@
     <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
+        <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
 	<WinFormsDefaultFont>Microsoft Sans Serif, 9pt</WinFormsDefaultFont>
 	<HighDpiMode>PerMonitorV2</HighDpiMode>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="actividadesRecreativas\**" />
     <Compile Remove="Resources\**" />
-    <EmbeddedResource Remove="actividadesRecreativas\**" />
     <EmbeddedResource Remove="Resources\**" />
-    <None Remove="actividadesRecreativas\**" />
     <None Remove="Resources\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="activadesRecreativas\Cocina Comunitaria\fmCocinaComunitaria.cs" />
+    <None Remove="mapaInteractivo\map.html" />
+    <None Remove="mapaInteractivo\mapaEcuador.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="mapaInteractivo\map.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mapaInteractivo\mapaEcuador.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CuoreUI.Winforms" Version="2025.12.14" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3650.58" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="activadesRecreativas\JuegoDePares\fmJuegoDeParesHuerto.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

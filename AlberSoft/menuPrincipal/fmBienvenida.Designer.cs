@@ -1,4 +1,4 @@
-﻿namespace AlberSoft.menuPrincipal
+namespace AlberSoft.menuPrincipal
 {
     partial class fmBienvenida
     {
@@ -95,3 +95,4 @@
         private PictureBox pictureBox1;
     }
 }
+

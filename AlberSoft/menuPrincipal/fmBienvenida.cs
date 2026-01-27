@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +15,7 @@ namespace AlberSoft.menuPrincipal
             InitializeComponent();
             // Mostrar el nombre del usuario en la etiqueta "bienvenida"
             string usuario = variablesGlobales.usuario1;
-            bienvenida.Content = "¡Bienvenido " + usuario + "!";
+            bienvenida.Content = "�Bienvenido " + usuario + "!";
         }
 
         private void bienvenida_Load(object sender, EventArgs e)
@@ -29,3 +29,5 @@ namespace AlberSoft.menuPrincipal
         }
     }
 }
+
+

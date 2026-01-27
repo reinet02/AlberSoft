@@ -1,38 +1,44 @@
-ï»¿using AlberSoft.activadesRecreativas;
+using AlberSoft.activadesRecreativas;
+using AlberSoft.actividadesRecreativas;
+using AlberSoft.Alojamiento_e_Inventario;
 using AlberSoft.alojamientoEInventario;
+using AlberSoft.capacitacionesIlustradas;
+using AlberSoft.mapaInteractivo;
+using AsignarCamas;
+using CrucigramaPt1;
 
 namespace AlberSoft
 {
     public partial class fmMenu : Form
     {
         // Ponemos el menu contextual dentro del menu flotante
-        // ContextMenuStrip es una clase de Windows Forms para crear un menÃº contextual (menÃº flotante). EstÃ¡ en el Cuadro de herramientas
-        // ContextMenuStrip? es una variable que contendrÃ¡ el menÃº flotante
+        // ContextMenuStrip es una clase de Windows Forms para crear un menú contextual (menú flotante). Está en el Cuadro de herramientas
+        // ContextMenuStrip? es una variable que contendrá el menú flotante
         private ContextMenuStrip? menuFlotante1;
         private ContextMenuStrip? menuFlotante2;
         private ContextMenuStrip? menuFlotante3;
         private ContextMenuStrip? menuFlotante4;
 
-        // InicializaciÃ³n principal
+        // Inicialización principal
         public fmMenu()
         {
-            // Carga los controles creados por el diseÃ±ador y prepara la ventana
+            // Carga los controles creados por el diseñador y prepara la ventana
             InitializeComponent();
 
-            // Cuando el formulario se cierre, se cerrarÃ¡ el programa
+            // Cuando el formulario se cierre, se cerrará el programa
 
             // Nota: FormClosing viene por defecto en Windows Forms
 
-            // FormClosing es un evento que se dispara cuando el formulario se estÃ¡ cerrando
+            // FormClosing es un evento que se dispara cuando el formulario se está cerrando
 
             // Nota: FormClosing es equivalente a this.FormClosing
 
-            // Advertencia: esto es necesario para evitar que la aplicaciÃ³n siga corriendo en segundo plano
+            // Advertencia: esto es necesario para evitar que la aplicación siga corriendo en segundo plano
 
             FormClosing += (s, e) => Application.Exit();
         }
 
-        #region FunciÃ³n para cargar un formulario dentro de un panel
+        #region Función para cargar un formulario dentro de un panel
         // Carga un formulario dentro del panel "panel2"
         private void abrirFormularioHijo(Form frm)
         {
@@ -46,7 +52,7 @@ namespace AlberSoft
                 frm.FormBorderStyle = FormBorderStyle.None;
                 frm.Dock = DockStyle.Fill;
 
-                // AÃ±adir y mostrar
+                // Añadir y mostrar
                 this.panel2.Controls.Add(frm);
                 frm.Show();
             }
@@ -86,52 +92,52 @@ namespace AlberSoft
         }
         #endregion
 
-        #region Creamos una funciÃ³n para mostrar un mensaje al usuario
+        #region Creamos una función para mostrar un mensaje al usuario
         private void noAsignado_Click(object? sender, EventArgs e)
         {
             MessageBox.Show("Formulario no asignado");
         }
         #endregion
 
-        #region Crear menÃº flotante 1
-        // ContextMenuStrip es un menÃº que estÃ¡ en las herramientas de Windows Forms, pero aquÃ­ fue programado manualmente para ser mejorado
+        #region Crear menú flotante 1
+        // ContextMenuStrip es un menú que está en las herramientas de Windows Forms, pero aquí fue programado manualmente para ser mejorado
         private ContextMenuStrip CrearMenuFlotante1()
         {
-            // Crear el menÃº flotante en una variable llamada menu
+            // Crear el menú flotante en una variable llamada menu
             var menu1 = new ContextMenuStrip();
 
-            #region Definir propiedades del menÃº flotante 1
-            //  Mostrar margen para las imÃ¡genes del menÃº flotante
+            #region Definir propiedades del menú flotante 1
+            //  Mostrar margen para las imágenes del menú flotante
             menu1.ShowImageMargin = true;
-            // Definir el tamaÃ±o de las imÃ¡genes del  menÃº flotante
+            // Definir el tamaño de las imágenes del  menú flotante
             // Nota: Es ancho x alto
             menu1.ImageScalingSize = new Size(63, 53);
-            // Definir la fuente del  menÃº flotante
-            // Ajustar el tamaÃ±o de la fuente a X puntos
-            // FontFamily mantiene la familia de la fuente actual que estÃ© usando el menÃº flotante
+            // Definir la fuente del  menú flotante
+            // Ajustar el tamaño de la fuente a X puntos
+            // FontFamily mantiene la familia de la fuente actual que esté usando el menú flotante
             menu1.Font = new Font(menu1.Font.FontFamily, 16F);
             #endregion
 
-            #region Arreglo que contiene las etiquetas para cada item del menÃº flotante 1
+            #region Arreglo que contiene las etiquetas para cada item del menú flotante 1
             string[] labels1 = {
-                "Alojamiento",
-                "AsignaciÃ³n de Camas",
                 "Inventario de Ropa",
-                "Inventario de Comida"
+                "Inventario de Comida",
+                "Asignación de Camas",
+                "Crucigrama"
             };
             #endregion
 
-            #region Nombres de recursos esperados en Properties.Resources para los iconos del menÃº 1
-            // AÃ±ade estas imÃ¡genes en Project > Properties > Resources y usa exactamente los nombres.
+            #region Nombres de recursos esperados en Properties.Resources para los iconos del menú 1
+            // Añade estas imágenes en Project > Properties > Resources y usa exactamente los nombres.
             string[] resourceNames1 = {
-                "alojamiento_icon1",
-                "asignaciÃ³nDeCamas_icon1",
                 "inventarioDeRopa_icon1",
-                "inventarioDeComida_icon1"
+                "inventarioDeComida_icon1",
+                "asignaciónDeCamas_icon1",
+                "crucigrama_icon1"
             };
             #endregion
 
-            #region for para crear cada item del menÃº con su etiqueta e icono
+            #region for para crear cada item del menú con su etiqueta e icono
             for (int i = 0; i < labels1.Length; i++)
             {
                 var item = new ToolStripMenuItem(labels1[i]);
@@ -149,17 +155,29 @@ namespace AlberSoft
                 catch { }
 
                 #region Cambios - manejador simple por etiqueta
-                // ExplicaciÃ³n simple:
+                // Explicación simple:
                 // - Capturamos la etiqueta en la variable `label`.
                 // - Asignamos un lambda corto a `item.Click` que abre el formulario
                 //   correspondiente o muestra el mensaje "no asignado".
-                // AsÃ­ es fÃ¡cil de entender y extender para principiantes.
+                // Así es fácil de entender y extender para principiantes.
                 var label = labels1[i];
                 item.Click += (s, e) =>
                 {
                     if (label == "Inventario de Ropa")
                     {
-                        abrirFormularioHijo(new fmInventarioDeRopa());
+                        abrirFormularioHijo(new fmInventarioRopa());
+                    }
+                    else if (label == "Inventario de Comida")
+                    {
+                        abrirFormularioHijo(new fmInventarioComida());
+                    }
+                    else if (label == "Asignación de Camas")
+                    {
+                        abrirFormularioHijo(new fmAsignacionCamas());
+                    }
+                    else if (label == "Crucigrama")
+                    {
+                        abrirFormularioHijo(new fmCrucigrama());
                     }
                     else
                     {
@@ -177,7 +195,7 @@ namespace AlberSoft
         }
         #endregion
 
-        #region Creamos un evento para mostrar el menÃº flotante 1
+        #region Creamos un evento para mostrar el menú flotante 1
         private void icon1_MouseClick(object sender, MouseEventArgs e)
         {
             // Ignorar si no es clic izquierdo
@@ -196,47 +214,49 @@ namespace AlberSoft
         }
         #endregion
 
-        #region Crear menÃº flotante 2
-        // ContextMenuStrip es un menÃº que estÃ¡ en las herramientas de Windows Forms, pero aquÃ­ fue programado manualmente para ser mejorado
+        #region Crear menú flotante 2
+        // ContextMenuStrip es un menú que está en las herramientas de Windows Forms, pero aquí fue programado manualmente para ser mejorado
         private ContextMenuStrip CrearMenuFlotante2()
         {
-            // Crear el menÃº flotante en una variable llamada menu
+            // Crear el menú flotante en una variable llamada menu
             var menu2 = new ContextMenuStrip();
 
-            #region Definir propiedades del menÃº flotante
-            //  Mostrar margen para las imÃ¡genes del menÃº flotante
+            #region Definir propiedades del menú flotante
+            //  Mostrar margen para las imágenes del menú flotante
             menu2.ShowImageMargin = true;
-            // Definir el tamaÃ±o de las imÃ¡genes del  menÃº flotante
+            // Definir el tamaño de las imágenes del  menú flotante
             // Nota: Es ancho x alto
             menu2.ImageScalingSize = new Size(63, 53);
-            // Definir la fuente del  menÃº flotante
-            // Ajustar el tamaÃ±o de la fuente a X puntos
-            // FontFamily mantiene la familia de la fuente actual que estÃ© usando el menÃº flotante
+            // Definir la fuente del  menú flotante
+            // Ajustar el tamaño de la fuente a X puntos
+            // FontFamily mantiene la familia de la fuente actual que esté usando el menú flotante
             menu2.Font = new Font(menu2.Font.FontFamily, 16F);
             #endregion
 
-            #region Arreglo que contiene las etiquetas para cada item del menÃº flotante
+            #region Arreglo que contiene las etiquetas para cada item del menú flotante
             string[] labels2 = {
                 "Primeros Auxilios",
-                "PrevenciÃ³n de Enfermedades Comunes",
+                "Prevención de Enfermedades Comunes",
                 "Protocolos en Caso de Incendios",
-                "Protocolos en Caso de Desastres Naturales"
+                "Protocolos en Caso de Desastres Naturales",
+                "Juego formativo"
             };
             #endregion
 
-            #region Nombres de recursos esperados en Properties.Resources para los iconos del menÃº 2
-            // AÃ±ade estas imÃ¡genes en Project > Properties > Resources y usa exactamente los nombres.
+            #region Nombres de recursos esperados en Properties.Resources para los iconos del menú 2
+            // Añade estas imágenes en Project > Properties > Resources y usa exactamente los nombres.
             // Si ya tienes un recurso llamado "capacitacionesIlustrativas_icon" en Resources.resx
             // lo usamos como fallback para todos los items.
             string[] resourceNames2 = {
                 "capacitacionesIcon1",
                 "capacitacionesIcon2",
                 "capacitacionesIcon3",
-                "capacitacionesIcon4"
+                "capacitacionesIcon4",
+                "juegoOrdenarImgsIcon5"
             };
             #endregion
 
-            #region for para crear cada item del menÃº con su etiqueta e icono
+            #region for para crear cada item del menú con su etiqueta e icono
             for (int i = 0; i < labels2.Length; i++)
             {
                 var item = new ToolStripMenuItem(labels2[i]);
@@ -254,7 +274,7 @@ namespace AlberSoft
                 catch { }
 
                 #region Cambios - manejador simple por etiqueta
-                // ExplicaciÃ³n simple:
+                // Explicación simple:
                 // - Capturamos la etiqueta en la variable `label`.
                 // - Asignamos un lambda corto a `item.Click` que abre el formulario
                 //   correspondiente o muestra el mensaje "no asignado".
@@ -264,6 +284,22 @@ namespace AlberSoft
                     if (label == "Primeros Auxilios")
                     {
                         abrirFormularioHijo(new fmPrimerosAuxilios());
+                    }
+                    else if (label == "Prevención de Enfermedades Comunes")
+                    {
+                        // abrirFormularioHijo(new fmEnfermedadesComunes());
+                    }
+                    else if (label == "Protocolos en Caso de Incendios")
+                    {
+                        // abrirFormularioHijo(new fmProtocolosIncendios());
+                    }
+                    else if (label == "Protocolos en Caso de Desastres Naturales")
+                    {
+                        // abrirFormularioHijo(new fmDesastresNaturales());
+                    }
+                    else if (label == "Juego formativo")
+                    {
+                        abrirFormularioHijo(new fmJuegoOrdenarImgs());
                     }
                     else
                     {
@@ -281,7 +317,7 @@ namespace AlberSoft
         }
         #endregion
 
-        #region Creamos un evento para mostrar el menÃº flotante 2
+        #region Creamos un evento para mostrar el menú flotante 2
         private void icon2_MouseClick(object sender, MouseEventArgs e)
         {
             // Ignorar si no es clic izquierdo
@@ -300,26 +336,26 @@ namespace AlberSoft
         }
         #endregion
 
-        #region Crear menÃº flotante 3
-        // ContextMenuStrip es un menÃº que estÃ¡ en las herramientas de Windows Forms, pero aquÃ­ fue programado manualmente para ser mejorado
+        #region Crear menú flotante 3
+        // ContextMenuStrip es un menú que está en las herramientas de Windows Forms, pero aquí fue programado manualmente para ser mejorado
         private ContextMenuStrip CrearMenuFlotante3()
         {
-            // Crear el menÃº flotante en una variable llamada menu
+            // Crear el menú flotante en una variable llamada menu
             var menu3 = new ContextMenuStrip();
 
-            #region Definir propiedades del menÃº flotante 3
-            //  Mostrar margen para las imÃ¡genes del menÃº flotante
+            #region Definir propiedades del menú flotante 3
+            //  Mostrar margen para las imágenes del menú flotante
             menu3.ShowImageMargin = true;
-            // Definir el tamaÃ±o de las imÃ¡genes del  menÃº flotante
+            // Definir el tamaño de las imágenes del  menú flotante
             // Nota: Es ancho x alto
             menu3.ImageScalingSize = new Size(63, 53);
-            // Definir la fuente del  menÃº flotante
-            // Ajustar el tamaÃ±o de la fuente a X puntos
-            // FontFamily mantiene la familia de la fuente actual que estÃ© usando el menÃº flotante
+            // Definir la fuente del  menú flotante
+            // Ajustar el tamaño de la fuente a X puntos
+            // FontFamily mantiene la familia de la fuente actual que esté usando el menú flotante
             menu3.Font = new Font(menu3.Font.FontFamily, 16F);
             #endregion
 
-            #region Arreglo que contiene las etiquetas para cada item del menÃº flotante 1
+            #region Arreglo que contiene las etiquetas para cada item del menú flotante 1
             string[] labels3 = {
                 "Taller de Reciclaje",
                 "Cocina Comunitaria",
@@ -328,8 +364,8 @@ namespace AlberSoft
             };
             #endregion
 
-            #region Nombres de recursos esperados en Properties.Resources para los iconos del menÃº 1
-            // AÃ±ade estas imÃ¡genes en Project > Properties > Resources y usa exactamente los nombres.
+            #region Nombres de recursos esperados en Properties.Resources para los iconos del menú 1
+            // Añade estas imágenes en Project > Properties > Resources y usa exactamente los nombres.
             string[] resourceNames3 = {
                 "tallerDeReciclajeIcon1",
                 "cocinaComunitariaIcon1",
@@ -338,7 +374,7 @@ namespace AlberSoft
             };
             #endregion
 
-            #region for para crear cada item del menÃº con su etiqueta e icono
+            #region for para crear cada item del menú con su etiqueta e icono
             for (int i = 0; i < labels3.Length; i++)
             {
                 var item = new ToolStripMenuItem(labels3[i]);
@@ -376,7 +412,7 @@ namespace AlberSoft
                     }
                     else if (label == "Juego de Pares")
                     {
-                        abrirFormularioHijo(new fmNivelesDeDificultad());
+                        abrirFormularioHijo(new fmNivelesDificultad());
                     }
                     else
                     {
@@ -394,7 +430,7 @@ namespace AlberSoft
         }
         #endregion
 
-        #region Creamos un evento para mostrar el menÃº flotante 3
+        #region Creamos un evento para mostrar el menú flotante 3
         private void icon3_MouseClick(object sender, MouseEventArgs e)
         {
             // Ignorar si no es clic izquierdo
@@ -413,8 +449,8 @@ namespace AlberSoft
         }
         #endregion
 
-        #region Crear menÃº flotante 4
-        // ContextMenuStrip es un menÃº que estÃ¡ en las herramientas de Windows Forms, pero aquÃ­ fue programado manualmente para ser mejorado
+        #region Crear menú flotante 4
+        // ContextMenuStrip es un menú que está en las herramientas de Windows Forms, pero aquí fue programado manualmente para ser mejorado
         private ContextMenuStrip CrearMenuFlotante4()
         {
             var menu4 = new ContextMenuStrip();
@@ -427,7 +463,7 @@ namespace AlberSoft
                 "Quiz"
             };
 
-            // Nombres de recursos esperados en Properties.Resources para los iconos del menÃº 4
+            // Nombres de recursos esperados en Properties.Resources para los iconos del menú 4
             string[] resourceNames4 = {
                 "mapaInteractivoIcon1",
                 "quizIcon2"
@@ -454,7 +490,11 @@ namespace AlberSoft
                 {
                     if (label == "Mapa Interactivo")
                     {
-                        //abrirFormularioHijo(new fmMapa());
+                        abrirFormularioHijo(new fmMapaEcuador());
+                    }
+                    else if (label == "Quiz")
+                    {
+                        abrirFormularioHijo(new fmQuiz1());
                     }
                     else
                     {
@@ -469,7 +509,7 @@ namespace AlberSoft
         }
         #endregion
 
-        #region Creamos un evento para mostrar el menÃº flotante 4
+        #region Creamos un evento para mostrar el menú flotante 4
         private void icon4_MouseClick(object sender, MouseEventArgs e)
         {
             // Ignorar si no es clic izquierdo
@@ -504,3 +544,4 @@ namespace AlberSoft
         }
     }
 }
+

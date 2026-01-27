@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-6\\AlberSoft\\AlberSoft.csproj": {}
+    "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-7\\AlberSoft\\AlberSoft.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-6\\AlberSoft\\AlberSoft.csproj": {
+    "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-7\\AlberSoft\\AlberSoft.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-6\\AlberSoft\\AlberSoft.csproj",
+        "projectUniqueName": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-7\\AlberSoft\\AlberSoft.csproj",
         "projectName": "AlberSoft",
-        "projectPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-6\\AlberSoft\\AlberSoft.csproj",
+        "projectPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-7\\AlberSoft\\AlberSoft.csproj",
         "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-6\\AlberSoft\\obj\\",
+        "outputPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-7\\AlberSoft\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\antho\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,10 @@
             "CuoreUI.Winforms": {
               "target": "Package",
               "version": "[2025.12.14, )"
+            },
+            "Microsoft.Web.WebView2": {
+              "target": "Package",
+              "version": "[1.0.3650.58, )"
             }
           },
           "imports": [
@@ -75,7 +79,7 @@
             "Microsoft.Windows.SDK.NET.Ref.Windows": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "Microsoft.WindowsDesktop.App": {
               "privateAssets": "none"
             }
           },

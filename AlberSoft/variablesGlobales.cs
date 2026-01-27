@@ -7,3 +7,4 @@ namespace AlberSoft
         public static string usuario1 { get; set; } = string.Empty;
     }
 }
+

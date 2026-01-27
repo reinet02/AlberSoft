@@ -1,10 +1,10 @@
-Ôªøusing AlberSoft.menuPrincipal;
+using AlberSoft.menuPrincipal;
 using System.Linq;
 
 namespace AlberSoft
 {
-    // Versi√≥n simplificada y comentada para principiantes de C# (en espa√±ol).
-    // Prop√≥sito: que cualquier persona con conocimientos b√°sicos de `if` pueda leer y modificar este formulario.
+    // VersiÛn simplificada y comentada para principiantes de C# (en espaÒol).
+    // PropÛsito: que cualquier persona con conocimientos b·sicos de `if` pueda leer y modificar este formulario.
 
     public partial class fmPrimerosAuxilios : Form
     {
@@ -16,18 +16,18 @@ namespace AlberSoft
 
         #region Carga y paint
         // Evento que ocurre cuando el formulario carga
-        // Qu√©: se ejecuta una vez, cuando el formulario aparece por primera vez.
-        // Por qu√©: aqu√≠ puedes preparar datos, cargar im√°genes o iniciar timers.
-        // C√≥mo usar: a√±ade c√≥digo dentro para ejecutar acciones al iniciar.
+        // QuÈ: se ejecuta una vez, cuando el formulario aparece por primera vez.
+        // Por quÈ: aquÌ puedes preparar datos, cargar im·genes o iniciar timers.
+        // CÛmo usar: aÒade cÛdigo dentro para ejecutar acciones al iniciar.
         private void primerosAuxilios_Load(object sender, EventArgs e)
         {
             // Ejemplo: cargar datos o inicializar componentes
         }
 
-        // Evento Paint del TableLayoutPanel (puede quedar vac√≠o)
+        // Evento Paint del TableLayoutPanel (puede quedar vacÌo)
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            // No es necesario modificar para la funcionalidad b√°sica
+            // No es necesario modificar para la funcionalidad b·sica
         }
         #endregion
 
@@ -35,12 +35,12 @@ namespace AlberSoft
 
         private void label4_Click(object sender, EventArgs e)
         {
-            // Ejemplo: otra acci√≥n al pulsar etiqueta
+            // Ejemplo: otra acciÛn al pulsar etiqueta
         }
 
         private void cuiButton1_Click(object sender, EventArgs e)
         {
-            // Ejemplo: abrir otro formulario con m√°s informaci√≥n
+            // Ejemplo: abrir otro formulario con m·s informaciÛn
         }
 
         private void cuiLabel1_Load(object sender, EventArgs e)
@@ -54,11 +54,11 @@ namespace AlberSoft
         }
         #endregion
 
-        #region Bot√≥n para regresar
-        // Bot√≥n "volver" ‚Äî cerrar este formulario y mostrar otro
+        #region FunciÛn para regresar (mostar a otro formulario)
+        // BotÛn "volver" ó cerrar este formulario y mostrar otro
         private void regresar_Click(object sender, EventArgs e)
         {
-            // Si este formulario est√° embebido dentro de un Panel (por ejemplo panel2 en fmMenu),
+            // Si este formulario est· embebido dentro de un Panel (por ejemplo panel2 en fmMenu),
             // reemplazamos su contenido por el formulario fmBienvenida
             var parentPanel = this.Parent as Panel;
             try
@@ -79,13 +79,24 @@ namespace AlberSoft
                 var bienvenida = new menuPrincipal.fmBienvenida();
                 bienvenida.Show();
             }
-            
+
+        }
+
+        private void tableroGeneralTab1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cuiLabel2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReferencias_Click(object sender, EventArgs e)
+        {
+
         }
         #endregion
-
-        // Nota para principiantes: este archivo contiene la l√≥gica del formulario; los controles visuales y los nombres
-        // (como `pictureBox`, `tituloA`, `cuiButton1`) est√°n definidos en el archivo `fmPrimerosAuxilios.Designer.cs`.
-        // Si necesitas cambiar nombres visibles, edita el dise√±ador o usa propiedades p√∫blicas para exponer valores.
-
     }
 }
+
