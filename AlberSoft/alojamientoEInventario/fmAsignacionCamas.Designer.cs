@@ -843,7 +843,6 @@
             // pictureBox18
             // 
             pictureBox18.Dock = DockStyle.Fill;
-            pictureBox18.Image = AlberSoft.Properties.Resources.caritafeliz;
             pictureBox18.Location = new Point(3, 3);
             pictureBox18.Name = "pictureBox18";
             pictureBox18.Size = new Size(103, 85);

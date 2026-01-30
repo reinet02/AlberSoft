@@ -135,7 +135,7 @@ namespace AlberSoft.mapaInteractivo
             public int pantallaY { get; set; } = -1;
         }
 
-        #region Handlers de eventos (comunicación JS -> C#)
+        #region Comunicación de JS con C#
         private void ManejarMensajeWeb(object sender, Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs e)
         {
             string raw = e.TryGetWebMessageAsString();

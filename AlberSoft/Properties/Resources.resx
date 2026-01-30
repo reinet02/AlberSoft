@@ -499,9 +499,6 @@
   <data name="tachovidrio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\imgs\actividadesRecreativas\imgs\Taller Reciclaje\tachovidrio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="caritafeliz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\..\..\..\Downloads\A integrar\AlberSoft-Jerliz\AlberSoft\caritafeliz.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="juegoOrdenarImgsIcon5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\imgs\capacitacionesIlustrativas\iconos\juegoOrdenarImgsIcon5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

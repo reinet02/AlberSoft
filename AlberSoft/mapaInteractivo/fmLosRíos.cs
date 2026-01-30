@@ -14,6 +14,11 @@ namespace AlberSoft.mapaInteractivo
         {
             InitializeComponent();
         }
+
+        private void lbText1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
