@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             tablaGeneral = new TableLayoutPanel();
+            tablaGeneralF5Botones = new TableLayoutPanel();
+            regresar = new PictureBox();
+            btnReferencias = new PictureBox();
             tablaIngredientesYPorciones = new TableLayoutPanel();
             tableIzquierda = new TableLayoutPanel();
             label1 = new Label();
@@ -63,6 +66,9 @@
             cuiLabel1 = new CuoreUI.Controls.cuiLabel();
             label14 = new Label();
             tablaGeneral.SuspendLayout();
+            tablaGeneralF5Botones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)regresar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnReferencias).BeginInit();
             tablaIngredientesYPorciones.SuspendLayout();
             tableIzquierda.SuspendLayout();
             tablaIconosIngredientes.SuspendLayout();
@@ -87,21 +93,63 @@
             tablaGeneral.BackColor = Color.Linen;
             tablaGeneral.ColumnCount = 1;
             tablaGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tablaGeneral.Controls.Add(tablaGeneralF5Botones, 0, 4);
             tablaGeneral.Controls.Add(tablaIngredientesYPorciones, 0, 1);
             tablaGeneral.Controls.Add(Avena, 0, 0);
             tablaGeneral.Controls.Add(label2, 0, 2);
             tablaGeneral.Controls.Add(tablaPasosDePreparación, 0, 3);
             tablaGeneral.Dock = DockStyle.Fill;
             tablaGeneral.Location = new Point(0, 0);
+            tablaGeneral.Margin = new Padding(3, 2, 3, 2);
             tablaGeneral.Name = "tablaGeneral";
-            tablaGeneral.RowCount = 4;
-            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 5F));
-            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 55F));
-            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 5F));
-            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 35F));
-            tablaGeneral.Size = new Size(1102, 893);
+            tablaGeneral.RowCount = 5;
+            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 3.34665322F));
+            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 36.8131866F));
+            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 3.34665322F));
+            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 46.45355F));
+            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 10.03996F));
+            tablaGeneral.Size = new Size(964, 670);
             tablaGeneral.TabIndex = 0;
             tablaGeneral.Paint += panelgeneral_Paint;
+            // 
+            // tablaGeneralF5Botones
+            // 
+            tablaGeneralF5Botones.ColumnCount = 3;
+            tablaGeneralF5Botones.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10.3232536F));
+            tablaGeneralF5Botones.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 89.67675F));
+            tablaGeneralF5Botones.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 110F));
+            tablaGeneralF5Botones.Controls.Add(regresar, 2, 0);
+            tablaGeneralF5Botones.Controls.Add(btnReferencias, 0, 0);
+            tablaGeneralF5Botones.Dock = DockStyle.Fill;
+            tablaGeneralF5Botones.Location = new Point(3, 604);
+            tablaGeneralF5Botones.Name = "tablaGeneralF5Botones";
+            tablaGeneralF5Botones.RowCount = 1;
+            tablaGeneralF5Botones.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tablaGeneralF5Botones.Size = new Size(958, 63);
+            tablaGeneralF5Botones.TabIndex = 4;
+            // 
+            // regresar
+            // 
+            regresar.BackColor = Color.Transparent;
+            regresar.Dock = DockStyle.Fill;
+            regresar.Image = Properties.Resources.regresar;
+            regresar.Location = new Point(850, 3);
+            regresar.Name = "regresar";
+            regresar.Size = new Size(105, 57);
+            regresar.SizeMode = PictureBoxSizeMode.Zoom;
+            regresar.TabIndex = 10;
+            regresar.TabStop = false;
+            regresar.Click += regresar_Click;
+            // 
+            // btnReferencias
+            // 
+            btnReferencias.Dock = DockStyle.Fill;
+            btnReferencias.Location = new Point(3, 3);
+            btnReferencias.Name = "btnReferencias";
+            btnReferencias.Size = new Size(81, 57);
+            btnReferencias.SizeMode = PictureBoxSizeMode.Zoom;
+            btnReferencias.TabIndex = 11;
+            btnReferencias.TabStop = false;
             // 
             // tablaIngredientesYPorciones
             // 
@@ -112,11 +160,12 @@
             tablaIngredientesYPorciones.Controls.Add(tableIzquierda, 0, 0);
             tablaIngredientesYPorciones.Controls.Add(tablaDerecha, 1, 0);
             tablaIngredientesYPorciones.Dock = DockStyle.Fill;
-            tablaIngredientesYPorciones.Location = new Point(3, 47);
+            tablaIngredientesYPorciones.Location = new Point(3, 24);
+            tablaIngredientesYPorciones.Margin = new Padding(3, 2, 3, 2);
             tablaIngredientesYPorciones.Name = "tablaIngredientesYPorciones";
             tablaIngredientesYPorciones.RowCount = 1;
             tablaIngredientesYPorciones.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tablaIngredientesYPorciones.Size = new Size(1096, 485);
+            tablaIngredientesYPorciones.Size = new Size(958, 242);
             tablaIngredientesYPorciones.TabIndex = 0;
             // 
             // tableIzquierda
@@ -127,13 +176,14 @@
             tableIzquierda.Controls.Add(tablaIconosIngredientes, 0, 1);
             tableIzquierda.Controls.Add(img1Receta1, 0, 2);
             tableIzquierda.Dock = DockStyle.Fill;
-            tableIzquierda.Location = new Point(3, 3);
+            tableIzquierda.Location = new Point(3, 2);
+            tableIzquierda.Margin = new Padding(3, 2, 3, 2);
             tableIzquierda.Name = "tableIzquierda";
             tableIzquierda.RowCount = 3;
             tableIzquierda.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tableIzquierda.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableIzquierda.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
-            tableIzquierda.Size = new Size(651, 479);
+            tableIzquierda.Size = new Size(568, 238);
             tableIzquierda.TabIndex = 0;
             // 
             // label1
@@ -144,7 +194,7 @@
             label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(645, 47);
+            label1.Size = new Size(562, 23);
             label1.TabIndex = 0;
             label1.Text = "INGREDIENTES";
             label1.TextAlign = ContentAlignment.MiddleLeft;
@@ -165,7 +215,8 @@
             tablaIconosIngredientes.Controls.Add(pictureBox7, 0, 3);
             tablaIconosIngredientes.Controls.Add(pictureBox8, 0, 4);
             tablaIconosIngredientes.Dock = DockStyle.Fill;
-            tablaIconosIngredientes.Location = new Point(3, 50);
+            tablaIconosIngredientes.Location = new Point(3, 25);
+            tablaIconosIngredientes.Margin = new Padding(3, 2, 3, 2);
             tablaIconosIngredientes.Name = "tablaIconosIngredientes";
             tablaIconosIngredientes.RowCount = 5;
             tablaIconosIngredientes.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -173,7 +224,7 @@
             tablaIconosIngredientes.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tablaIconosIngredientes.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tablaIconosIngredientes.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tablaIconosIngredientes.Size = new Size(645, 233);
+            tablaIconosIngredientes.Size = new Size(562, 115);
             tablaIconosIngredientes.TabIndex = 1;
             tablaIconosIngredientes.Paint += tableLayoutPanel5_Paint;
             // 
@@ -183,9 +234,9 @@
             label3.BackColor = Color.Linen;
             label3.Dock = DockStyle.Fill;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(67, 0);
+            label3.Location = new Point(59, 0);
             label3.Name = "label3";
-            label3.Size = new Size(575, 46);
+            label3.Size = new Size(500, 23);
             label3.TabIndex = 0;
             label3.Text = "Pechugas de pollo";
             label3.TextAlign = ContentAlignment.MiddleLeft;
@@ -197,9 +248,9 @@
             label4.BackColor = Color.Linen;
             label4.Dock = DockStyle.Fill;
             label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(67, 46);
+            label4.Location = new Point(59, 23);
             label4.Name = "label4";
-            label4.Size = new Size(575, 46);
+            label4.Size = new Size(500, 23);
             label4.TabIndex = 0;
             label4.Text = "Cebolla, Zanahoria, Apio";
             label4.TextAlign = ContentAlignment.MiddleLeft;
@@ -211,9 +262,9 @@
             label5.BackColor = Color.Linen;
             label5.Dock = DockStyle.Fill;
             label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(67, 92);
+            label5.Location = new Point(59, 46);
             label5.Name = "label5";
-            label5.Size = new Size(575, 46);
+            label5.Size = new Size(500, 23);
             label5.TabIndex = 2;
             label5.Text = "Fideos ";
             label5.TextAlign = ContentAlignment.MiddleLeft;
@@ -224,9 +275,9 @@
             label6.BackColor = Color.Linen;
             label6.Dock = DockStyle.Fill;
             label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(67, 138);
+            label6.Location = new Point(59, 69);
             label6.Name = "label6";
-            label6.Size = new Size(575, 46);
+            label6.Size = new Size(500, 23);
             label6.TabIndex = 3;
             label6.Text = "Caldo de pollo";
             label6.TextAlign = ContentAlignment.MiddleLeft;
@@ -237,9 +288,9 @@
             label7.BackColor = Color.Linen;
             label7.Dock = DockStyle.Fill;
             label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(67, 184);
+            label7.Location = new Point(59, 92);
             label7.Name = "label7";
-            label7.Size = new Size(575, 49);
+            label7.Size = new Size(500, 23);
             label7.TabIndex = 4;
             label7.Text = "Hierbas frescas (perejil, cilantro)";
             label7.TextAlign = ContentAlignment.MiddleLeft;
@@ -249,9 +300,10 @@
             pictureBox4.BackColor = Color.Linen;
             pictureBox4.Dock = DockStyle.Fill;
             pictureBox4.Image = Properties.Resources.pechugapollo;
-            pictureBox4.Location = new Point(3, 3);
+            pictureBox4.Location = new Point(3, 2);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(58, 40);
+            pictureBox4.Size = new Size(50, 19);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
@@ -262,9 +314,10 @@
             pictureBox5.BackColor = Color.Linen;
             pictureBox5.Dock = DockStyle.Fill;
             pictureBox5.Image = Properties.Resources.cebollaicon;
-            pictureBox5.Location = new Point(3, 49);
+            pictureBox5.Location = new Point(3, 25);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(58, 40);
+            pictureBox5.Size = new Size(50, 19);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 6;
             pictureBox5.TabStop = false;
@@ -274,9 +327,10 @@
             pictureBox6.BackColor = Color.Linen;
             pictureBox6.Dock = DockStyle.Fill;
             pictureBox6.Image = Properties.Resources.fideosicon;
-            pictureBox6.Location = new Point(3, 95);
+            pictureBox6.Location = new Point(3, 48);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(58, 40);
+            pictureBox6.Size = new Size(50, 19);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 7;
             pictureBox6.TabStop = false;
@@ -286,9 +340,10 @@
             pictureBox7.BackColor = Color.Linen;
             pictureBox7.Dock = DockStyle.Fill;
             pictureBox7.Image = Properties.Resources.cucharonicon;
-            pictureBox7.Location = new Point(3, 141);
+            pictureBox7.Location = new Point(3, 71);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(58, 40);
+            pictureBox7.Size = new Size(50, 19);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 8;
             pictureBox7.TabStop = false;
@@ -298,9 +353,10 @@
             pictureBox8.BackColor = Color.Linen;
             pictureBox8.Dock = DockStyle.Fill;
             pictureBox8.Image = Properties.Resources.perejilicon;
-            pictureBox8.Location = new Point(3, 187);
+            pictureBox8.Location = new Point(3, 94);
+            pictureBox8.Margin = new Padding(3, 2, 3, 2);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(58, 43);
+            pictureBox8.Size = new Size(50, 19);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 9;
             pictureBox8.TabStop = false;
@@ -310,9 +366,10 @@
             img1Receta1.BackColor = Color.Linen;
             img1Receta1.Dock = DockStyle.Fill;
             img1Receta1.Image = Properties.Resources.sopadepollo;
-            img1Receta1.Location = new Point(3, 289);
+            img1Receta1.Location = new Point(3, 144);
+            img1Receta1.Margin = new Padding(3, 2, 3, 2);
             img1Receta1.Name = "img1Receta1";
-            img1Receta1.Size = new Size(645, 187);
+            img1Receta1.Size = new Size(562, 92);
             img1Receta1.SizeMode = PictureBoxSizeMode.Zoom;
             img1Receta1.TabIndex = 2;
             img1Receta1.TabStop = false;
@@ -322,17 +379,18 @@
             tablaDerecha.BackColor = Color.Linen;
             tablaDerecha.ColumnCount = 1;
             tablaDerecha.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tablaDerecha.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tablaDerecha.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 18F));
             tablaDerecha.Controls.Add(img2Receta1, 0, 0);
             tablaDerecha.Controls.Add(tableLayoutPanel1, 0, 1);
             tablaDerecha.Dock = DockStyle.Fill;
-            tablaDerecha.Location = new Point(660, 3);
+            tablaDerecha.Location = new Point(577, 2);
+            tablaDerecha.Margin = new Padding(3, 2, 3, 2);
             tablaDerecha.Name = "tablaDerecha";
             tablaDerecha.RowCount = 2;
             tablaDerecha.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
             tablaDerecha.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
-            tablaDerecha.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tablaDerecha.Size = new Size(433, 479);
+            tablaDerecha.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
+            tablaDerecha.Size = new Size(378, 238);
             tablaDerecha.TabIndex = 1;
             // 
             // img2Receta1
@@ -340,9 +398,10 @@
             img2Receta1.BackColor = Color.Linen;
             img2Receta1.Dock = DockStyle.Fill;
             img2Receta1.Image = Properties.Resources.sopapollo2;
-            img2Receta1.Location = new Point(3, 3);
+            img2Receta1.Location = new Point(3, 2);
+            img2Receta1.Margin = new Padding(3, 2, 3, 2);
             img2Receta1.Name = "img2Receta1";
-            img2Receta1.Size = new Size(427, 281);
+            img2Receta1.Size = new Size(372, 138);
             img2Receta1.SizeMode = PictureBoxSizeMode.Zoom;
             img2Receta1.TabIndex = 1;
             img2Receta1.TabStop = false;
@@ -352,15 +411,16 @@
             tableLayoutPanel1.BackColor = Color.Bisque;
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 18F));
             tableLayoutPanel1.Controls.Add(tablaIconosInstrucciones, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(3, 290);
+            tableLayoutPanel1.Location = new Point(3, 144);
+            tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Size = new Size(427, 186);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 140F));
+            tableLayoutPanel1.Size = new Size(372, 92);
             tableLayoutPanel1.TabIndex = 2;
             // 
             // tablaIconosInstrucciones
@@ -375,13 +435,14 @@
             tablaIconosInstrucciones.Controls.Add(pictureBox3, 0, 2);
             tablaIconosInstrucciones.Controls.Add(pictureBox1, 0, 1);
             tablaIconosInstrucciones.Dock = DockStyle.Fill;
-            tablaIconosInstrucciones.Location = new Point(3, 3);
+            tablaIconosInstrucciones.Location = new Point(3, 2);
+            tablaIconosInstrucciones.Margin = new Padding(3, 2, 3, 2);
             tablaIconosInstrucciones.Name = "tablaIconosInstrucciones";
             tablaIconosInstrucciones.RowCount = 3;
             tablaIconosInstrucciones.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tablaIconosInstrucciones.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tablaIconosInstrucciones.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tablaIconosInstrucciones.Size = new Size(421, 180);
+            tablaIconosInstrucciones.Size = new Size(366, 88);
             tablaIconosInstrucciones.TabIndex = 2;
             // 
             // label8
@@ -391,9 +452,9 @@
             label8.Dock = DockStyle.Fill;
             label8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(87, 0);
+            label8.Location = new Point(76, 0);
             label8.Name = "label8";
-            label8.Size = new Size(331, 60);
+            label8.Size = new Size(287, 29);
             label8.TabIndex = 0;
             label8.Text = "Porciones: 6";
             label8.TextAlign = ContentAlignment.MiddleLeft;
@@ -404,9 +465,9 @@
             label9.BackColor = Color.Bisque;
             label9.Dock = DockStyle.Fill;
             label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(87, 60);
+            label9.Location = new Point(76, 29);
             label9.Name = "label9";
-            label9.Size = new Size(331, 60);
+            label9.Size = new Size(287, 29);
             label9.TabIndex = 1;
             label9.Text = "T. Preparación: 25min";
             label9.TextAlign = ContentAlignment.MiddleLeft;
@@ -417,9 +478,9 @@
             label10.BackColor = Color.Bisque;
             label10.Dock = DockStyle.Fill;
             label10.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(87, 120);
+            label10.Location = new Point(76, 58);
             label10.Name = "label10";
-            label10.Size = new Size(331, 60);
+            label10.Size = new Size(287, 30);
             label10.TabIndex = 2;
             label10.Text = "T. Total: 45min";
             label10.TextAlign = ContentAlignment.MiddleLeft;
@@ -429,9 +490,10 @@
             pictureBox2.BackColor = Color.Bisque;
             pictureBox2.Dock = DockStyle.Fill;
             pictureBox2.Image = Properties.Resources.porcionicon;
-            pictureBox2.Location = new Point(3, 3);
+            pictureBox2.Location = new Point(3, 2);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(78, 54);
+            pictureBox2.Size = new Size(67, 25);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -441,9 +503,10 @@
             pictureBox3.BackColor = Color.Bisque;
             pictureBox3.Dock = DockStyle.Fill;
             pictureBox3.Image = Properties.Resources.tiempoicon;
-            pictureBox3.Location = new Point(3, 123);
+            pictureBox3.Location = new Point(3, 60);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(78, 54);
+            pictureBox3.Size = new Size(67, 26);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
@@ -454,9 +517,10 @@
             pictureBox1.BackColor = Color.Bisque;
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.preparacionicon;
-            pictureBox1.Location = new Point(3, 63);
+            pictureBox1.Location = new Point(3, 31);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(78, 54);
+            pictureBox1.Size = new Size(67, 25);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -470,7 +534,7 @@
             Avena.ForeColor = Color.Black;
             Avena.Location = new Point(3, 0);
             Avena.Name = "Avena";
-            Avena.Size = new Size(1096, 44);
+            Avena.Size = new Size(958, 22);
             Avena.TabIndex = 1;
             Avena.Text = "SOPA DE POLLO CON VERDURAS\r\n";
             Avena.TextAlign = ContentAlignment.MiddleCenter;
@@ -481,9 +545,9 @@
             label2.BackColor = Color.Bisque;
             label2.Dock = DockStyle.Fill;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(3, 535);
+            label2.Location = new Point(3, 268);
             label2.Name = "label2";
-            label2.Size = new Size(1096, 44);
+            label2.Size = new Size(958, 22);
             label2.TabIndex = 2;
             label2.Text = "Pasos de Preparación";
             label2.TextAlign = ContentAlignment.MiddleLeft;
@@ -499,7 +563,8 @@
             tablaPasosDePreparación.Controls.Add(cuiLabel1, 0, 4);
             tablaPasosDePreparación.Controls.Add(label14, 0, 3);
             tablaPasosDePreparación.Dock = DockStyle.Fill;
-            tablaPasosDePreparación.Location = new Point(3, 582);
+            tablaPasosDePreparación.Location = new Point(3, 292);
+            tablaPasosDePreparación.Margin = new Padding(3, 2, 3, 2);
             tablaPasosDePreparación.Name = "tablaPasosDePreparación";
             tablaPasosDePreparación.RowCount = 5;
             tablaPasosDePreparación.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -507,7 +572,7 @@
             tablaPasosDePreparación.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tablaPasosDePreparación.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tablaPasosDePreparación.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tablaPasosDePreparación.Size = new Size(1096, 308);
+            tablaPasosDePreparación.Size = new Size(958, 307);
             tablaPasosDePreparación.TabIndex = 3;
             tablaPasosDePreparación.Paint += tablaPasosDePreparación_Paint;
             // 
@@ -519,7 +584,7 @@
             label12.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label12.Location = new Point(3, 61);
             label12.Name = "label12";
-            label12.Size = new Size(1090, 61);
+            label12.Size = new Size(952, 61);
             label12.TabIndex = 1;
             label12.Text = "2. Desmenuzar el pollo. ";
             label12.TextAlign = ContentAlignment.MiddleLeft;
@@ -532,7 +597,7 @@
             label13.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.Location = new Point(3, 122);
             label13.Name = "label13";
-            label13.Size = new Size(1090, 61);
+            label13.Size = new Size(952, 61);
             label13.TabIndex = 2;
             label13.Text = "3. Añadir los fideos y cocinar hasta que estén tiernos.";
             label13.TextAlign = ContentAlignment.MiddleLeft;
@@ -545,7 +610,7 @@
             label11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label11.Location = new Point(3, 0);
             label11.Name = "label11";
-            label11.Size = new Size(1090, 61);
+            label11.Size = new Size(952, 61);
             label11.TabIndex = 0;
             label11.Text = "1. Cocinar el pollo en caldo con cebolla, zanahoria y apio.";
             label11.TextAlign = ContentAlignment.MiddleLeft;
@@ -556,10 +621,10 @@
             cuiLabel1.Content = "";
             cuiLabel1.Dock = DockStyle.Fill;
             cuiLabel1.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel1.Location = new Point(4, 249);
-            cuiLabel1.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel1.Location = new Point(4, 248);
+            cuiLabel1.Margin = new Padding(4);
             cuiLabel1.Name = "cuiLabel1";
-            cuiLabel1.Size = new Size(1088, 54);
+            cuiLabel1.Size = new Size(950, 55);
             cuiLabel1.TabIndex = 3;
             cuiLabel1.VerticalAlignment = StringAlignment.Near;
             // 
@@ -570,21 +635,25 @@
             label14.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label14.Location = new Point(3, 183);
             label14.Name = "label14";
-            label14.Size = new Size(1090, 61);
+            label14.Size = new Size(952, 61);
             label14.TabIndex = 4;
             label14.Text = "4. Adornar con hierbas frescas.";
             label14.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // fmdesayunoreceta1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1102, 893);
+            ClientSize = new Size(964, 670);
             Controls.Add(tablaGeneral);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "fmdesayunoreceta1";
             Text = "fmdesayunoreceta1";
             tablaGeneral.ResumeLayout(false);
             tablaGeneral.PerformLayout();
+            tablaGeneralF5Botones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)regresar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnReferencias).EndInit();
             tablaIngredientesYPorciones.ResumeLayout(false);
             tableIzquierda.ResumeLayout(false);
             tableIzquierda.PerformLayout();
@@ -645,5 +714,8 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox1;
         private Label label14;
+        private TableLayoutPanel tablaGeneralF5Botones;
+        private PictureBox regresar;
+        private PictureBox btnReferencias;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlberSoft.activadesRecreativas.Cocina_Comunitaria;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,13 +18,13 @@ namespace AlberSoft.actividadesRecreativas
         }
 
         #region Funciones para los botones de recetas
-        // Manejador para el botón llamado "receta1" en el diseñador.
+        // Manejador para el botón llamado "receta1" en el diseñador
         private void btnReceta1_Click(object sender, EventArgs e)
         {
             try
             {
                 // Llamar a la función que coloca el formulario dentro de panel1
-                abrirFormularioHijo(new fmCocinaComunitaria());
+                abrirFormularioHijo(new fmDesayunoreceta1());
             }
             catch (Exception ex)
             {

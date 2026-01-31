@@ -240,4 +240,3 @@ C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\Alb
 C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-7\AlberSoft\obj\Debug\net10.0-windows10.0.19041.0\AlberSoft.menuPrincipal.fmRegistro.resources
 C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-7\AlberSoft\obj\Debug\net10.0-windows10.0.19041.0\AlberSoft.activadesRecreativas.fmNivelesDificultad.resources
 C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-7\AlberSoft\obj\Debug\net10.0-windows10.0.19041.0\AlberSoft.menuPrincipal.fmRegistroTest.resources
-C:\Users\antho\OneDrive - keug\Informática\Programación\C#\Programas en C#\AlberSoft\AlberSoft-7\AlberSoft\obj\Debug\net10.0-windows10.0.19041.0\AlberSoft.mapaInteractivo.fmSantaElena.resources
