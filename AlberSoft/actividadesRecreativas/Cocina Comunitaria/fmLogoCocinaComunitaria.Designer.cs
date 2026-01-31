@@ -31,12 +31,12 @@
             pbLogoCocina = new PictureBox();
             tablaGeneral = new TableLayoutPanel();
             tablaGeneralF5Botones = new TableLayoutPanel();
-            regresar = new PictureBox();
+            btnRegresar = new PictureBox();
             btnReferencias = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pbLogoCocina).BeginInit();
             tablaGeneral.SuspendLayout();
             tablaGeneralF5Botones.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)regresar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnRegresar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnReferencias).BeginInit();
             SuspendLayout();
             // 
@@ -73,7 +73,7 @@
             tablaGeneralF5Botones.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10.3232536F));
             tablaGeneralF5Botones.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 89.67675F));
             tablaGeneralF5Botones.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 110F));
-            tablaGeneralF5Botones.Controls.Add(regresar, 2, 0);
+            tablaGeneralF5Botones.Controls.Add(btnRegresar, 2, 0);
             tablaGeneralF5Botones.Controls.Add(btnReferencias, 0, 0);
             tablaGeneralF5Botones.Dock = DockStyle.Fill;
             tablaGeneralF5Botones.Location = new Point(3, 637);
@@ -83,18 +83,18 @@
             tablaGeneralF5Botones.Size = new Size(974, 65);
             tablaGeneralF5Botones.TabIndex = 5;
             // 
-            // regresar
+            // btnRegresar
             // 
-            regresar.BackColor = Color.Transparent;
-            regresar.Dock = DockStyle.Fill;
-            regresar.Image = Properties.Resources.regresar;
-            regresar.Location = new Point(866, 3);
-            regresar.Name = "regresar";
-            regresar.Size = new Size(105, 59);
-            regresar.SizeMode = PictureBoxSizeMode.Zoom;
-            regresar.TabIndex = 10;
-            regresar.TabStop = false;
-            regresar.Click += regresar_Click;
+            btnRegresar.BackColor = Color.Transparent;
+            btnRegresar.Dock = DockStyle.Fill;
+            btnRegresar.Image = Properties.Resources.regresar;
+            btnRegresar.Location = new Point(866, 3);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(105, 59);
+            btnRegresar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnRegresar.TabIndex = 10;
+            btnRegresar.TabStop = false;
+            btnRegresar.Click += regresar_Click;
             // 
             // btnReferencias
             // 
@@ -117,7 +117,7 @@
             ((System.ComponentModel.ISupportInitialize)pbLogoCocina).EndInit();
             tablaGeneral.ResumeLayout(false);
             tablaGeneralF5Botones.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)regresar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnRegresar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnReferencias).EndInit();
             ResumeLayout(false);
         }
@@ -127,7 +127,7 @@
         private PictureBox pbLogoCocina;
         private TableLayoutPanel tablaGeneral;
         private TableLayoutPanel tablaGeneralF5Botones;
-        private PictureBox regresar;
+        private PictureBox btnRegresar;
         private PictureBox btnReferencias;
     }
 }

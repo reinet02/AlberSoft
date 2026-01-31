@@ -19,6 +19,11 @@ namespace AlberSoft.mapaInteractivo
         {
 
         }
+
+        private void tablaGeneral_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

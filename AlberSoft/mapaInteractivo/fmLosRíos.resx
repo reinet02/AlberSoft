@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cuiLabel1.Content" xml:space="preserve">
+    <value>Nombre\ del\ albergue:\ Cáritas\ Diocesana\ de\ Babahoyo\ \ \n\n\ Provincia:\ Los\ Ríos\ \n\n\ Ciudad:\ Babahoyo\ \n\n\ Cáritas\ Diocesana\ de\ Babahoyo\ brinda\ apoyo\ humanitario\ y\ social\ a\ comunidades\ vulnerables\.\ \n\n\ Asistencia\ humanitaria\ \n\n\ Apoyo\ social\ \n\n\ Atención\ en\ emergencias\ \n\n\ Acompañamiento\ comunitario</value>
+  </data>
 </root>

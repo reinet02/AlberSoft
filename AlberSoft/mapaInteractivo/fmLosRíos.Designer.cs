@@ -28,16 +28,20 @@ namespace AlberSoft.mapaInteractivo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmLosRíos));
             pbImg = new PictureBox();
             tablaGeneral = new TableLayoutPanel();
-            lbText1 = new CuoreUI.Controls.cuiLabel();
+            lbTitulo = new CuoreUI.Controls.cuiLabel();
+            tablaTexto = new TableLayoutPanel();
+            cuiLabel1 = new CuoreUI.Controls.cuiLabel();
             ((System.ComponentModel.ISupportInitialize)pbImg).BeginInit();
             tablaGeneral.SuspendLayout();
+            tablaTexto.SuspendLayout();
             SuspendLayout();
             // 
             // pbImg
             // 
-            pbImg.Dock = DockStyle.Fill;
+            pbImg.BackColor = Color.White;
             pbImg.Image = Properties.Resources.visible;
             pbImg.Location = new Point(3, 3);
             pbImg.Name = "pbImg";
@@ -52,7 +56,7 @@ namespace AlberSoft.mapaInteractivo
             tablaGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35.9026375F));
             tablaGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 64.09737F));
             tablaGeneral.Controls.Add(pbImg, 0, 0);
-            tablaGeneral.Controls.Add(lbText1, 1, 0);
+            tablaGeneral.Controls.Add(tablaTexto, 1, 0);
             tablaGeneral.Dock = DockStyle.Fill;
             tablaGeneral.Location = new Point(0, 0);
             tablaGeneral.Name = "tablaGeneral";
@@ -60,20 +64,51 @@ namespace AlberSoft.mapaInteractivo
             tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tablaGeneral.Size = new Size(1049, 507);
             tablaGeneral.TabIndex = 2;
+            tablaGeneral.Paint += tablaGeneral_Paint;
             // 
-            // lbText1
+            // lbTitulo
             // 
-            lbText1.Content = "Info";
-            lbText1.Dock = DockStyle.Fill;
-            lbText1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbText1.HorizontalAlignment = StringAlignment.Center;
-            lbText1.Location = new Point(380, 3);
-            lbText1.Margin = new Padding(4, 3, 4, 3);
-            lbText1.Name = "lbText1";
-            lbText1.Size = new Size(665, 501);
-            lbText1.TabIndex = 0;
-            lbText1.VerticalAlignment = StringAlignment.Near;
-            lbText1.Load += lbText1_Load;
+            lbTitulo.BackColor = Color.FromArgb(245, 224, 220);
+            lbTitulo.Content = "Los\\ Ríos";
+            lbTitulo.Dock = DockStyle.Fill;
+            lbTitulo.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbTitulo.HorizontalAlignment = StringAlignment.Center;
+            lbTitulo.Location = new Point(4, 3);
+            lbTitulo.Margin = new Padding(4, 3, 4, 3);
+            lbTitulo.Name = "lbTitulo";
+            lbTitulo.Size = new Size(659, 36);
+            lbTitulo.TabIndex = 0;
+            lbTitulo.VerticalAlignment = StringAlignment.Near;
+            lbTitulo.Load += lbText1_Load;
+            // 
+            // tablaTexto
+            // 
+            tablaTexto.ColumnCount = 1;
+            tablaTexto.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tablaTexto.Controls.Add(lbTitulo, 0, 0);
+            tablaTexto.Controls.Add(cuiLabel1, 0, 1);
+            tablaTexto.Dock = DockStyle.Fill;
+            tablaTexto.Location = new Point(379, 3);
+            tablaTexto.Name = "tablaTexto";
+            tablaTexto.RowCount = 2;
+            tablaTexto.RowStyles.Add(new RowStyle(SizeType.Percent, 8.383233F));
+            tablaTexto.RowStyles.Add(new RowStyle(SizeType.Percent, 91.61677F));
+            tablaTexto.Size = new Size(667, 501);
+            tablaTexto.TabIndex = 3;
+            // 
+            // cuiLabel1
+            // 
+            cuiLabel1.BackColor = Color.White;
+            cuiLabel1.Content = resources.GetString("cuiLabel1.Content");
+            cuiLabel1.Dock = DockStyle.Fill;
+            cuiLabel1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel1.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel1.Location = new Point(4, 45);
+            cuiLabel1.Margin = new Padding(4, 3, 4, 3);
+            cuiLabel1.Name = "cuiLabel1";
+            cuiLabel1.Size = new Size(659, 453);
+            cuiLabel1.TabIndex = 1;
+            cuiLabel1.VerticalAlignment = StringAlignment.Near;
             // 
             // fmLosRíos
             // 
@@ -86,13 +121,16 @@ namespace AlberSoft.mapaInteractivo
             Text = "fmLosRios";
             ((System.ComponentModel.ISupportInitialize)pbImg).EndInit();
             tablaGeneral.ResumeLayout(false);
+            tablaTexto.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
         private PictureBox pbImg;
         private TableLayoutPanel tablaGeneral;
-        private CuoreUI.Controls.cuiLabel lbText1;
+        private CuoreUI.Controls.cuiLabel lbTitulo;
+        private TableLayoutPanel tablaTexto;
+        private CuoreUI.Controls.cuiLabel cuiLabel1;
     }
 }
 
