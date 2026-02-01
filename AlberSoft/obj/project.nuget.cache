@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UcMGpDm3SVE=",
+  "dgSpecHash": "95Yu5EC9Ec0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft\\AlberSoft.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Personal\\OneDrive - Universidad Técnica Estatal de Quevedo\\AlberSoft\\AlberSoft-5\\AlberSoft\\AlberSoft.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Personal\\.nuget\\packages\\cuoreui.winforms\\2025.12.14\\cuoreui.winforms.2025.12.14.nupkg.sha512",
+    "C:\\Users\\Personal\\.nuget\\packages\\microsoft.web.webview2\\1.0.3650.58\\microsoft.web.webview2.1.0.3650.58.nupkg.sha512",
+    "C:\\Users\\Personal\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
   "logs": []
 }

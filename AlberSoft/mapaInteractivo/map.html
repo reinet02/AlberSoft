@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mapa SVG - Ecuador</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    html, body { height:100%; margin:0; }
+    body { display:flex; align-items:center; justify-content:center; }
+    svg, img, object { max-width:100%; display:block; }
+    #mapwrap { width:100%; min-height:100vh; position:relative; background:#f0f4f7; display:flex; align-items:center; justify-content:center; padding:20px; box-sizing:border-box; }
+    /* Contenedor flexible para el SVG: permite que el mapa escale manteniendo proporciones
+       max-width evita que crezca demasiado en pantallas grandes, max-height limita su altura
+       y centra el contenido. */
+    #svgcontainer { width:92%; max-width:1200px; max-height:90vh; box-sizing:border-box; }
+    svg { width:100%; height:auto; border:1px solid #ddd; background:#fff; display:block; }
+    /* Las provincias recibirán colores pastel desde JS (Catppuccin-like).
+       CSS solo define comportamiento visual y bordes por defecto. */
+    .province { stroke-width:1; cursor:pointer; transition:fill .12s, transform .08s, filter .08s; }
+    .province:hover { transform: translateY(-2px); filter:brightness(.92); }
+    .popup {
+      position:absolute;
+      background:#fff; border:1px solid #666; padding:8px; border-radius:4px;
+      box-shadow:0 2px 8px rgba(0,0,0,.18); pointer-events:none; white-space:nowrap;
+      transform: translate(-50%, -120%);
+      display:none;
+    }
+    /* Mensaje de error */
+    .error { color:#900; font-weight:600; padding:12px; }
+  </style>
+</head>
+<body>
+  <div id="mapwrap">
+    <!-- Contenedor donde inyectaremos el SVG cargado desde archivo -->
+    <div id="svgcontainer"></div>
+
+    <!-- Popup HTML para mostrar nombre al lado del cursor -->
+    <div id="popup" class="popup"></div>
+  </div>
+
+  <script>
+    (function() {
+      const burbuja = document.getElementById('popup');
+      const contenedor = document.getElementById('svgcontainer');
+      // Ruta relativa al SVG — coloca tu archivo en la misma carpeta que este map.html
+      const rutaSvg = 'mapaEcuador.svg';
+
+      function mostrarBurbuja(texto, x, y) {
+        burbuja.style.left = x + 'px';
+        burbuja.style.top = y + 'px';
+        burbuja.textContent = texto;
+        burbuja.style.display = 'block';
+      }
+      function ocultarBurbuja() { burbuja.style.display = 'none'; }
+
+      // Inserta un SVG y añade interactividad (versión simplificada)
+      function insertarSvgDesdeTexto(textoSvg) {
+        try {
+          const doc = new DOMParser().parseFromString(textoSvg, 'image/svg+xml');
+          const svg = doc.documentElement;
+          svg.setAttribute('id', 'ecuador');
+
+          // Si no hay viewBox pero sí width/height numéricos, crear viewBox simple
+          const w = parseFloat(svg.getAttribute('width')) || null;
+          const h = parseFloat(svg.getAttribute('height')) || null;
+          if (!svg.hasAttribute('viewBox') && w && h) {
+            svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+          }
+          svg.removeAttribute('width');
+          svg.removeAttribute('height');
+          if (!svg.hasAttribute('preserveAspectRatio')) svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+          contenedor.innerHTML = '';
+          contenedor.appendChild(document.importNode(svg, true));
+
+          // Colores pastel (Catppuccin-like)
+          const paleta = ['#F5E0DC','#F2CDCD','#F5C2E7','#C6A0F6','#EFD3A8','#FAE3B0','#ABE9B3','#B5E8E0','#C9CBFF','#DCE0EA'];
+          const colorPorNombre = {};
+          let siguienteColor = 0;
+
+          const elementos = contenedor.querySelectorAll('path, polygon, rect, circle, ellipse');
+          elementos.forEach(el => {
+            if (!el) return;
+            if (!el.classList.contains('province')) el.classList.add('province');
+            // obtener nombre simple
+            let nombre = el.getAttribute('title') || el.getAttribute('id') || el.getAttribute('aria-label') || null;
+            if (!nombre) {
+              const t = el.querySelector('title');
+              if (t && t.textContent) nombre = t.textContent.trim();
+            }
+            if (!nombre) nombre = 'prov_' + Math.random().toString(36).slice(2,7);
+            el.setAttribute('data-name', nombre);
+
+            if (!colorPorNombre[nombre]) {
+              colorPorNombre[nombre] = paleta[siguienteColor % paleta.length];
+              siguienteColor++;
+            }
+            el.style.fill = colorPorNombre[nombre];
+            el.style.stroke = '#667';
+            el.style.strokeWidth = '1';
+          });
+
+          colocarManejadoresInteraccion();
+        } catch (err) {
+          console.error(err);
+          contenedor.innerHTML = '<div class="error">No se pudo procesar el SVG: ' + err.message + '</div>';
+        }
+      }
+
+      // Coloca los listeners de interacción (separa para reusar)
+      function colocarManejadoresInteraccion() {
+        const svgElemento = contenedor.querySelector('svg');
+        if (!svgElemento) return;
+
+        svgElemento.addEventListener('click', function(e) {
+          const objetivo = e.target.closest('.province');
+          if (!objetivo) return;
+          const nombre = objetivo.getAttribute('data-name') || 'Provincia';
+          mostrarBurbuja(nombre, e.clientX, e.clientY);
+          // enviar a WebView2 si existe
+          if (window.chrome && window.chrome.webview && window.chrome.webview.postMessage) {
+            window.chrome.webview.postMessage(JSON.stringify({ name: nombre, screenX: e.screenX, screenY: e.screenY }));
+          }
+          e.stopPropagation();
+        });
+
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.province')) ocultarBurbuja();
+        });
+        window.addEventListener('resize', ocultarBurbuja);
+      }
+
+      // Intento de carga por fetch como fallback (puede fallar en algunos entornos).
+      async function obtenerEInsertarSvg() {
+        try {
+          const res = await fetch(rutaSvg);
+          if (!res.ok) throw new Error('HTTP ' + res.status + ' al cargar ' + rutaSvg);
+          const texto = await res.text();
+          insertarSvgDesdeTexto(texto);
+        } catch (err) {
+          console.warn('fetch failed, esperando inyección desde la app:', err.message);
+          contenedor.innerHTML = '<div class="error">No se pudo cargar el SVG automáticamente. La aplicación debería inyectarlo.\n' +
+                                'Detalle: ' + err.message + '</div>';
+        }
+      }
+
+      // Exponer una función global que la app C# puede llamar para inyectar el SVG
+      window.recibirSvg = function(textoSvg) {
+        insertarSvgDesdeTexto(textoSvg);
+      };
+
+      // Ejecutar intento de fetch en segundo plano (fallback)
+      obtenerEInsertarSvg();
+    })();
+  </script>
+</body>
+</html>

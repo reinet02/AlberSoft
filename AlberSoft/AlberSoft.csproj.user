@@ -1,8 +1,127 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="FMRegistro.cs">
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\fmCocinaComunitaria.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\fmLogoCocinaComunitaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\fmTallerReciclaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Huerto Comunitario\fmplanta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Huerto Comunitario\fmplanta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Huerto Comunitario\fmplanta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Huerto Comunitario\fmplanta4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\JuegoDePares\fmJuegoDeParesCocina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\JuegoDePares\fmJuegoDeParesHuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\JuegoDePares\fmJuegoDeParesReciclaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\JuegoDePares\fmLogoJuegoDePares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\JuegoDePares\fmNivelesDificultad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Recetas\fmAlmuerzoReceta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Recetas\fmDesayunoReceta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Recetas\fmDesayunoReceta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Recetas\fmMeriendaReceta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Recetas\fmMeriendaReceta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Recetas\fmPostresReceta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Recetas\fmPostresReceta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmManualidad1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmManualidad2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\FmManualidad3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\FmManualidad4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmreciclajetachos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="alojamientoEInventario\fmAsignacionCamas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="alojamientoEInventario\fmCrucigrama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="alojamientoEInventario\fmInventarioComida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="alojamientoEInventario\fmInventarioRopa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="capacitacionesIlustradas\fmJuegoOrdenarImgs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\fmLosRíos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\fmMapaEcuador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\fmQuiz1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\fmQuiz2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="menuPrincipal\fmBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="menuPrincipal\fmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="capacitacionesIlustradas\fmPrimerosAuxilios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="menuPrincipal\fmInicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="menuPrincipal\fmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="menuPrincipal\fmRegistroTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
