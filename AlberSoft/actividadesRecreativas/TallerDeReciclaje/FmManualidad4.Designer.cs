@@ -1,6 +1,6 @@
 ﻿namespace AlberSoft.activadesRecreativas.Cocina_Comunitaria
 {
-    partial class FmManualidad4
+    partial class fmManualidad4
     {
         /// <summary>
         /// Required designer variable.
@@ -48,6 +48,10 @@
             label1 = new Label();
             label3 = new Label();
             pictureBox2 = new PictureBox();
+            tblregresar = new TableLayoutPanel();
+            pictureBox3 = new PictureBox();
+            tblbibliografiia = new TableLayoutPanel();
+            pictureBox4 = new PictureBox();
             pnlgeneral.SuspendLayout();
             tblixquierda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -55,6 +59,10 @@
             tblinstrucciones.SuspendLayout();
             tblmateriales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            tblregresar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            tblbibliografiia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pnlgeneral
@@ -64,13 +72,16 @@
             pnlgeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
             pnlgeneral.Controls.Add(tblixquierda, 0, 0);
             pnlgeneral.Controls.Add(tblderecho, 1, 0);
+            pnlgeneral.Controls.Add(tblregresar, 1, 1);
+            pnlgeneral.Controls.Add(tblbibliografiia, 0, 1);
             pnlgeneral.Dock = DockStyle.Fill;
             pnlgeneral.Location = new Point(0, 0);
+            pnlgeneral.Margin = new Padding(3, 2, 3, 2);
             pnlgeneral.Name = "pnlgeneral";
-            pnlgeneral.RowCount = 1;
-            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            pnlgeneral.Size = new Size(1123, 949);
+            pnlgeneral.RowCount = 2;
+            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
+            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            pnlgeneral.Size = new Size(983, 712);
             pnlgeneral.TabIndex = 0;
             // 
             // tblixquierda
@@ -80,21 +91,23 @@
             tblixquierda.Controls.Add(pictureBox1, 0, 1);
             tblixquierda.Controls.Add(label15, 0, 0);
             tblixquierda.Dock = DockStyle.Fill;
-            tblixquierda.Location = new Point(3, 3);
+            tblixquierda.Location = new Point(3, 2);
+            tblixquierda.Margin = new Padding(3, 2, 3, 2);
             tblixquierda.Name = "tblixquierda";
             tblixquierda.RowCount = 2;
             tblixquierda.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tblixquierda.RowStyles.Add(new RowStyle(SizeType.Percent, 80F));
-            tblixquierda.Size = new Size(330, 943);
+            tblixquierda.Size = new Size(288, 636);
             tblixquierda.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.cohete1;
-            pictureBox1.Location = new Point(3, 191);
+            pictureBox1.Location = new Point(3, 129);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(324, 749);
+            pictureBox1.Size = new Size(282, 505);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -107,7 +120,7 @@
             label15.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label15.Location = new Point(3, 0);
             label15.Name = "label15";
-            label15.Size = new Size(324, 188);
+            label15.Size = new Size(282, 127);
             label15.TabIndex = 1;
             label15.Text = "Cohete con cajas";
             label15.TextAlign = ContentAlignment.MiddleCenter;
@@ -116,18 +129,19 @@
             // 
             tblderecho.ColumnCount = 1;
             tblderecho.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tblderecho.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tblderecho.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 18F));
             tblderecho.Controls.Add(tblinstrucciones, 0, 1);
             tblderecho.Controls.Add(tblmateriales, 0, 0);
             tblderecho.Controls.Add(pictureBox2, 0, 2);
             tblderecho.Dock = DockStyle.Fill;
-            tblderecho.Location = new Point(339, 3);
+            tblderecho.Location = new Point(297, 2);
+            tblderecho.Margin = new Padding(3, 2, 3, 2);
             tblderecho.Name = "tblderecho";
             tblderecho.RowCount = 3;
             tblderecho.RowStyles.Add(new RowStyle(SizeType.Percent, 37F));
             tblderecho.RowStyles.Add(new RowStyle(SizeType.Percent, 37F));
             tblderecho.RowStyles.Add(new RowStyle(SizeType.Percent, 26F));
-            tblderecho.Size = new Size(781, 943);
+            tblderecho.Size = new Size(683, 636);
             tblderecho.TabIndex = 1;
             // 
             // tblinstrucciones
@@ -140,7 +154,8 @@
             tblinstrucciones.Controls.Add(label9, 0, 1);
             tblinstrucciones.Controls.Add(label2, 0, 0);
             tblinstrucciones.Dock = DockStyle.Fill;
-            tblinstrucciones.Location = new Point(3, 351);
+            tblinstrucciones.Location = new Point(3, 237);
+            tblinstrucciones.Margin = new Padding(3, 2, 3, 2);
             tblinstrucciones.Name = "tblinstrucciones";
             tblinstrucciones.RowCount = 5;
             tblinstrucciones.RowStyles.Add(new RowStyle(SizeType.Percent, 19.9999962F));
@@ -148,9 +163,9 @@
             tblinstrucciones.RowStyles.Add(new RowStyle(SizeType.Percent, 20.0000019F));
             tblinstrucciones.RowStyles.Add(new RowStyle(SizeType.Percent, 20.0000019F));
             tblinstrucciones.RowStyles.Add(new RowStyle(SizeType.Percent, 19.9999962F));
-            tblinstrucciones.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tblinstrucciones.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tblinstrucciones.Size = new Size(775, 342);
+            tblinstrucciones.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
+            tblinstrucciones.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
+            tblinstrucciones.Size = new Size(677, 231);
             tblinstrucciones.TabIndex = 1;
             // 
             // label12
@@ -159,9 +174,9 @@
             label12.BackColor = Color.FromArgb(255, 255, 192);
             label12.Dock = DockStyle.Fill;
             label12.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.Location = new Point(3, 272);
+            label12.Location = new Point(3, 184);
             label12.Name = "label12";
-            label12.Size = new Size(769, 70);
+            label12.Size = new Size(671, 47);
             label12.TabIndex = 5;
             label12.Text = "4. Dibuja ventanas y detalles.";
             label12.TextAlign = ContentAlignment.MiddleLeft;
@@ -172,9 +187,9 @@
             label11.BackColor = Color.FromArgb(255, 255, 192);
             label11.Dock = DockStyle.Fill;
             label11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(3, 204);
+            label11.Location = new Point(3, 138);
             label11.Name = "label11";
-            label11.Size = new Size(769, 68);
+            label11.Size = new Size(671, 46);
             label11.TabIndex = 4;
             label11.Text = "3. Decora con papel aluminio.";
             label11.TextAlign = ContentAlignment.MiddleLeft;
@@ -185,9 +200,9 @@
             label10.BackColor = Color.FromArgb(255, 255, 192);
             label10.Dock = DockStyle.Fill;
             label10.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(3, 136);
+            label10.Location = new Point(3, 92);
             label10.Name = "label10";
-            label10.Size = new Size(769, 68);
+            label10.Size = new Size(671, 46);
             label10.TabIndex = 3;
             label10.Text = "2. Agrega alas con cartulina.";
             label10.TextAlign = ContentAlignment.MiddleLeft;
@@ -198,9 +213,9 @@
             label9.BackColor = Color.FromArgb(255, 255, 192);
             label9.Dock = DockStyle.Fill;
             label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(3, 68);
+            label9.Location = new Point(3, 46);
             label9.Name = "label9";
-            label9.Size = new Size(769, 68);
+            label9.Size = new Size(671, 46);
             label9.TabIndex = 2;
             label9.Text = "1. Usa la caja como cuerpo del cohete.";
             label9.TextAlign = ContentAlignment.MiddleLeft;
@@ -214,7 +229,7 @@
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(769, 68);
+            label2.Size = new Size(671, 46);
             label2.TabIndex = 1;
             label2.Text = "INSTRUCCIONES";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -231,7 +246,8 @@
             tblmateriales.Controls.Add(label1, 0, 0);
             tblmateriales.Controls.Add(label3, 0, 1);
             tblmateriales.Dock = DockStyle.Fill;
-            tblmateriales.Location = new Point(3, 3);
+            tblmateriales.Location = new Point(3, 2);
+            tblmateriales.Margin = new Padding(3, 2, 3, 2);
             tblmateriales.Name = "tblmateriales";
             tblmateriales.RowCount = 7;
             tblmateriales.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
@@ -241,7 +257,7 @@
             tblmateriales.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
             tblmateriales.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
             tblmateriales.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
-            tblmateriales.Size = new Size(775, 342);
+            tblmateriales.Size = new Size(677, 231);
             tblmateriales.TabIndex = 0;
             // 
             // label8
@@ -250,9 +266,9 @@
             label8.BackColor = Color.FromArgb(255, 255, 192);
             label8.Dock = DockStyle.Fill;
             label8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(3, 288);
+            label8.Location = new Point(3, 198);
             label8.Name = "label8";
-            label8.Size = new Size(769, 54);
+            label8.Size = new Size(671, 33);
             label8.TabIndex = 6;
             label8.Text = "Marcadores.";
             label8.TextAlign = ContentAlignment.MiddleLeft;
@@ -263,9 +279,9 @@
             label7.BackColor = Color.FromArgb(255, 255, 192);
             label7.Dock = DockStyle.Fill;
             label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(3, 240);
+            label7.Location = new Point(3, 165);
             label7.Name = "label7";
-            label7.Size = new Size(769, 48);
+            label7.Size = new Size(671, 33);
             label7.TabIndex = 5;
             label7.Text = "Tijeras.";
             label7.TextAlign = ContentAlignment.MiddleLeft;
@@ -276,9 +292,9 @@
             label6.BackColor = Color.FromArgb(255, 255, 192);
             label6.Dock = DockStyle.Fill;
             label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(3, 192);
+            label6.Location = new Point(3, 132);
             label6.Name = "label6";
-            label6.Size = new Size(769, 48);
+            label6.Size = new Size(671, 33);
             label6.TabIndex = 4;
             label6.Text = "Pegamento.";
             label6.TextAlign = ContentAlignment.MiddleLeft;
@@ -289,9 +305,9 @@
             label5.BackColor = Color.FromArgb(255, 255, 192);
             label5.Dock = DockStyle.Fill;
             label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(3, 144);
+            label5.Location = new Point(3, 99);
             label5.Name = "label5";
-            label5.Size = new Size(769, 48);
+            label5.Size = new Size(671, 33);
             label5.TabIndex = 3;
             label5.Text = "Papel Aluminio.";
             label5.TextAlign = ContentAlignment.MiddleLeft;
@@ -302,9 +318,9 @@
             label4.BackColor = Color.FromArgb(255, 255, 192);
             label4.Dock = DockStyle.Fill;
             label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(3, 96);
+            label4.Location = new Point(3, 66);
             label4.Name = "label4";
-            label4.Size = new Size(769, 48);
+            label4.Size = new Size(671, 33);
             label4.TabIndex = 2;
             label4.Text = "Cartulina.";
             label4.TextAlign = ContentAlignment.MiddleLeft;
@@ -317,7 +333,7 @@
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(769, 48);
+            label1.Size = new Size(671, 33);
             label1.TabIndex = 0;
             label1.Text = "MATERIALES";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -328,9 +344,9 @@
             label3.BackColor = Color.FromArgb(255, 255, 192);
             label3.Dock = DockStyle.Fill;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(3, 48);
+            label3.Location = new Point(3, 33);
             label3.Name = "label3";
-            label3.Size = new Size(769, 48);
+            label3.Size = new Size(671, 33);
             label3.TabIndex = 1;
             label3.Text = "Cajas pequeñas.";
             label3.TextAlign = ContentAlignment.MiddleLeft;
@@ -339,20 +355,79 @@
             // 
             pictureBox2.Dock = DockStyle.Fill;
             pictureBox2.Image = Properties.Resources.cohete2;
-            pictureBox2.Location = new Point(3, 699);
+            pictureBox2.Location = new Point(3, 472);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(775, 241);
+            pictureBox2.Size = new Size(677, 162);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
-            // FmManualidad4
+            // tblregresar
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            tblregresar.BackColor = Color.FromArgb(255, 255, 192);
+            tblregresar.ColumnCount = 2;
+            tblregresar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 83.83839F));
+            tblregresar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.1616154F));
+            tblregresar.Controls.Add(pictureBox3, 1, 0);
+            tblregresar.Dock = DockStyle.Fill;
+            tblregresar.Location = new Point(297, 642);
+            tblregresar.Margin = new Padding(3, 2, 3, 2);
+            tblregresar.Name = "tblregresar";
+            tblregresar.RowCount = 1;
+            tblregresar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tblregresar.RowStyles.Add(new RowStyle(SizeType.Absolute, 67F));
+            tblregresar.Size = new Size(683, 68);
+            tblregresar.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Dock = DockStyle.Fill;
+            pictureBox3.Image = Properties.Resources.regresar;
+            pictureBox3.Location = new Point(575, 2);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(105, 64);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += regresar_Click;
+            // 
+            // tblbibliografiia
+            // 
+            tblbibliografiia.BackColor = Color.FromArgb(255, 255, 192);
+            tblbibliografiia.ColumnCount = 2;
+            tblbibliografiia.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 28.2828274F));
+            tblbibliografiia.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 71.71717F));
+            tblbibliografiia.Controls.Add(pictureBox4, 0, 0);
+            tblbibliografiia.Dock = DockStyle.Fill;
+            tblbibliografiia.Location = new Point(3, 642);
+            tblbibliografiia.Margin = new Padding(3, 2, 3, 2);
+            tblbibliografiia.Name = "tblbibliografiia";
+            tblbibliografiia.RowCount = 1;
+            tblbibliografiia.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tblbibliografiia.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
+            tblbibliografiia.Size = new Size(288, 68);
+            tblbibliografiia.TabIndex = 3;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Dock = DockStyle.Fill;
+            pictureBox4.Location = new Point(3, 2);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(75, 64);
+            pictureBox4.TabIndex = 0;
+            pictureBox4.TabStop = false;
+            // 
+            // fmManualidad4
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1123, 949);
+            ClientSize = new Size(983, 712);
             Controls.Add(pnlgeneral);
-            Name = "FmManualidad4";
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "fmManualidad4";
             Text = "FmManualidad1";
             pnlgeneral.ResumeLayout(false);
             tblixquierda.ResumeLayout(false);
@@ -364,6 +439,10 @@
             tblmateriales.ResumeLayout(false);
             tblmateriales.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            tblregresar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            tblbibliografiia.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
@@ -389,5 +468,9 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label15;
+        private TableLayoutPanel tblregresar;
+        private PictureBox pictureBox3;
+        private TableLayoutPanel tblbibliografiia;
+        private PictureBox pictureBox4;
     }
 }

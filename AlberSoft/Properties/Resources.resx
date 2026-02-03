@@ -511,4 +511,145 @@
   <data name="visible" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\imgs\menu\iconos\visible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logoBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\logoBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoTituloBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\logoTituloBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="triangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\iconos\figuras\triangulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\iconos\figuras\circulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cuadrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\iconos\figuras\cuadrado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rombo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\iconos\figuras\rombo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bibliografia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\menu\iconos\bibliografia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guayas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\Guayas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Loja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\Loja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LosRios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\LosRios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manabí" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\Manabí.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pichincha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\Pichincha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SantoDm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\SantoDm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tungurahua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\Tungurahua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Azuay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\Azuay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chimborazo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\Chimborazo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElOro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\ElOro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Esmeraldas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\mapaInteractivo\provincias\Esmeraldas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sopadetomate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\sopadetomate1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sopadetomate2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\sopadetomate2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cazueladepollo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\cazueladepollo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cazueladepollo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\cazueladepollo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fajitasdepollo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\fajitasdepollo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fajitasdepollo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\fajitasdepollo2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fesasicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\fesasicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frutasicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\frutasicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="granolaicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\granolaicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="healdo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\healdo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="helado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\helado1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="limonicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\limonicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mangoicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\mangoicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maniicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\maniicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panquequeavena1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\panquequeavena1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panquequeavena2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\panquequeavena2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parfait1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\parfait1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parfait2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\parfait2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pastaconsalsadeaguacate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\pastaconsalsadeaguacate1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pastaconsalsadeaguacate2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\pastaconsalsadeaguacate2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pastaicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\pastaicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pudinchia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\pudinchia1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pudinchia2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\pudinchia2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tomateicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\tomateicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yoguriccon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\yoguriccon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="albahacicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\albahacicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bananaicopn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\imgs\Cocina Comunitaria\bananaicopn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoHuertoComunitario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\iconos\logoHuertoComunitario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoTallerDeReciclaje" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\imgs\actividadesRecreativas\iconos\logoTallerDeReciclaje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

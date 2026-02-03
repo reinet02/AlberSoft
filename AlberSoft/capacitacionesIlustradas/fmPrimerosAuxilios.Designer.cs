@@ -389,6 +389,7 @@ namespace AlberSoft
             // btnReferencias
             // 
             btnReferencias.Dock = DockStyle.Fill;
+            btnReferencias.Image = Properties.Resources.bibliografia;
             btnReferencias.Location = new Point(3, 3);
             btnReferencias.Name = "btnReferencias";
             btnReferencias.Size = new Size(93, 61);

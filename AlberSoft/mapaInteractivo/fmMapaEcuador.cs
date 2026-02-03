@@ -47,16 +47,6 @@ namespace AlberSoft.mapaInteractivo
             }
 
         }
-
-        private void tableroGeneralTab1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cuiLabel2_Load(object sender, EventArgs e)
-        {
-
-        }
         #endregion
 
         private async Task InicializarYMostrarMapaAsync()
@@ -186,7 +176,7 @@ namespace AlberSoft.mapaInteractivo
                     }
                 }
 
-                MessageBox.Show($"No existe un formulario específico para la provincia: {nombre}", "Formulario no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"No existe un albergue para la provincia {nombre}", "No encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

@@ -7,7 +7,7 @@ namespace AlberSoft.activadesRecreativas
     {
         #region Declaramos variables
         // Número máximo de intentos permitidos
-        private const int MaxIntentos = 16;
+        private const int MaxIntentos = 32;
 
         // Creamos una listas para gestionar las cartas enumeradas
         private List<int> cartasEnumeradas;

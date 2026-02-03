@@ -37,6 +37,7 @@ namespace AlberSoft.menuPrincipal
             // 
             // bienvenida
             // 
+            bienvenida.BackColor = Color.White;
             bienvenida.Content = "Test!";
             bienvenida.Dock = DockStyle.Fill;
             bienvenida.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -50,6 +51,7 @@ namespace AlberSoft.menuPrincipal
             // 
             // tablaGeneral
             // 
+            tablaGeneral.BackColor = Color.White;
             tablaGeneral.ColumnCount = 1;
             tablaGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tablaGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
@@ -66,6 +68,7 @@ namespace AlberSoft.menuPrincipal
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.White;
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.logo;
             pictureBox1.Location = new Point(3, 3);
@@ -79,6 +82,7 @@ namespace AlberSoft.menuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(1082, 761);
             Controls.Add(tablaGeneral);
             Name = "fmBienvenida";

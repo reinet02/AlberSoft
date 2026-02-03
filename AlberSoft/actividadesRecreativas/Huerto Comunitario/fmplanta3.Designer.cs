@@ -51,6 +51,10 @@
             label9 = new Label();
             label11 = new Label();
             pictureBox5 = new PictureBox();
+            tblbibliografia = new TableLayoutPanel();
+            pictureBox7 = new PictureBox();
+            ttblregresar = new TableLayoutPanel();
+            pictureBox6 = new PictureBox();
             pnlgeneral.SuspendLayout();
             tblcuidado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -64,6 +68,10 @@
             tblnombrescientificos.SuspendLayout();
             tblnombre2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            tblbibliografia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ttblregresar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // pnlgeneral
@@ -77,14 +85,18 @@
             pnlgeneral.Controls.Add(tblAdvertencia, 0, 2);
             pnlgeneral.Controls.Add(tblnombrescientificos, 0, 0);
             pnlgeneral.Controls.Add(pictureBox5, 1, 0);
+            pnlgeneral.Controls.Add(tblbibliografia, 0, 3);
+            pnlgeneral.Controls.Add(ttblregresar, 1, 3);
             pnlgeneral.Dock = DockStyle.Fill;
             pnlgeneral.Location = new Point(0, 0);
+            pnlgeneral.Margin = new Padding(3, 2, 3, 2);
             pnlgeneral.Name = "pnlgeneral";
-            pnlgeneral.RowCount = 3;
-            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
-            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            pnlgeneral.Size = new Size(1123, 949);
+            pnlgeneral.RowCount = 4;
+            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 27.272728F));
+            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 45.4545441F));
+            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 18.181818F));
+            pnlgeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            pnlgeneral.Size = new Size(983, 712);
             pnlgeneral.TabIndex = 0;
             // 
             // tblcuidado
@@ -99,13 +111,14 @@
             tblcuidado.Controls.Add(pictureBox3, 0, 2);
             tblcuidado.Controls.Add(label1, 1, 0);
             tblcuidado.Dock = DockStyle.Fill;
-            tblcuidado.Location = new Point(3, 287);
+            tblcuidado.Location = new Point(3, 196);
+            tblcuidado.Margin = new Padding(3, 2, 3, 2);
             tblcuidado.Name = "tblcuidado";
             tblcuidado.RowCount = 3;
             tblcuidado.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tblcuidado.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
             tblcuidado.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tblcuidado.Size = new Size(555, 468);
+            tblcuidado.Size = new Size(485, 319);
             tblcuidado.TabIndex = 0;
             // 
             // label3
@@ -114,9 +127,9 @@
             label3.BackColor = Color.Ivory;
             label3.Dock = DockStyle.Fill;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(169, 310);
+            label3.Location = new Point(148, 212);
             label3.Name = "label3";
-            label3.Size = new Size(383, 158);
+            label3.Size = new Size(334, 107);
             label3.TabIndex = 5;
             label3.Text = "Clima: \rEs muy adaptable, pero ama la humedad. Si el clima es muy seco, asegúrate de que esté en la sombra.";
             label3.TextAlign = ContentAlignment.MiddleLeft;
@@ -127,9 +140,9 @@
             label2.BackColor = Color.Ivory;
             label2.Dock = DockStyle.Fill;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(169, 155);
+            label2.Location = new Point(148, 106);
             label2.Name = "label2";
-            label2.Size = new Size(383, 155);
+            label2.Size = new Size(334, 106);
             label2.TabIndex = 4;
             label2.Text = "Riego: Alto (tierra siempre húmeda).";
             label2.TextAlign = ContentAlignment.MiddleLeft;
@@ -139,9 +152,10 @@
             pictureBox1.BackColor = Color.DarkSeaGreen;
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.climaicon;
-            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Location = new Point(3, 2);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(160, 149);
+            pictureBox1.Size = new Size(139, 102);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -151,9 +165,10 @@
             pictureBox2.BackColor = Color.DarkSeaGreen;
             pictureBox2.Dock = DockStyle.Fill;
             pictureBox2.Image = Properties.Resources.reiegoicon;
-            pictureBox2.Location = new Point(3, 158);
+            pictureBox2.Location = new Point(3, 108);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(160, 149);
+            pictureBox2.Size = new Size(139, 102);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -163,9 +178,10 @@
             pictureBox3.BackColor = Color.DarkSeaGreen;
             pictureBox3.Dock = DockStyle.Fill;
             pictureBox3.Image = Properties.Resources.temperaturaicon;
-            pictureBox3.Location = new Point(3, 313);
+            pictureBox3.Location = new Point(3, 214);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(160, 152);
+            pictureBox3.Size = new Size(139, 103);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -176,9 +192,9 @@
             label1.BackColor = Color.Ivory;
             label1.Dock = DockStyle.Fill;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(169, 0);
+            label1.Location = new Point(148, 0);
             label1.Name = "label1";
-            label1.Size = new Size(383, 155);
+            label1.Size = new Size(334, 106);
             label1.TabIndex = 3;
             label1.Text = "Luz: Sol pleno / Semisombra.";
             label1.TextAlign = ContentAlignment.MiddleLeft;
@@ -187,32 +203,34 @@
             // 
             tblderecha.ColumnCount = 1;
             tblderecha.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tblderecha.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tblderecha.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 18F));
             tblderecha.Controls.Add(tblcuidadoo, 0, 1);
             tblderecha.Controls.Add(tblSabiasQue, 0, 0);
             tblderecha.Dock = DockStyle.Fill;
-            tblderecha.Location = new Point(564, 287);
+            tblderecha.Location = new Point(494, 196);
+            tblderecha.Margin = new Padding(3, 2, 3, 2);
             tblderecha.Name = "tblderecha";
             tblderecha.RowCount = 2;
             tblderecha.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tblderecha.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tblderecha.Size = new Size(556, 468);
+            tblderecha.Size = new Size(486, 319);
             tblderecha.TabIndex = 1;
             // 
             // tblcuidadoo
             // 
             tblcuidadoo.ColumnCount = 1;
             tblcuidadoo.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tblcuidadoo.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tblcuidadoo.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 18F));
             tblcuidadoo.Controls.Add(label7, 0, 1);
             tblcuidadoo.Controls.Add(label6, 0, 0);
             tblcuidadoo.Dock = DockStyle.Fill;
-            tblcuidadoo.Location = new Point(3, 237);
+            tblcuidadoo.Location = new Point(3, 161);
+            tblcuidadoo.Margin = new Padding(3, 2, 3, 2);
             tblcuidadoo.Name = "tblcuidadoo";
             tblcuidadoo.RowCount = 2;
             tblcuidadoo.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tblcuidadoo.RowStyles.Add(new RowStyle(SizeType.Percent, 80F));
-            tblcuidadoo.Size = new Size(550, 228);
+            tblcuidadoo.Size = new Size(480, 156);
             tblcuidadoo.TabIndex = 1;
             // 
             // label7
@@ -221,9 +239,9 @@
             label7.BackColor = SystemColors.Info;
             label7.Dock = DockStyle.Fill;
             label7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(3, 45);
+            label7.Location = new Point(3, 31);
             label7.Name = "label7";
-            label7.Size = new Size(544, 183);
+            label7.Size = new Size(474, 125);
             label7.TabIndex = 5;
             label7.Text = "Corta ramitas desde arriba para que la planta se mantenga bajita y llena de vida";
             label7.TextAlign = ContentAlignment.MiddleLeft;
@@ -236,7 +254,7 @@
             label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.Location = new Point(3, 0);
             label6.Name = "label6";
-            label6.Size = new Size(544, 45);
+            label6.Size = new Size(474, 31);
             label6.TabIndex = 4;
             label6.Text = "Cosecha";
             label6.TextAlign = ContentAlignment.MiddleCenter;
@@ -245,16 +263,17 @@
             // 
             tblSabiasQue.ColumnCount = 1;
             tblSabiasQue.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tblSabiasQue.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tblSabiasQue.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 18F));
             tblSabiasQue.Controls.Add(label5, 0, 1);
             tblSabiasQue.Controls.Add(label4, 0, 0);
             tblSabiasQue.Dock = DockStyle.Fill;
-            tblSabiasQue.Location = new Point(3, 3);
+            tblSabiasQue.Location = new Point(3, 2);
+            tblSabiasQue.Margin = new Padding(3, 2, 3, 2);
             tblSabiasQue.Name = "tblSabiasQue";
             tblSabiasQue.RowCount = 2;
             tblSabiasQue.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tblSabiasQue.RowStyles.Add(new RowStyle(SizeType.Percent, 80F));
-            tblSabiasQue.Size = new Size(550, 228);
+            tblSabiasQue.Size = new Size(480, 155);
             tblSabiasQue.TabIndex = 0;
             // 
             // label5
@@ -263,9 +282,9 @@
             label5.BackColor = SystemColors.Info;
             label5.Dock = DockStyle.Fill;
             label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(3, 45);
+            label5.Location = new Point(3, 31);
             label5.Name = "label5";
-            label5.Size = new Size(544, 183);
+            label5.Size = new Size(474, 124);
             label5.TabIndex = 5;
             label5.Text = "Su aroma ayuda a repeler de forma natural a las hormigas y mosquitos del huerto";
             label5.TextAlign = ContentAlignment.MiddleLeft;
@@ -278,7 +297,7 @@
             label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(3, 0);
             label4.Name = "label4";
-            label4.Size = new Size(544, 45);
+            label4.Size = new Size(474, 31);
             label4.TabIndex = 4;
             label4.Text = "¿Sabías qué?";
             label4.TextAlign = ContentAlignment.MiddleCenter;
@@ -291,12 +310,13 @@
             tblAdvertencia.Controls.Add(label8, 1, 0);
             tblAdvertencia.Controls.Add(pictureBox4, 0, 0);
             tblAdvertencia.Dock = DockStyle.Fill;
-            tblAdvertencia.Location = new Point(3, 761);
+            tblAdvertencia.Location = new Point(3, 519);
+            tblAdvertencia.Margin = new Padding(3, 2, 3, 2);
             tblAdvertencia.Name = "tblAdvertencia";
             tblAdvertencia.RowCount = 1;
             tblAdvertencia.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tblAdvertencia.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tblAdvertencia.Size = new Size(555, 185);
+            tblAdvertencia.RowStyles.Add(new RowStyle(SizeType.Absolute, 124F));
+            tblAdvertencia.Size = new Size(485, 125);
             tblAdvertencia.TabIndex = 2;
             // 
             // label8
@@ -305,9 +325,9 @@
             label8.BackColor = Color.Ivory;
             label8.Dock = DockStyle.Fill;
             label8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(169, 0);
+            label8.Location = new Point(148, 0);
             label8.Name = "label8";
-            label8.Size = new Size(383, 185);
+            label8.Size = new Size(334, 125);
             label8.TabIndex = 0;
             label8.Text = "Mantener alejado de mascotas. \r\nNo ingerir sin lavar.";
             label8.TextAlign = ContentAlignment.MiddleCenter;
@@ -317,9 +337,10 @@
             pictureBox4.BackColor = Color.Ivory;
             pictureBox4.Dock = DockStyle.Fill;
             pictureBox4.Image = Properties.Resources.advertenciasicon;
-            pictureBox4.Location = new Point(3, 3);
+            pictureBox4.Location = new Point(3, 2);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(160, 179);
+            pictureBox4.Size = new Size(139, 121);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
@@ -328,16 +349,17 @@
             // 
             tblnombrescientificos.ColumnCount = 1;
             tblnombrescientificos.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tblnombrescientificos.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tblnombrescientificos.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 18F));
             tblnombrescientificos.Controls.Add(tblnombre2, 0, 0);
             tblnombrescientificos.Controls.Add(label11, 0, 1);
             tblnombrescientificos.Dock = DockStyle.Fill;
-            tblnombrescientificos.Location = new Point(3, 3);
+            tblnombrescientificos.Location = new Point(3, 2);
+            tblnombrescientificos.Margin = new Padding(3, 2, 3, 2);
             tblnombrescientificos.Name = "tblnombrescientificos";
             tblnombrescientificos.RowCount = 2;
             tblnombrescientificos.RowStyles.Add(new RowStyle(SizeType.Percent, 70F));
             tblnombrescientificos.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
-            tblnombrescientificos.Size = new Size(555, 278);
+            tblnombrescientificos.Size = new Size(485, 190);
             tblnombrescientificos.TabIndex = 3;
             // 
             // tblnombre2
@@ -346,12 +368,13 @@
             tblnombre2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tblnombre2.Controls.Add(label9, 0, 0);
             tblnombre2.Dock = DockStyle.Fill;
-            tblnombre2.Location = new Point(3, 3);
+            tblnombre2.Location = new Point(3, 2);
+            tblnombre2.Margin = new Padding(3, 2, 3, 2);
             tblnombre2.Name = "tblnombre2";
             tblnombre2.RowCount = 1;
             tblnombre2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tblnombre2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tblnombre2.Size = new Size(549, 188);
+            tblnombre2.RowStyles.Add(new RowStyle(SizeType.Absolute, 128F));
+            tblnombre2.Size = new Size(479, 129);
             tblnombre2.TabIndex = 0;
             // 
             // label9
@@ -362,7 +385,7 @@
             label9.ForeColor = Color.DarkSeaGreen;
             label9.Location = new Point(3, 0);
             label9.Name = "label9";
-            label9.Size = new Size(543, 188);
+            label9.Size = new Size(473, 129);
             label9.TabIndex = 0;
             label9.Text = "HIERBABUENA";
             label9.TextAlign = ContentAlignment.MiddleLeft;
@@ -373,9 +396,9 @@
             label11.Dock = DockStyle.Fill;
             label11.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.DarkSeaGreen;
-            label11.Location = new Point(3, 194);
+            label11.Location = new Point(3, 133);
             label11.Name = "label11";
-            label11.Size = new Size(549, 84);
+            label11.Size = new Size(479, 57);
             label11.TabIndex = 1;
             label11.Text = "\"Mentha spicata\"";
             // 
@@ -383,19 +406,76 @@
             // 
             pictureBox5.Dock = DockStyle.Fill;
             pictureBox5.Image = Properties.Resources.hierbaBuena;
-            pictureBox5.Location = new Point(564, 3);
+            pictureBox5.Location = new Point(494, 2);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(556, 278);
+            pictureBox5.Size = new Size(486, 190);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 4;
             pictureBox5.TabStop = false;
             // 
+            // tblbibliografia
+            // 
+            tblbibliografia.ColumnCount = 2;
+            tblbibliografia.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23F));
+            tblbibliografia.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77F));
+            tblbibliografia.Controls.Add(pictureBox7, 0, 0);
+            tblbibliografia.Dock = DockStyle.Fill;
+            tblbibliografia.Location = new Point(3, 648);
+            tblbibliografia.Margin = new Padding(3, 2, 3, 2);
+            tblbibliografia.Name = "tblbibliografia";
+            tblbibliografia.RowCount = 1;
+            tblbibliografia.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tblbibliografia.RowStyles.Add(new RowStyle(SizeType.Absolute, 62F));
+            tblbibliografia.Size = new Size(485, 62);
+            tblbibliografia.TabIndex = 5;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Dock = DockStyle.Fill;
+            pictureBox7.Location = new Point(3, 2);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(105, 58);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 0;
+            pictureBox7.TabStop = false;
+            // 
+            // ttblregresar
+            // 
+            ttblregresar.ColumnCount = 2;
+            ttblregresar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77F));
+            ttblregresar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 23F));
+            ttblregresar.Controls.Add(pictureBox6, 1, 0);
+            ttblregresar.Dock = DockStyle.Fill;
+            ttblregresar.Location = new Point(494, 648);
+            ttblregresar.Margin = new Padding(3, 2, 3, 2);
+            ttblregresar.Name = "ttblregresar";
+            ttblregresar.RowCount = 1;
+            ttblregresar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            ttblregresar.Size = new Size(486, 62);
+            ttblregresar.TabIndex = 6;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Dock = DockStyle.Fill;
+            pictureBox6.Image = Properties.Resources.regresar;
+            pictureBox6.Location = new Point(377, 2);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(106, 58);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 0;
+            pictureBox6.TabStop = false;
+            pictureBox6.Click += regresar_Click;
+            // 
             // fmplanta3
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1123, 949);
+            ClientSize = new Size(983, 712);
             Controls.Add(pnlgeneral);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "fmplanta3";
             Text = "fmplanta1";
             pnlgeneral.ResumeLayout(false);
@@ -417,6 +497,10 @@
             tblnombre2.ResumeLayout(false);
             tblnombre2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            tblbibliografia.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ttblregresar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -445,5 +529,9 @@
         private Label label9;
         private Label label11;
         private PictureBox pictureBox5;
+        private TableLayoutPanel tblbibliografia;
+        private PictureBox pictureBox7;
+        private TableLayoutPanel ttblregresar;
+        private PictureBox pictureBox6;
     }
 }

@@ -159,11 +159,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-7\\AlberSoft\\AlberSoft.csproj",
+      "projectUniqueName": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-8\\AlberSoft\\AlberSoft.csproj",
       "projectName": "AlberSoft",
-      "projectPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-7\\AlberSoft\\AlberSoft.csproj",
+      "projectPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-8\\AlberSoft\\AlberSoft.csproj",
       "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-7\\AlberSoft\\obj\\",
+      "outputPath": "C:\\Users\\antho\\OneDrive - keug\\Informática\\Programación\\C#\\Programas en C#\\AlberSoft\\AlberSoft-8\\AlberSoft\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\antho\\AppData\\Roaming\\NuGet\\NuGet.Config",

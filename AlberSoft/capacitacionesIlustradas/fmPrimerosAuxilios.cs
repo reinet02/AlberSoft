@@ -1,3 +1,4 @@
+using AlberSoft.capacitacionesIlustradas;
 using AlberSoft.menuPrincipal;
 using System.Linq;
 
@@ -16,9 +17,6 @@ namespace AlberSoft
 
         #region Carga y paint
         // Evento que ocurre cuando el formulario carga
-        // Qué: se ejecuta una vez, cuando el formulario aparece por primera vez.
-        // Por qué: aquí puedes preparar datos, cargar imágenes o iniciar timers.
-        // Cómo usar: añade código dentro para ejecutar acciones al iniciar.
         private void primerosAuxilios_Load(object sender, EventArgs e)
         {
             // Ejemplo: cargar datos o inicializar componentes
@@ -81,22 +79,14 @@ namespace AlberSoft
             }
 
         }
-
-        private void tableroGeneralTab1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cuiLabel2_Load(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
 
         private void btnReferencias_Click(object sender, EventArgs e)
         {
-
+            Form referenciasForm = new fmReferenciasPrimerosAuxilios();
+            referenciasForm.Show();
         }
-        #endregion
+        
     }
 }
 

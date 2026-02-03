@@ -82,9 +82,11 @@
             // 
             // label2
             // 
+            label2.BackColor = Color.Honeydew;
             label2.Content = "Intentos\\ fallidos:";
             label2.Dock = DockStyle.Fill;
-            label2.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.DarkSlateGray;
             label2.HorizontalAlignment = StringAlignment.Near;
             label2.Location = new Point(5, 139);
             label2.Margin = new Padding(5, 4, 5, 4);
@@ -105,8 +107,8 @@
             btnReinicio.DialogResult = DialogResult.None;
             btnReinicio.Dock = DockStyle.Fill;
             btnReinicio.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnReinicio.ForeColor = Color.Black;
-            btnReinicio.HoverBackground = Color.White;
+            btnReinicio.ForeColor = Color.DarkGreen;
+            btnReinicio.HoverBackground = Color.PaleGreen;
             btnReinicio.HoverForeColor = Color.Black;
             btnReinicio.HoverImageTint = Color.White;
             btnReinicio.HoverOutline = Color.FromArgb(32, 128, 128, 128);
@@ -117,8 +119,8 @@
             btnReinicio.Location = new Point(3, 323);
             btnReinicio.Margin = new Padding(3, 4, 3, 4);
             btnReinicio.Name = "btnReinicio";
-            btnReinicio.NormalBackground = Color.White;
-            btnReinicio.NormalForeColor = Color.Black;
+            btnReinicio.NormalBackground = Color.Ivory;
+            btnReinicio.NormalForeColor = Color.DarkGreen;
             btnReinicio.NormalImageTint = Color.White;
             btnReinicio.NormalOutline = Color.FromArgb(64, 128, 128, 128);
             btnReinicio.OutlineThickness = 1F;
@@ -140,6 +142,7 @@
             // 
             // tableroGeneral
             // 
+            tableroGeneral.BackColor = Color.Honeydew;
             tableroGeneral.ColumnCount = 2;
             tableroGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
             tableroGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
@@ -466,9 +469,11 @@
             // 
             // label1
             // 
-            label1.Content = "Taller\\ de\\ Reciclaje";
+            label1.BackColor = Color.Honeydew;
+            label1.Content = "Taller\\ de\\ Reciclaje\\ /\\ Solo\\ tienes\\ 32\\ intentos\\.";
             label1.Dock = DockStyle.Fill;
-            label1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DarkSlateGray;
             label1.HorizontalAlignment = StringAlignment.Center;
             label1.Location = new Point(5, 4);
             label1.Margin = new Padding(5, 4, 5, 4);
@@ -479,6 +484,7 @@
             // 
             // tableLayoutPanel1
             // 
+            tableLayoutPanel1.BackColor = Color.Honeydew;
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 97.20497F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 2.795031F));

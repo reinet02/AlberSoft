@@ -1,6 +1,8 @@
 
 // To customize application configuration such as set high DPI settings or default font,
 // see https://aka.ms/applicationconfiguration.
+using AlberSoft.menuPrincipal;
+
 namespace AlberSoft
 {
     internal static class Program

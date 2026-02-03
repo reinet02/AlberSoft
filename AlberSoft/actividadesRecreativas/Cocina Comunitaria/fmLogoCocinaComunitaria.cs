@@ -1,12 +1,13 @@
-﻿using AlberSoft.menuPrincipal;
+﻿using AlberSoft.capacitacionesIlustradas;
+using AlberSoft.menuPrincipal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace AlberSoft.actividadesRecreativas
 {
@@ -17,50 +18,60 @@ namespace AlberSoft.actividadesRecreativas
             InitializeComponent();
         }
 
+        #region Función para regresar (mostar a otro formulario)
+        // Botón "volver" — cerrar este formulario y mostrar otro
         private void regresar_Click(object sender, EventArgs e)
         {
-            try
+            // 1) Intentar encontrar la instancia de fmMenu entre los formularios abiertos
+            var menu = Application.OpenForms.OfType<fmMenu>().FirstOrDefault();
+            if (menu != null)
             {
-                // Obtener el formulario contenedor inmediato (debería ser fmCocinaComunitaria)
-                var contenedorInmediato = this.FindForm();
-
-                // Obtener el formulario principal (top-level) q contiene todo (en este caso ese es fmMenu)
-                var formPrincipal = contenedorInmediato?.TopLevelControl as Form;
-
-                if (formPrincipal == null)
+                // Buscar panel2 dentro de fmMenu (busca por nombre en toda la jerarquía de controles)
+                var panel2 = menu.Controls.Find("panel2", true).FirstOrDefault() as Panel;
+                if (panel2 != null)
                 {
-                    // Si no se encuentra, cerramos el formulario inmediato
-                    contenedorInmediato?.Close();
+                    panel2.Controls.Clear();
+
+                    var bienvenida = new menuPrincipal.fmBienvenida
+                    {
+                        TopLevel = false,
+                        FormBorderStyle = FormBorderStyle.None,
+                        Dock = DockStyle.Fill
+                    };
+
+                    panel2.Controls.Add(bienvenida);
+                    bienvenida.Show();
                     return;
                 }
+            }
 
-                // 3) Buscar el Panel llamado "panel2" dentro del formulario principal
-                var panel2 = formPrincipal.Controls.Find("panel2", true).FirstOrDefault() as Panel;
-                if (panel2 == null)
-                {
-                    // No existe panel2: cerramos el contenedor inmediato para evitar dejar UI bloqueada
-                    contenedorInmediato?.Close();
-                    return;
-                }
+            // 2) Si no se encontró fmMenu.panel2, usar el panel padre inmediato (si existe)
+            var parentPanel = this.Parent as Panel;
+            if (parentPanel != null)
+            {
+                parentPanel.Controls.Clear();
 
-                // 4) Limpiar y cargar fmBienvenida embebido en panel2
-                panel2.Controls.Clear();
-                var bienvenida = new fmBienvenida
+                var bienvenida = new menuPrincipal.fmBienvenida
                 {
                     TopLevel = false,
                     FormBorderStyle = FormBorderStyle.None,
                     Dock = DockStyle.Fill
                 };
-                panel2.Controls.Add(bienvenida);
-                bienvenida.Show();
 
-                // 5) Cerrar el formulario contenedor (fmCocinaComunitaria)
-                contenedorInmediato?.Close();
+                parentPanel.Controls.Add(bienvenida);
+                bienvenida.Show();
+                return;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No se pudo regresar: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            // 3) Fallback final: abrir como ventana independiente
+            new menuPrincipal.fmBienvenida().Show();
+        }
+        #endregion
+
+        private void btnReferencias_Click(object sender, EventArgs e)
+        {
+            Form referenciasForm = new fmReferenciasPrimerosAuxilios();
+            referenciasForm.Show();
         }
 
     }

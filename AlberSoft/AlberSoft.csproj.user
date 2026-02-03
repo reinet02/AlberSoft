@@ -7,7 +7,10 @@
     <Compile Update="actividadesRecreativas\Cocina Comunitaria\fmLogoCocinaComunitaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\Cocina Comunitaria\fmTallerReciclaje.cs">
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmTachosReciclaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Huerto Comunitario\fmHuertoComunitario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="actividadesRecreativas\Huerto Comunitario\fmplanta1.cs">
@@ -37,28 +40,52 @@
     <Compile Update="actividadesRecreativas\JuegoDePares\fmNivelesDificultad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\Recetas\fmAlmuerzoReceta2.cs">
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmAlmuerzoReceta1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\Recetas\fmDesayunoReceta1.cs">
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmAlmuerzoReceta2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\Recetas\fmDesayunoReceta2.cs">
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmAlmuerzoReceta3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\Recetas\fmDesayunoReceta3.cs">
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmAlmuerzoReceta4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\Recetas\fmMeriendaReceta1.cs">
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmDesayunoReceta1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\Recetas\fmMeriendaReceta2.cs">
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmDesayunoReceta2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\Recetas\fmPostresReceta1.cs">
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmDesayunoReceta3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\Recetas\fmPostresReceta2.cs">
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmDesayunoReceta4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmMeriendaReceta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmMeriendaReceta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmMeriendaReceta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmMeriendaReceta4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmPostresReceta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmPostresReceta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmPostresReceta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\Recetas\fmPostresReceta4.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmManualidad1.cs">
@@ -67,13 +94,16 @@
     <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmManualidad2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\TallerDeReciclaje\FmManualidad3.cs">
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmManualidad3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="actividadesRecreativas\TallerDeReciclaje\FmManualidad4.cs">
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmManualidad4.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmreciclajetachos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmTallerReciclaje.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="alojamientoEInventario\fmAsignacionCamas.cs">
@@ -91,16 +121,49 @@
     <Compile Update="capacitacionesIlustradas\fmJuegoOrdenarImgs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="mapaInteractivo\fmLosRíos.cs">
+    <Compile Update="capacitacionesIlustradas\fmReferenciasPrimerosAuxilios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="mapaInteractivo\fmMapaEcuador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="mapaInteractivo\fmQuiz1.cs">
+    <Compile Update="mapaInteractivo\fmQuizMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="mapaInteractivo\fmQuiz2.cs">
+    <Compile Update="mapaInteractivo\fmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmAzuay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmChimborazo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmElOro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmEsmeraldas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmGuayas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmLoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmLosRíos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmManabí.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmPichincha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmSantoDomingodelosTsáchilas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\Provincias\fmTungurahua.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="menuPrincipal\fmBienvenida.cs">
@@ -112,13 +175,7 @@
     <Compile Update="capacitacionesIlustradas\fmPrimerosAuxilios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="menuPrincipal\fmInicioSesion.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="menuPrincipal\fmRegistro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="menuPrincipal\fmRegistroTest.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

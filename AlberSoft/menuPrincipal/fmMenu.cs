@@ -25,15 +25,11 @@ namespace AlberSoft
             // Carga los controles creados por el diseñador y prepara la ventana
             InitializeComponent();
 
-            // Cuando el formulario se cierre, se cerrará el programa
-
-            // Nota: FormClosing viene por defecto en Windows Forms
-
+            // Cuando el formulario se cierre, terminará la ejecución del programa
+            // FormClosing viene por defecto en Windows Forms
             // FormClosing es un evento que se dispara cuando el formulario se está cerrando
-
-            // Nota: FormClosing es equivalente a this.FormClosing
-
-            // Advertencia: esto es necesario para evitar que la aplicación siga corriendo en segundo plano
+            // FormClosing es equivalente a this.FormClosing
+            // Es necesario para evitar que la aplicación siga corriendo en segundo plano
 
             FormClosing += (s, e) => Application.Exit();
         }
@@ -400,7 +396,7 @@ namespace AlberSoft
                 {
                     if (label == "Taller de Reciclaje")
                     {
-                        abrirFormularioHijo(new fmCocinaComunitaria());
+                        abrirFormularioHijo(new fmTallerReciclaje());
                     }
                     else if (label == "Cocina Comunitaria")
                     {
@@ -408,7 +404,7 @@ namespace AlberSoft
                     }
                     else if (label == "Huerto Comunitario")
                     {
-                        abrirFormularioHijo(new fmCocinaComunitaria());
+                        abrirFormularioHijo(new fmHuertoComunitario());
                     }
                     else if (label == "Juego de Pares")
                     {
@@ -494,7 +490,7 @@ namespace AlberSoft
                     }
                     else if (label == "Quiz")
                     {
-                        abrirFormularioHijo(new fmQuiz1());
+                        abrirFormularioHijo(new fmQuizMenu());
                     }
                     else
                     {

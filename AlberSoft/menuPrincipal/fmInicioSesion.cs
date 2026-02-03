@@ -1,127 +1,117 @@
-using AlberSoft.menuPrincipal;
-using System.IO; // System.IO es un espacio de nombres q contiene la clase File
+Ôªøusing System.IO; // Para operaciones con archivos
 
-namespace AlberSoft
+namespace AlberSoft.menuPrincipal
 {
     public partial class fmInicioSesion : Form
     {
         public fmInicioSesion()
         {
             InitializeComponent();
+            // cuando se cierre este formulario, se terminar√° la ejecuci√≥n del programa
+            FormClosed += (s, e) => Application.Exit();
+
+            // hacemos que por defecto la contrase√±a est√© oculta
+            tbContrasena.PasswordChar = true;
+            pbOjo.Image = Properties.Resources.invisible;
         }
 
-        #region FunciÛn que valida las credenciales ingresadas
-        private void btnIngresar_Click(object sender, EventArgs e)
+        private void pbOjo_Click(object? sender, EventArgs e)
         {
-            // Nota: Algunos controles personalizados (CuoreUI) usan la propiedad .Content en lugar de .Text
-
-            #region Verificar q los textbox no esten vacÌos
-            // Obtener los valores ingresados en los textbox llamados "usuario" y "contrasena"
-            string usuario1 = usuario.Content.Trim();
-            string contrasena1 = contrasena.Content.Trim();
-
-            // si usuario1 est· vacÌo o contiene solo espacios en blanco entonces
-            if (string.IsNullOrWhiteSpace(usuario1))
+            if (tbContrasena.PasswordChar == false)
             {
-                MessageBox.Show("°Ingrese su usuario!");
-                return;
-            }
-            // tambiÈn si contrasena1 est· vacÌo o contiene solo espacios en blanco entonces
-            else if (string.IsNullOrWhiteSpace(contrasena1))
-            {
-                MessageBox.Show("°Ingrese su contraseÒa!");
-                return;
+                tbContrasena.PasswordChar = true;
+                pbOjo.Image = Properties.Resources.invisible;
             }
             else
             {
-                
+                tbContrasena.PasswordChar = false;
+                pbOjo.Image = Properties.Resources.visible;
             }
-            #endregion
-
-            #region Validar las credenciales ingresadas con las credenciales ya registradas
-            // AppDomain.CurrentDomain.BaseDirectory devuelve el directorio
-            // q el cargador de ensamblados usa para buscar archivos y dependencias
-            // (habitualmente la carpeta donde est· el ejecutable de la aplicaciÛn, por ejemplo bin\Debug\net10\)
-            // La ruta suele terminar con el separador de directorio: "\" 
-
-            // Declaramos la variable "ruta" y le asignamos la ruta completa del archivo credenciales.txt
-            string ruta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "credenciales.txt"); //  Declaramos la ruta del archivo credenciales.txt
-
-            // si el archivo credenciales.txt no existe entonces
-            if (!File.Exists(ruta))
-            {
-                MessageBox.Show("°No se encontraron usuarios registrados!");
-                return;
-            }
-
-            #region Leer el archivo lÌnea por lÌnea
-            // Usamos foreach para leer cada lÌnea del archivo
-            // Cada lÌnea tiene el formato: usuario|contraseÒa
-            // File.ReadAllLines lee todas las lÌneas del archivo
-
-            // Declaramos la variable "encontradas" como falsa
-            // debe estar fuera del bucle para mantener su valor despuÈs de recorrer todas las lÌneas del archivo con foreach
-            bool encontradas = false;
-
-            foreach (string linea in File.ReadAllLines(ruta))
-            {
-                // Creamos una lista llamada "partes" de tipo string
-                // linea.Split('|') divide la lÌnea en partes usando "|" como separador
-                // de modo que los elementos de la lista ser·n las partes separadas por "|" 
-                string[] partes = linea.Split('|');
-
-                // si hay dos partes entonces
-                if (partes.Length >= 2)
-                {
-                    // usuario ser· la primera parte
-                    string usuarioGuardado = partes[0].Trim();
-                    // contrasena ser· la segunda parte
-                    string contrasenaGuardada = partes[1].Trim();
-
-                    // si usuario1 == usuarioGuardado y contrasena1 == contrasenaGuardada entonces
-                    if (usuario1 == usuarioGuardado && contrasena1 == contrasenaGuardada)
-                    {
-                        encontradas = true;
-                        break;
-                    }
-                }
-            }
-            
-
-            if (encontradas == true)
-            {
-                // Asiganamos a la variable global "usuario1" el valor de la variable local usuario1
-                variablesGlobales.usuario1 = usuario1;
-
-                MessageBox.Show("°Inicio de sesiÛn exitoso!");
-
-                // Abrir men˙ principal
-                new fmMenu().Show();
-                Hide(); // Ocultar el formulario de inicio de sesiÛn
-            }
-            else
-            {
-                MessageBox.Show("°Usuario o contraseÒa incorrectos!"); // incorrectos o no encontrados
-            }
-            #endregion
-
-            #endregion
         }
-        #endregion
 
         private void linkRegistrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Abrir el formulario de registro
+            // Declaramos una variable de tipo Form
+            // y le asignamos una nueva instancia del formulario "fmInicioSesion"
             Form registro = new fmRegistro();
-            // Usar ShowDialog para que el usuario tenga que cerar el registro para poder volver al login
-            registro.ShowDialog();
+            // Mostrar el formulario
+            registro.Show();
+            // Lo ocultamos en lugar de cerrarlo para evitar que la aplicaci√≥n se cierre
+            // ya que si este formulario es cerrado, se termina la ejecuci√≥n del programa
+            // debido a FormClosed declarado en el constructor de este formulario
+            Hide();
         }
 
-        private void linkOlvidasteContra_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            // Abrir el formulario de registro
-            Form registro = new fmRegistro();
-            registro.ShowDialog();
+            // Obtener valores de los controles (CuoreUI usa .Content)
+            string usuario = tbUsuario.Content?.Trim() ?? string.Empty;
+            string contrasena = tbContrasena.Content?.Trim() ?? string.Empty;
+
+            // Validaciones b√°sicas
+            if (string.IsNullOrWhiteSpace(usuario))
+            {
+                MessageBox.Show("¬°Ingrese su usuario!", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(contrasena))
+            {
+                MessageBox.Show("¬°Ingrese su contrase√±a!", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Ruta del archivo creado por fmRegistro
+            string ruta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "credenciales.txt");
+
+            if (!File.Exists(ruta))
+            {
+                MessageBox.Show("¬°No se encontraron usuarios registrados!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            bool encontrado = false;
+
+            try
+            {
+                // Cada l√≠nea: fecha \t usuario \t contrase√±a
+                foreach (string lineaOriginal in File.ReadLines(ruta))
+                {
+                    if (string.IsNullOrWhiteSpace(lineaOriginal))
+                        continue;
+
+                    string[] partes = lineaOriginal.Trim().Split('\t');
+                    if (partes.Length >= 3)
+                    {
+                        string usuarioGuardado = partes[1].Trim();
+                        string contrasenaGuardada = partes[2].Trim();
+
+                        if (usuario == usuarioGuardado && contrasena == contrasenaGuardada)
+                        {
+                            encontrado = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al leer el archivo de credenciales: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (encontrado)
+            {
+                // variable global usada en tu c√≥digo original
+                variablesGlobales.usuario1 = usuario;
+                MessageBox.Show("¬°Inicio de sesi√≥n exitoso!", "√âxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                new fmMenu().Show();
+                Hide(); // ocultar formulario de inicio de sesi√≥n
+            }
+            else
+            {
+                MessageBox.Show("¬°Usuario o contrase√±a incorrectos!", "Error de autenticaci√≥n", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
