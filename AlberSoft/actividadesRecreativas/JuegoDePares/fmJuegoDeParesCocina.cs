@@ -1,13 +1,21 @@
 ﻿// System.Collections tiene la clase ArrayList que usamos
 using System.Collections;
+using System.Windows.Forms;
+using Timer = System.Windows.Forms.Timer;
 
 namespace AlberSoft.activadesRecreativas
 {
     public partial class fmJuegoDeParesCocina : Form
     {
         #region Declaramos variables
-        // Número máximo de intentos permitidos
-        private const int MaxIntentos = 16;
+        // Límite de tiempo en segundos
+        private const int TimeLimitSeconds = 60;
+
+        // Tiempo restante en la partida actual
+        private int tiempoRestante;
+
+        // Temporizador que cuenta el tiempo de la partida (1s)
+        private Timer gameTimer;
 
         // Creamos una listas para gestionar las cartas enumeradas
         private List<int> cartasEnumeradas;
@@ -21,8 +29,6 @@ namespace AlberSoft.activadesRecreativas
         private PictureBox cartaTemp1;
         private PictureBox cartaTemp2;
 
-        // Contador de intentos realizados
-        private int intentos = 0;
         // Contador de parejas encontradas
         private int parejasEncontradas = 0;
 
@@ -33,6 +39,13 @@ namespace AlberSoft.activadesRecreativas
         public fmJuegoDeParesCocina()
         {
             InitializeComponent();
+
+            // Inicializar el temporizador del juego (cuenta regresiva)
+            gameTimer = new Timer
+            {
+                Interval = 1000
+            };
+            gameTimer.Tick += GameTimer_Tick;
         }
 
 
@@ -49,7 +62,7 @@ namespace AlberSoft.activadesRecreativas
             cartaTemp1 = null;
             cartaTemp2 = null;
 
-            // Detener temporizador
+            // Detener temporizador de volteo
             temporizador.Stop();
             temporizador.Enabled = false;
         }
@@ -61,14 +74,21 @@ namespace AlberSoft.activadesRecreativas
 
         private void IniciarJuego()
         {
-            // Detener cualquier temporizador en curso
+            // Detener temporizadores en curso
             temporizador.Stop();
             temporizador.Enabled = false;
+            gameTimer.Stop();
 
             // Reiniciar contadores
-            intentos = 0;
             parejasEncontradas = 0;
-            label2.Content = "Intentos fallidos: 0";
+
+            // Iniciar tiempo
+            tiempoRestante = TimeLimitSeconds;
+            try
+            {
+                label2.Content = $"Tiempo restante: {tiempoRestante}s";
+            }
+            catch { }
 
             // Crear lista de parejas duplicadas
             cartasEnumeradas = new List<int>();
@@ -83,13 +103,15 @@ namespace AlberSoft.activadesRecreativas
             cartasRevueltas = cartasEnumeradas.OrderBy(_ => aleatorio.Next()).ToList();
 
             int indice = 0;
-            // forach recorre todos los controles dentro del tablero1
+            // foreach recorre todos los controles dentro del tablero1
             foreach (Control c in tablero1.Controls)
             {
                 // Si el control dentro del tablero1 es un PictureBox
-                // le asignamos la imagen "parteTraseraDeCartasCocina" 
+                // le asignamos la imagen "parteTraseraDeCartasCocina" y Tag
                 if (c is PictureBox pictureBox)
                 {
+                    pictureBox.Image = Properties.Resources.parteTraseraDeCartasCocina;
+                    pictureBox.Enabled = true;
                     // Forzamos a tratar la propiedad Tag como un entero
                     pictureBox.Tag = indice++;
                 }
@@ -99,6 +121,9 @@ namespace AlberSoft.activadesRecreativas
             cartasSeleccionadas = new ArrayList();
             cartaTemp1 = null;
             cartaTemp2 = null;
+
+            // Iniciar el temporizador de la partida
+            gameTimer.Start();
         }
 
         private void fmJuegoDeParesCocina_Load(object sender, EventArgs e)
@@ -152,27 +177,18 @@ namespace AlberSoft.activadesRecreativas
                     cartasSeleccionadas.Clear();
                     parejasEncontradas++;
 
-                    // Si se encuentran todas las parejas, avisar al usuario
+                    // Si se encuentran todas las parejas, avisar al usuario y detener temporizador de juego
                     if (parejasEncontradas >= 8)
+                    {
+                        gameTimer.Stop();
                         MessageBox.Show("¡Felicitaciones, has encontrado todas las parejas!");
+                    }
                 }
                 else
                 {
                     // No coinciden: guardamos temporales para voltearlas cuando suene el temporizador
                     cartaTemp1 = pictureBox1;
                     cartaTemp2 = pictureBox2;
-
-                    // Incrementamos contador de intentos (intentos)
-                    intentos++;
-                    // Actualizamos la etiqueta de intentos
-                    label2.Content = $"Intentos fallidos: {intentos}";
-
-                    // Si llegamos al máximo de intentos, podemos deshabilitar el tablero
-                    if (intentos >= MaxIntentos)
-                    {
-                        panel1.Enabled = false;
-                        MessageBox.Show("Se acabaron los intentos.", "Intentos agotados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
 
                     // Iniciar temporizador para que el jugador vea las cartas antes de volver a girarlas
                     temporizador.Enabled = true;
@@ -184,11 +200,11 @@ namespace AlberSoft.activadesRecreativas
         // Botón reinicio: vuelve a empezar la partida y reordena las cartas
         private void btnReinicio_Click(object? sender, EventArgs e)
         {
-            // Reconfigura el juego (baraja, reinicia contadores)
+            // Reconfigura el juego (baraja, reinicia contadores y temporizadores)
             IniciarJuego();
             panel1.Enabled = true; // asegurar que el tablero esté habilitado
 
-            // Poner todas las cartas en su parte trasera y habilitarlas
+            // Asegurar todas las cartas en su parte trasera y habilitarlas
             foreach (Control c in tablero1.Controls)
             {
                 if (c is PictureBox pb)
@@ -204,6 +220,31 @@ namespace AlberSoft.activadesRecreativas
             cartaTemp2 = null;
             temporizador.Stop();
             temporizador.Enabled = false;
+
+            // Asegurar que el temporizador de la partida esté en marcha tras el reinicio
+            gameTimer.Start();
+        }
+
+        // Tick del temporizador de la partida (cuenta regresiva)
+        private void GameTimer_Tick(object? sender, EventArgs e)
+        {
+            tiempoRestante--;
+            try
+            {
+                label2.Content = $"Tiempo restante: {tiempoRestante}s";
+            }
+            catch { }
+
+            if (tiempoRestante <= 0)
+            {
+                gameTimer.Stop();
+                // Deshabilitar tablero y detener temporizador de volteo por si estaba activo
+                panel1.Enabled = false;
+                temporizador.Stop();
+                temporizador.Enabled = false;
+
+                MessageBox.Show("Se acabó el tiempo.", "Fin de la partida", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         #region Lógica del juego

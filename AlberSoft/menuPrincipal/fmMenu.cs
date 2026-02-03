@@ -232,9 +232,9 @@ namespace AlberSoft
             #region Arreglo que contiene las etiquetas para cada item del menú flotante
             string[] labels2 = {
                 "Primeros Auxilios",
-                "Prevención de Enfermedades Comunes",
-                "Protocolos en Caso de Incendios",
-                "Protocolos en Caso de Desastres Naturales",
+                //"Prevención de Enfermedades Comunes",
+                //"Protocolos en Caso de Incendios",
+                //"Protocolos en Caso de Desastres Naturales",
                 "Juego formativo"
             };
             #endregion
@@ -245,9 +245,9 @@ namespace AlberSoft
             // lo usamos como fallback para todos los items.
             string[] resourceNames2 = {
                 "capacitacionesIcon1",
-                "capacitacionesIcon2",
-                "capacitacionesIcon3",
-                "capacitacionesIcon4",
+                //"capacitacionesIcon2",
+                //"capacitacionesIcon3",
+                //"capacitacionesIcon4",
                 "juegoOrdenarImgsIcon5"
             };
             #endregion

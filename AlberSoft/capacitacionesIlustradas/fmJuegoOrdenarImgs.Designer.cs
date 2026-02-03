@@ -33,127 +33,176 @@ namespace AlberSoft.capacitacionesIlustradas
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new Container();
-            this.cbEscenario = new CuoreUI.Controls.cuiComboBox();
-            this.btnMezclar = new Button();
-            this.btnComprobar = new Button();
-            this.btnReiniciar = new Button();
-            this.lblPuntuacion = new Label();
-            this.lblMensaje = new Label();
-            this.tlpTargets = new TableLayoutPanel();
-            this.flpPool = new FlowLayoutPanel();
-            this.SuspendLayout();
+            cbEscenario = new CuoreUI.Controls.cuiComboBox();
+            cbDificultad = new ComboBox();
+            btnMezclar = new Button();
+            btnComprobar = new Button();
+            btnReiniciar = new Button();
+            lblPuntuacion = new Label();
+            lblTiempo = new Label();
+            lblMensaje = new Label();
+            tlpTargets = new TableLayoutPanel();
+            flpPool = new FlowLayoutPanel();
+            pnlTop = new Panel();
+            pnlTop.SuspendLayout();
+            SuspendLayout();
             // 
             // cbEscenario
             // 
-            this.cbEscenario.BackgroundColor = Color.FromArgb(255, 255, 255);
-            this.cbEscenario.DropDownBackgroundColor = Color.White;
-            this.cbEscenario.DropDownForeColor = Color.FromArgb(27, 27, 27);
-            this.cbEscenario.ExpandArrowColor = Color.Gray;
-            this.cbEscenario.ForeColor = Color.Gray;
-            this.cbEscenario.Items = new string[] { "ABCDE" };
-            this.cbEscenario.Location = new Point(24, 20);
-            this.cbEscenario.Margin = new Padding(4, 3, 4, 3);
-            this.cbEscenario.MaxDropDownHeight = 240;
-            this.cbEscenario.Name = "cbEscenario";
-            this.cbEscenario.NoSelectionText = "Selecciona escenario";
-            this.cbEscenario.OutlineColor = Color.FromArgb(64, 128, 128, 128);
-            this.cbEscenario.OutlineThickness = 1F;
-            this.cbEscenario.Rounding = 8;
-            this.cbEscenario.SelectedIndex = 0;
-            this.cbEscenario.SelectedItem = "ABCDE";
-            this.cbEscenario.Size = new Size(220, 28);
-            this.cbEscenario.SortAlphabetically = false;
-            this.cbEscenario.TabIndex = 0;
-            this.cbEscenario.SelectedIndexChanged += new EventHandler(this.cbEscenario_SelectedIndexChanged);
+            cbEscenario.BackgroundColor = Color.FromArgb(255, 255, 255);
+            cbEscenario.DropDownBackgroundColor = Color.White;
+            cbEscenario.DropDownForeColor = Color.FromArgb(27, 27, 27);
+            cbEscenario.ExpandArrowColor = Color.Gray;
+            cbEscenario.ForeColor = Color.Gray;
+            cbEscenario.Items = new string[]
+    {
+    "ABCDE"
+    };
+            cbEscenario.Location = new Point(16, 16);
+            cbEscenario.Margin = new Padding(4, 3, 4, 3);
+            cbEscenario.MaxDropDownHeight = 240;
+            cbEscenario.Name = "cbEscenario";
+            cbEscenario.NoSelectionText = "Selecciona escenario";
+            cbEscenario.OutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cbEscenario.OutlineThickness = 1F;
+            cbEscenario.Rounding = 8;
+            cbEscenario.SelectedIndex = 0;
+            cbEscenario.SelectedItem = "ABCDE";
+            cbEscenario.Size = new Size(220, 28);
+            cbEscenario.SortAlphabetically = false;
+            cbEscenario.TabIndex = 0;
+            cbEscenario.SelectedIndexChanged += cbEscenario_SelectedIndexChanged;
+            // 
+            // cbDificultad
+            // 
+            cbDificultad.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbDificultad.Location = new Point(256, 16);
+            cbDificultad.Name = "cbDificultad";
+            cbDificultad.Size = new Size(132, 28);
+            cbDificultad.TabIndex = 1;
+            cbDificultad.SelectedIndexChanged += cbDificultad_SelectedIndexChanged;
             // 
             // btnMezclar
             // 
-            this.btnMezclar.Location = new Point(260, 18);
-            this.btnMezclar.Name = "btnMezclar";
-            this.btnMezclar.Size = new Size(90, 28);
-            this.btnMezclar.Text = "Mezclar";
-            this.btnMezclar.UseVisualStyleBackColor = true;
-            this.btnMezclar.Click += new EventHandler(this.btnMezclar_Click);
+            btnMezclar.Location = new Point(424, 16);
+            btnMezclar.Name = "btnMezclar";
+            btnMezclar.Size = new Size(120, 40);
+            btnMezclar.TabIndex = 2;
+            btnMezclar.Text = "Mezclar";
+            btnMezclar.UseVisualStyleBackColor = true;
+            btnMezclar.Click += btnMezclar_Click;
             // 
             // btnComprobar
             // 
-            this.btnComprobar.Location = new Point(360, 18);
-            this.btnComprobar.Name = "btnComprobar";
-            this.btnComprobar.Size = new Size(100, 28);
-            this.btnComprobar.Text = "Comprobar";
-            this.btnComprobar.UseVisualStyleBackColor = true;
-            this.btnComprobar.Click += new EventHandler(this.btnComprobar_Click);
+            btnComprobar.Location = new Point(568, 16);
+            btnComprobar.Name = "btnComprobar";
+            btnComprobar.Size = new Size(144, 40);
+            btnComprobar.TabIndex = 3;
+            btnComprobar.Text = "Comprobar";
+            btnComprobar.UseVisualStyleBackColor = true;
+            btnComprobar.Click += btnComprobar_Click;
             // 
             // btnReiniciar
             // 
-            this.btnReiniciar.Location = new Point(470, 18);
-            this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new Size(90, 28);
-            this.btnReiniciar.Text = "Reiniciar";
-            this.btnReiniciar.UseVisualStyleBackColor = true;
-            this.btnReiniciar.Click += new EventHandler(this.btnReiniciar_Click);
+            btnReiniciar.Location = new Point(736, 16);
+            btnReiniciar.Name = "btnReiniciar";
+            btnReiniciar.Size = new Size(120, 40);
+            btnReiniciar.TabIndex = 4;
+            btnReiniciar.Text = "Reiniciar";
+            btnReiniciar.UseVisualStyleBackColor = true;
+            btnReiniciar.Click += btnReiniciar_Click;
             // 
             // lblPuntuacion
             // 
-            this.lblPuntuacion.Location = new Point(580, 18);
-            this.lblPuntuacion.Name = "lblPuntuacion";
-            this.lblPuntuacion.Size = new Size(140, 28);
-            this.lblPuntuacion.Text = "Puntuación: 0";
-            this.lblPuntuacion.TextAlign = ContentAlignment.MiddleLeft;
+            lblPuntuacion.AutoSize = true;
+            lblPuntuacion.Location = new Point(872, 16);
+            lblPuntuacion.Name = "lblPuntuacion";
+            lblPuntuacion.Size = new Size(97, 20);
+            lblPuntuacion.TabIndex = 5;
+            lblPuntuacion.Text = "Puntuación: 0";
+            // 
+            // lblTiempo
+            // 
+            lblTiempo.AutoSize = true;
+            lblTiempo.Location = new Point(880, 56);
+            lblTiempo.Name = "lblTiempo";
+            lblTiempo.Size = new Size(81, 20);
+            lblTiempo.TabIndex = 6;
+            lblTiempo.Text = "Tiempo: 0s";
             // 
             // lblMensaje
             // 
-            this.lblMensaje.Location = new Point(24, 56);
-            this.lblMensaje.Name = "lblMensaje";
-            this.lblMensaje.Size = new Size(700, 22);
-            this.lblMensaje.Text = "Pulsa Mezclar para iniciar el escenario ABCDE.";
+            lblMensaje.Location = new Point(24, 56);
+            lblMensaje.Name = "lblMensaje";
+            lblMensaje.Size = new Size(100, 23);
+            lblMensaje.TabIndex = 1;
             // 
             // tlpTargets
             // 
-            this.tlpTargets.Location = new Point(24, 90);
-            this.tlpTargets.Name = "tlpTargets";
-            this.tlpTargets.Size = new Size(980, 360);
-            this.tlpTargets.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            this.tlpTargets.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tlpTargets.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tlpTargets.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            tlpTargets.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tlpTargets.Location = new Point(24, 90);
+            tlpTargets.Name = "tlpTargets";
+            tlpTargets.Size = new Size(980, 360);
+            tlpTargets.TabIndex = 0;
             // 
             // flpPool
             // 
-            this.flpPool.Location = new Point(24, 470);
-            this.flpPool.Name = "flpPool";
-            this.flpPool.Size = new Size(980, 180);
-            this.flpPool.AutoScroll = true;
-            this.flpPool.FlowDirection = FlowDirection.LeftToRight;
-            this.flpPool.WrapContents = true;
-            this.flpPool.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flpPool.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flpPool.AutoScroll = true;
+            flpPool.Location = new Point(24, 470);
+            flpPool.Name = "flpPool";
+            flpPool.Size = new Size(980, 180);
+            flpPool.TabIndex = 2;
+            // 
+            // pnlTop
+            // 
+            pnlTop.BackColor = SystemColors.Control;
+            pnlTop.Controls.Add(cbEscenario);
+            pnlTop.Controls.Add(lblMensaje);
+            pnlTop.Controls.Add(cbDificultad);
+            pnlTop.Controls.Add(btnMezclar);
+            pnlTop.Controls.Add(btnComprobar);
+            pnlTop.Controls.Add(btnReiniciar);
+            pnlTop.Controls.Add(lblPuntuacion);
+            pnlTop.Controls.Add(lblTiempo);
+            pnlTop.Dock = DockStyle.Fill;
+            pnlTop.Location = new Point(0, 0);
+            pnlTop.Name = "pnlTop";
+            pnlTop.Padding = new Padding(6);
+            pnlTop.Size = new Size(1028, 680);
+            pnlTop.TabIndex = 3;
             // 
             // fmJuegoOrdenarImgs
             // 
-            this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(1028, 680);
-            this.Controls.Add(this.cbEscenario);
-            this.Controls.Add(this.btnMezclar);
-            this.Controls.Add(this.btnComprobar);
-            this.Controls.Add(this.btnReiniciar);
-            this.Controls.Add(this.lblPuntuacion);
-            this.Controls.Add(this.lblMensaje);
-            this.Controls.Add(this.tlpTargets);
-            this.Controls.Add(this.flpPool);
-            this.Name = "fmJuegoOrdenarImgs";
-            this.Text = "fmJuegoDeOrdenarImgs";
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1028, 680);
+            Controls.Add(tlpTargets);
+            Controls.Add(flpPool);
+            Controls.Add(pnlTop);
+            Name = "fmJuegoOrdenarImgs";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Juego - Ordenar Imágenes";
+            pnlTop.ResumeLayout(false);
+            pnlTop.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
 
         private CuoreUI.Controls.cuiComboBox cbEscenario;
+        private ComboBox cbDificultad;
         private Button btnMezclar;
         private Button btnComprobar;
         private Button btnReiniciar;
         private Label lblPuntuacion;
+        private Label lblTiempo;
         private Label lblMensaje;
         private TableLayoutPanel tlpTargets;
         private FlowLayoutPanel flpPool;
+        private Panel pnlTop;
     }
 }
 

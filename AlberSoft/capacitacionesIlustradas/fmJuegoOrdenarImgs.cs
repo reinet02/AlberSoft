@@ -23,10 +23,22 @@ namespace AlberSoft.capacitacionesIlustradas
         private int puntuacion = 0;
         private readonly Random generador = new Random();
 
+        // --- Nuevas variables para dificultad y temporizador ---
+        private System.Windows.Forms.Timer gameTimer;
+        private int tiempoRestante;
+        private readonly Dictionary<string, int> tiemposPorDificultad = new Dictionary<string, int>
+        {
+            { "Fácil", 120 },
+            { "Medio", 60 },
+            { "Difícil", 30 }
+        };
+        // -------------------------------------------------------
+
         public fmJuegoOrdenarImgs()
         {
             InitializeComponent();
             InicializarEscenarios();
+            InicializarDificultadYTemporizador();
         }
 
         // Inicializa la lista de escenarios y prepara el primero
@@ -47,11 +59,46 @@ namespace AlberSoft.capacitacionesIlustradas
             PrepararEscenario(escenarioActual);
         }
 
+        // Inicializa UI y temporizador de dificultad
+        private void InicializarDificultadYTemporizador()
+        {
+            try
+            {
+                // llenar combo de dificultad (si existe)
+                cbDificultad.Items.Clear();
+                cbDificultad.Items.AddRange(new object[] { "Fácil", "Medio", "Difícil" });
+                cbDificultad.SelectedIndex = 1; // por defecto Medio
+            }
+            catch
+            {
+                // Si el control no existe o es personalizado, evitar fallo silencioso
+            }
+
+            gameTimer = new System.Windows.Forms.Timer { Interval = 1000 };
+            gameTimer.Tick += GameTimer_Tick;
+
+            // Mostrar tiempo inicial
+            ActualizarLabelTiempoPreview();
+        }
+
         private void cbEscenario_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbEscenario.SelectedItem == null) return;
             escenarioActual = cbEscenario.SelectedItem.ToString();
             PrepararEscenario(escenarioActual);
+        }
+
+        private void cbDificultad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ActualizarLabelTiempoPreview();
+        }
+
+        private void ActualizarLabelTiempoPreview()
+        {
+            if (lblTiempo == null) return;
+            var clave = cbDificultad?.SelectedItem as string ?? "Medio";
+            if (!tiemposPorDificultad.TryGetValue(clave, out var t)) t = 60;
+            lblTiempo.Text = $"Tiempo: {t}s";
         }
 
         // Crear los huecos (targets) y llenar la pool con las imágenes mezcladas
@@ -216,6 +263,9 @@ namespace AlberSoft.capacitacionesIlustradas
             }
             PrepararEscenario(escenarioActual);
             lblMensaje.Text = "Imágenes mezcladas. Clic en una imagen para colocarla.";
+
+            // Reiniciar contador y arrancar temporizador según dificultad seleccionada
+            IniciarTemporizadorSegunDificultad();
         }
 
         private void btnComprobar_Click(object sender, EventArgs e)
@@ -262,6 +312,8 @@ namespace AlberSoft.capacitacionesIlustradas
                 {
                     if (c is PictureBox pb) pb.BackColor = Color.LightGreen;
                 }
+                // Detener temporizador al ganar
+                DetenerTemporizador();
             }
             else
             {
@@ -281,6 +333,45 @@ namespace AlberSoft.capacitacionesIlustradas
             lblPuntuacion.Text = $"Puntuación: {puntuacion}";
             PrepararEscenario(escenarioActual);
             lblMensaje.Text = "Reiniciado.";
+
+            DetenerTemporizador();
+            ActualizarLabelTiempoPreview();
+        }
+
+        // Temporizador: tick cada segundo
+        private void GameTimer_Tick(object? sender, EventArgs e)
+        {
+            tiempoRestante--;
+            lblTiempo.Text = $"Tiempo: {tiempoRestante}s";
+
+            if (tiempoRestante <= 0)
+            {
+                DetenerTemporizador();
+                // Deshabilitar interacción
+                tlpTargets.Enabled = false;
+                flpPool.Enabled = false;
+
+                MessageBox.Show("Se acabó el tiempo.", "Fin de la partida", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void IniciarTemporizadorSegunDificultad()
+        {
+            var clave = cbDificultad?.SelectedItem as string ?? "Medio";
+            if (!tiemposPorDificultad.TryGetValue(clave, out var t)) t = 60;
+            tiempoRestante = t;
+            lblTiempo.Text = $"Tiempo: {tiempoRestante}s";
+
+            // Habilitar interacción y arrancar
+            tlpTargets.Enabled = true;
+            flpPool.Enabled = true;
+
+            gameTimer?.Start();
+        }
+
+        private void DetenerTemporizador()
+        {
+            gameTimer?.Stop();
         }
     }
 }

@@ -83,7 +83,7 @@
             // label2
             // 
             label2.BackColor = Color.Transparent;
-            label2.Content = "Intentos\\ fallidos:";
+            label2.Content = "Tiempo\\ restante:";
             label2.Dock = DockStyle.Fill;
             label2.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
@@ -460,17 +460,17 @@
             tablero2.Margin = new Padding(3, 4, 3, 4);
             tablero2.Name = "tablero2";
             tablero2.RowCount = 4;
-            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 21.3496933F));
-            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 17.79141F));
-            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 10.6607113F));
-            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 50.01334F));
+            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 21.3892269F));
+            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 17.824358F));
+            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 10.6804543F));
+            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 50.105957F));
             tablero2.Size = new Size(328, 815);
             tablero2.TabIndex = 2;
             // 
             // label1
             // 
             label1.BackColor = Color.Transparent;
-            label1.Content = "Taller\\ de\\ Reciclaje\\\\n\\n\\ Solo\\ tienes\\ 32\\ intentos";
+            label1.Content = "Taller\\ de\\ Reciclaje";
             label1.Dock = DockStyle.Fill;
             label1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;

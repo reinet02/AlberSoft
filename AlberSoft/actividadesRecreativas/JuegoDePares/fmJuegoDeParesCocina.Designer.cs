@@ -82,15 +82,15 @@
             // 
             // label2
             // 
-            label2.Content = "Intentos\\ fallidos:";
+            label2.Content = "Tiempo\\ restante:";
             label2.Dock = DockStyle.Fill;
             label2.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
             label2.HorizontalAlignment = StringAlignment.Near;
-            label2.Location = new Point(5, 199);
+            label2.Location = new Point(5, 161);
             label2.Margin = new Padding(5, 4, 5, 4);
             label2.Name = "label2";
-            label2.Size = new Size(318, 116);
+            label2.Size = new Size(318, 121);
             label2.TabIndex = 2;
             label2.VerticalAlignment = StringAlignment.Near;
             // 
@@ -116,7 +116,7 @@
             btnReinicio.ImageAutoCenter = true;
             btnReinicio.ImageExpand = new Point(0, 0);
             btnReinicio.ImageOffset = new Point(0, 0);
-            btnReinicio.Location = new Point(3, 323);
+            btnReinicio.Location = new Point(3, 290);
             btnReinicio.Margin = new Padding(3, 4, 3, 4);
             btnReinicio.Name = "btnReinicio";
             btnReinicio.NormalBackground = Color.White;
@@ -129,7 +129,7 @@
             btnReinicio.PressedImageTint = Color.White;
             btnReinicio.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnReinicio.Rounding = new Padding(8);
-            btnReinicio.Size = new Size(322, 79);
+            btnReinicio.Size = new Size(322, 68);
             btnReinicio.TabIndex = 3;
             btnReinicio.TextAlignment = StringAlignment.Center;
             btnReinicio.TextOffset = new Point(0, 0);
@@ -459,17 +459,18 @@
             tablero2.Location = new Point(782, 4);
             tablero2.Margin = new Padding(3, 4, 3, 4);
             tablero2.Name = "tablero2";
-            tablero2.RowCount = 4;
-            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 23.92638F));
-            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 15.2147236F));
-            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 10.6607113F));
-            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 50.01334F));
+            tablero2.RowCount = 5;
+            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 19.3658772F));
+            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 15.8448086F));
+            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 9.396716F));
+            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 38.0189F));
+            tablero2.RowStyles.Add(new RowStyle(SizeType.Percent, 17.3736935F));
             tablero2.Size = new Size(328, 815);
             tablero2.TabIndex = 2;
             // 
             // label1
             // 
-            label1.Content = "Cocina\\ Comunitaria\\n\\nSolo\\ tienes\\ 16\\ intentos";
+            label1.Content = "Cocina\\ Comunitaria";
             label1.Dock = DockStyle.Fill;
             label1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
@@ -477,7 +478,7 @@
             label1.Location = new Point(5, 4);
             label1.Margin = new Padding(5, 4, 5, 4);
             label1.Name = "label1";
-            label1.Size = new Size(318, 187);
+            label1.Size = new Size(318, 149);
             label1.TabIndex = 4;
             label1.VerticalAlignment = StringAlignment.Near;
             // 
@@ -488,12 +489,12 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.1801243F));
             tableLayoutPanel1.Controls.Add(pictureBox1, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(3, 409);
+            tableLayoutPanel1.Location = new Point(3, 365);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50.9901F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 49.0099F));
-            tableLayoutPanel1.Size = new Size(322, 403);
+            tableLayoutPanel1.Size = new Size(322, 303);
             tableLayoutPanel1.TabIndex = 5;
             // 
             // pictureBox1
@@ -502,7 +503,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(3, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(280, 199);
+            pictureBox1.Size = new Size(280, 148);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -566,8 +567,8 @@
         private PictureBox carta2;
         private PictureBox carta1;
         private TableLayoutPanel tablero2;
-        private CuoreUI.Controls.cuiLabel label1;
         private TableLayoutPanel tableLayoutPanel1;
         private PictureBox pictureBox1;
+        private CuoreUI.Controls.cuiLabel label1;
     }
 }
