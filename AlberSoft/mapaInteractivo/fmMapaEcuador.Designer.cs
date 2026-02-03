@@ -87,6 +87,7 @@ namespace AlberSoft.mapaInteractivo
             regresar.SizeMode = PictureBoxSizeMode.Zoom;
             regresar.TabIndex = 10;
             regresar.TabStop = false;
+            regresar.Click += regresar_Click;
             // 
             // btnReferencias
             // 

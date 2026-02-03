@@ -84,7 +84,7 @@
             // 
             label2.Content = "Tiempo\\ restante:";
             label2.Dock = DockStyle.Fill;
-            label2.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
             label2.HorizontalAlignment = StringAlignment.Near;
             label2.Location = new Point(5, 161);
@@ -472,7 +472,7 @@
             // 
             label1.Content = "Cocina\\ Comunitaria";
             label1.Dock = DockStyle.Fill;
-            label1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
             label1.HorizontalAlignment = StringAlignment.Center;
             label1.Location = new Point(5, 4);

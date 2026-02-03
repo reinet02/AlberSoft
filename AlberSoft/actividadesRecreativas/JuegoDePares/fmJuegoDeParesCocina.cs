@@ -9,7 +9,7 @@ namespace AlberSoft.activadesRecreativas
     {
         #region Declaramos variables
         // Límite de tiempo en segundos
-        private const int TimeLimitSeconds = 60;
+        private const int TimeLimitSeconds = 120;
 
         // Tiempo restante en la partida actual
         private int tiempoRestante;

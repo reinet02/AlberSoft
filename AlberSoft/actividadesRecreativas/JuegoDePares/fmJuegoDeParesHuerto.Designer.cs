@@ -84,7 +84,7 @@
             // 
             label2.Content = "Tiempo\\ restante:";
             label2.Dock = DockStyle.Fill;
-            label2.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
             label2.HorizontalAlignment = StringAlignment.Near;
             label2.Location = new Point(5, 182);
@@ -107,9 +107,9 @@
             btnReinicio.DialogResult = DialogResult.None;
             btnReinicio.Dock = DockStyle.Fill;
             btnReinicio.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnReinicio.ForeColor = Color.FromArgb(249, 226, 175);
+            btnReinicio.ForeColor = Color.FromArgb(166, 227, 161);
             btnReinicio.HoverBackground = Color.WhiteSmoke;
-            btnReinicio.HoverForeColor = Color.FromArgb(249, 226, 175);
+            btnReinicio.HoverForeColor = Color.FromArgb(166, 227, 161);
             btnReinicio.HoverImageTint = Color.White;
             btnReinicio.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             btnReinicio.Image = null;
@@ -120,12 +120,12 @@
             btnReinicio.Margin = new Padding(3, 4, 3, 4);
             btnReinicio.Name = "btnReinicio";
             btnReinicio.NormalBackground = Color.White;
-            btnReinicio.NormalForeColor = Color.FromArgb(249, 226, 175);
+            btnReinicio.NormalForeColor = Color.FromArgb(166, 227, 161);
             btnReinicio.NormalImageTint = Color.White;
             btnReinicio.NormalOutline = Color.FromArgb(64, 128, 128, 128);
             btnReinicio.OutlineThickness = 1F;
             btnReinicio.PressedBackground = Color.White;
-            btnReinicio.PressedForeColor = Color.FromArgb(249, 226, 175);
+            btnReinicio.PressedForeColor = Color.FromArgb(166, 227, 161);
             btnReinicio.PressedImageTint = Color.White;
             btnReinicio.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnReinicio.Rounding = new Padding(8);
@@ -142,7 +142,7 @@
             // 
             // tableroGeneral
             // 
-            tableroGeneral.BackColor = Color.FromArgb(249, 226, 175);
+            tableroGeneral.BackColor = Color.FromArgb(166, 227, 161);
             tableroGeneral.ColumnCount = 2;
             tableroGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
             tableroGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
@@ -472,7 +472,7 @@
             label1.BackColor = Color.Transparent;
             label1.Content = "Huerto\\ Comunitario";
             label1.Dock = DockStyle.Fill;
-            label1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
             label1.HorizontalAlignment = StringAlignment.Center;
             label1.Location = new Point(5, 4);

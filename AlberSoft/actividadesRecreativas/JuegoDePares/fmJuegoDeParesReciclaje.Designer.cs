@@ -94,6 +94,7 @@
             label2.Size = new Size(318, 137);
             label2.TabIndex = 2;
             label2.VerticalAlignment = StringAlignment.Near;
+            label2.Load += label2_Load;
             // 
             // btnReinicio
             // 
@@ -107,9 +108,9 @@
             btnReinicio.DialogResult = DialogResult.None;
             btnReinicio.Dock = DockStyle.Fill;
             btnReinicio.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnReinicio.ForeColor = Color.FromArgb(166, 227, 161);
+            btnReinicio.ForeColor = Color.FromArgb(148, 226, 213);
             btnReinicio.HoverBackground = Color.WhiteSmoke;
-            btnReinicio.HoverForeColor = Color.FromArgb(166, 227, 161);
+            btnReinicio.HoverForeColor = Color.FromArgb(148, 226, 213);
             btnReinicio.HoverImageTint = Color.White;
             btnReinicio.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             btnReinicio.Image = null;
@@ -120,12 +121,12 @@
             btnReinicio.Margin = new Padding(3, 4, 3, 4);
             btnReinicio.Name = "btnReinicio";
             btnReinicio.NormalBackground = Color.White;
-            btnReinicio.NormalForeColor = Color.FromArgb(166, 227, 161);
+            btnReinicio.NormalForeColor = Color.FromArgb(148, 226, 213);
             btnReinicio.NormalImageTint = Color.White;
             btnReinicio.NormalOutline = Color.FromArgb(64, 128, 128, 128);
             btnReinicio.OutlineThickness = 1F;
             btnReinicio.PressedBackground = Color.White;
-            btnReinicio.PressedForeColor = Color.FromArgb(166, 227, 161);
+            btnReinicio.PressedForeColor = Color.FromArgb(148, 226, 213);
             btnReinicio.PressedImageTint = Color.White;
             btnReinicio.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnReinicio.Rounding = new Padding(8);
@@ -142,7 +143,7 @@
             // 
             // tableroGeneral
             // 
-            tableroGeneral.BackColor = Color.FromArgb(166, 227, 161);
+            tableroGeneral.BackColor = Color.FromArgb(148, 226, 213);
             tableroGeneral.ColumnCount = 2;
             tableroGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
             tableroGeneral.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
@@ -472,7 +473,7 @@
             label1.BackColor = Color.Transparent;
             label1.Content = "Taller\\ de\\ Reciclaje";
             label1.Dock = DockStyle.Fill;
-            label1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
             label1.HorizontalAlignment = StringAlignment.Center;
             label1.Location = new Point(5, 4);

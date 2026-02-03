@@ -70,6 +70,7 @@
             // 
             // tableLayoutPanel1
             // 
+            tableLayoutPanel1.BackColor = Color.FromArgb(245, 194, 231);
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(cuiPanelGradient1, 0, 0);
@@ -93,10 +94,10 @@
             cuiPanelGradient1.Location = new Point(3, 3);
             cuiPanelGradient1.Name = "cuiPanelGradient1";
             cuiPanelGradient1.OutlineThickness = 1F;
-            cuiPanelGradient1.PanelColor1 = Color.FromArgb(4, 165, 229);
-            cuiPanelGradient1.PanelColor2 = Color.FromArgb(204, 208, 218);
-            cuiPanelGradient1.PanelOutlineColor1 = Color.FromArgb(203, 166, 247);
-            cuiPanelGradient1.PanelOutlineColor2 = Color.FromArgb(203, 166, 247);
+            cuiPanelGradient1.PanelColor1 = Color.FromArgb(245, 194, 231);
+            cuiPanelGradient1.PanelColor2 = Color.FromArgb(245, 194, 231);
+            cuiPanelGradient1.PanelOutlineColor1 = Color.FromArgb(245, 194, 231);
+            cuiPanelGradient1.PanelOutlineColor2 = Color.FromArgb(245, 194, 231);
             cuiPanelGradient1.Rounding = new Padding(8);
             cuiPanelGradient1.Size = new Size(1329, 118);
             cuiPanelGradient1.TabIndex = 5;
@@ -117,7 +118,7 @@
             clblComida.BackColor = Color.Transparent;
             clblComida.Content = "Inventario\\ de\\ Comida";
             clblComida.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            clblComida.ForeColor = Color.FromArgb(31, 41, 55);
+            clblComida.ForeColor = Color.White;
             clblComida.HorizontalAlignment = StringAlignment.Center;
             clblComida.Location = new Point(461, 22);
             clblComida.Margin = new Padding(4, 5, 4, 5);
@@ -177,7 +178,7 @@
             // dtgInventarioComida
             // 
             dtgInventarioComida.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtgInventarioComida.BackgroundColor = Color.FromArgb(239, 241, 245);
+            dtgInventarioComida.BackgroundColor = Color.White;
             dtgInventarioComida.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
             dtgInventarioComida.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -250,6 +251,7 @@
             // cuiPanelGradient3
             // 
             cuiPanelGradient3.AutoSize = true;
+            cuiPanelGradient3.BackColor = Color.Transparent;
             cuiPanelGradient3.Controls.Add(nudCantidadComi);
             cuiPanelGradient3.Controls.Add(cuibtnGuardar);
             cuiPanelGradient3.Controls.Add(cuibtnEliminar);
@@ -596,7 +598,7 @@
             cuiLabel2.TabIndex = 2;
             cuiLabel2.VerticalAlignment = StringAlignment.Center;
             // 
-            // frmInventarioDeComida
+            // fmInventarioComida
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -604,7 +606,7 @@
             ClientSize = new Size(1335, 1000);
             Controls.Add(tableLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "frmInventarioDeComida";
+            Name = "fmInventarioComida";
             Text = "frmInventarioDeComida";
             FormClosing += frmInventarioDeComida_FormClosing;
             tableLayoutPanel1.ResumeLayout(false);

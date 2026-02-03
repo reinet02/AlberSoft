@@ -65,7 +65,7 @@
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.BackColor = SystemColors.ActiveBorder;
+            tableLayoutPanel1.BackColor = Color.FromArgb(116, 199, 236);
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 1);
@@ -81,6 +81,7 @@
             // 
             // tableLayoutPanel2
             // 
+            tableLayoutPanel2.BackColor = Color.FromArgb(116, 199, 236);
             tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 29.6804657F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70.3195343F));
@@ -97,6 +98,7 @@
             // cuiPanelGradient2
             // 
             cuiPanelGradient2.AutoSize = true;
+            cuiPanelGradient2.BackColor = Color.White;
             cuiPanelGradient2.Controls.Add(cuibtnGuardar);
             cuiPanelGradient2.Controls.Add(cuibtnEliminar);
             cuiPanelGradient2.Controls.Add(cuibtnAgregarRopa);
@@ -110,14 +112,15 @@
             cuiPanelGradient2.Controls.Add(cuiLabel3);
             cuiPanelGradient2.Controls.Add(cuiLabel1);
             cuiPanelGradient2.Dock = DockStyle.Fill;
+            cuiPanelGradient2.ForeColor = SystemColors.ActiveCaptionText;
             cuiPanelGradient2.GradientAngle = 0F;
             cuiPanelGradient2.Location = new Point(3, 3);
             cuiPanelGradient2.Name = "cuiPanelGradient2";
             cuiPanelGradient2.OutlineThickness = 1F;
-            cuiPanelGradient2.PanelColor1 = Color.FromArgb(224, 224, 224);
-            cuiPanelGradient2.PanelColor2 = Color.Transparent;
-            cuiPanelGradient2.PanelOutlineColor1 = Color.Red;
-            cuiPanelGradient2.PanelOutlineColor2 = Color.Red;
+            cuiPanelGradient2.PanelColor1 = Color.White;
+            cuiPanelGradient2.PanelColor2 = Color.White;
+            cuiPanelGradient2.PanelOutlineColor1 = Color.White;
+            cuiPanelGradient2.PanelOutlineColor2 = Color.White;
             cuiPanelGradient2.Rounding = new Padding(8);
             cuiPanelGradient2.Size = new Size(388, 866);
             cuiPanelGradient2.TabIndex = 0;
@@ -134,8 +137,8 @@
             cuibtnGuardar.Content = "Guardar";
             cuibtnGuardar.DialogResult = DialogResult.None;
             cuibtnGuardar.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cuibtnGuardar.ForeColor = Color.FromArgb(30, 102, 245);
-            cuibtnGuardar.HoverBackground = Color.FromArgb(30, 102, 245);
+            cuibtnGuardar.ForeColor = Color.White;
+            cuibtnGuardar.HoverBackground = Color.FromArgb(200, 250, 179, 135);
             cuibtnGuardar.HoverForeColor = Color.WhiteSmoke;
             cuibtnGuardar.HoverImageTint = Color.White;
             cuibtnGuardar.HoverOutline = Color.FromArgb(32, 128, 128, 128);
@@ -143,15 +146,15 @@
             cuibtnGuardar.ImageAutoCenter = true;
             cuibtnGuardar.ImageExpand = new Point(0, 0);
             cuibtnGuardar.ImageOffset = new Point(0, 0);
-            cuibtnGuardar.Location = new Point(202, 804);
+            cuibtnGuardar.Location = new Point(8, 776);
             cuibtnGuardar.Name = "cuibtnGuardar";
-            cuibtnGuardar.NormalBackground = Color.FromArgb(23, 146, 153);
-            cuibtnGuardar.NormalForeColor = Color.FromArgb(30, 102, 245);
+            cuibtnGuardar.NormalBackground = Color.FromArgb(250, 179, 135);
+            cuibtnGuardar.NormalForeColor = Color.White;
             cuibtnGuardar.NormalImageTint = Color.White;
             cuibtnGuardar.NormalOutline = Color.FromArgb(64, 128, 128, 128);
             cuibtnGuardar.OutlineThickness = 1F;
-            cuibtnGuardar.PressedBackground = Color.WhiteSmoke;
-            cuibtnGuardar.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuibtnGuardar.PressedBackground = Color.FromArgb(250, 179, 135);
+            cuibtnGuardar.PressedForeColor = Color.White;
             cuibtnGuardar.PressedImageTint = Color.White;
             cuibtnGuardar.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             cuibtnGuardar.Rounding = new Padding(8);
@@ -174,8 +177,8 @@
             cuibtnEliminar.Content = "Eliminar";
             cuibtnEliminar.DialogResult = DialogResult.None;
             cuibtnEliminar.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cuibtnEliminar.ForeColor = Color.Crimson;
-            cuibtnEliminar.HoverBackground = Color.Crimson;
+            cuibtnEliminar.ForeColor = Color.White;
+            cuibtnEliminar.HoverBackground = Color.FromArgb(200, 243, 139, 168);
             cuibtnEliminar.HoverForeColor = Color.WhiteSmoke;
             cuibtnEliminar.HoverImageTint = Color.White;
             cuibtnEliminar.HoverOutline = Color.FromArgb(32, 128, 128, 128);
@@ -183,15 +186,15 @@
             cuibtnEliminar.ImageAutoCenter = true;
             cuibtnEliminar.ImageExpand = new Point(0, 0);
             cuibtnEliminar.ImageOffset = new Point(0, 0);
-            cuibtnEliminar.Location = new Point(202, 716);
+            cuibtnEliminar.Location = new Point(202, 696);
             cuibtnEliminar.Name = "cuibtnEliminar";
-            cuibtnEliminar.NormalBackground = Color.PaleVioletRed;
-            cuibtnEliminar.NormalForeColor = Color.Crimson;
+            cuibtnEliminar.NormalBackground = Color.FromArgb(243, 139, 168);
+            cuibtnEliminar.NormalForeColor = Color.White;
             cuibtnEliminar.NormalImageTint = Color.White;
             cuibtnEliminar.NormalOutline = Color.FromArgb(64, 128, 128, 128);
             cuibtnEliminar.OutlineThickness = 1F;
-            cuibtnEliminar.PressedBackground = Color.WhiteSmoke;
-            cuibtnEliminar.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuibtnEliminar.PressedBackground = Color.FromArgb(243, 139, 168);
+            cuibtnEliminar.PressedForeColor = Color.White;
             cuibtnEliminar.PressedImageTint = Color.White;
             cuibtnEliminar.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             cuibtnEliminar.Rounding = new Padding(8);
@@ -214,8 +217,8 @@
             cuibtnAgregarRopa.Content = "Agregar";
             cuibtnAgregarRopa.DialogResult = DialogResult.None;
             cuibtnAgregarRopa.Font = new Font("Microsoft Sans Serif", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cuibtnAgregarRopa.ForeColor = Color.ForestGreen;
-            cuibtnAgregarRopa.HoverBackground = Color.ForestGreen;
+            cuibtnAgregarRopa.ForeColor = Color.White;
+            cuibtnAgregarRopa.HoverBackground = Color.FromArgb(200, 166, 227, 161);
             cuibtnAgregarRopa.HoverForeColor = Color.WhiteSmoke;
             cuibtnAgregarRopa.HoverImageTint = Color.White;
             cuibtnAgregarRopa.HoverOutline = Color.FromArgb(32, 128, 128, 128);
@@ -223,15 +226,15 @@
             cuibtnAgregarRopa.ImageAutoCenter = true;
             cuibtnAgregarRopa.ImageExpand = new Point(0, 0);
             cuibtnAgregarRopa.ImageOffset = new Point(0, 0);
-            cuibtnAgregarRopa.Location = new Point(11, 716);
+            cuibtnAgregarRopa.Location = new Point(11, 696);
             cuibtnAgregarRopa.Name = "cuibtnAgregarRopa";
-            cuibtnAgregarRopa.NormalBackground = Color.Lime;
-            cuibtnAgregarRopa.NormalForeColor = Color.ForestGreen;
+            cuibtnAgregarRopa.NormalBackground = Color.FromArgb(166, 227, 161);
+            cuibtnAgregarRopa.NormalForeColor = Color.White;
             cuibtnAgregarRopa.NormalImageTint = Color.White;
             cuibtnAgregarRopa.NormalOutline = Color.FromArgb(64, 128, 128, 128);
             cuibtnAgregarRopa.OutlineThickness = 1F;
-            cuibtnAgregarRopa.PressedBackground = Color.WhiteSmoke;
-            cuibtnAgregarRopa.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuibtnAgregarRopa.PressedBackground = Color.FromArgb(166, 227, 161);
+            cuibtnAgregarRopa.PressedForeColor = Color.White;
             cuibtnAgregarRopa.PressedImageTint = Color.White;
             cuibtnAgregarRopa.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             cuibtnAgregarRopa.Rounding = new Padding(8);
@@ -246,7 +249,8 @@
             cuiLabel6.AutoSize = true;
             cuiLabel6.BackColor = Color.Transparent;
             cuiLabel6.Content = "Cantidad\\*";
-            cuiLabel6.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cuiLabel6.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold);
+            cuiLabel6.ForeColor = SystemColors.ActiveCaptionText;
             cuiLabel6.HorizontalAlignment = StringAlignment.Center;
             cuiLabel6.Location = new Point(11, 541);
             cuiLabel6.Margin = new Padding(4, 5, 4, 5);
@@ -297,7 +301,7 @@
             cuicmbColor.MaxDropDownHeight = 240;
             cuicmbColor.Name = "cuicmbColor";
             cuicmbColor.NoSelectionText = "--Seleccione--";
-            cuicmbColor.OutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuicmbColor.OutlineColor = Color.FromArgb(186, 194, 222);
             cuicmbColor.OutlineThickness = 1F;
             cuicmbColor.Rounding = 8;
             cuicmbColor.SelectedIndex = -1;
@@ -311,7 +315,8 @@
             cuiLabel5.AutoSize = true;
             cuiLabel5.BackColor = Color.Transparent;
             cuiLabel5.Content = "Color\\*";
-            cuiLabel5.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cuiLabel5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold);
+            cuiLabel5.ForeColor = SystemColors.ActiveCaptionText;
             cuiLabel5.HorizontalAlignment = StringAlignment.Center;
             cuiLabel5.Location = new Point(11, 395);
             cuiLabel5.Margin = new Padding(4, 5, 4, 5);
@@ -343,7 +348,7 @@
             cuicmbTalla.MaxDropDownHeight = 240;
             cuicmbTalla.Name = "cuicmbTalla";
             cuicmbTalla.NoSelectionText = "--Seleccione--";
-            cuicmbTalla.OutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuicmbTalla.OutlineColor = Color.FromArgb(186, 194, 222);
             cuicmbTalla.OutlineThickness = 1F;
             cuicmbTalla.Rounding = 8;
             cuicmbTalla.SelectedIndex = -1;
@@ -357,7 +362,8 @@
             cuiLabel4.AutoSize = true;
             cuiLabel4.BackColor = Color.Transparent;
             cuiLabel4.Content = "Talla\\*";
-            cuiLabel4.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cuiLabel4.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold);
+            cuiLabel4.ForeColor = SystemColors.ActiveCaptionText;
             cuiLabel4.HorizontalAlignment = StringAlignment.Center;
             cuiLabel4.Location = new Point(11, 233);
             cuiLabel4.Margin = new Padding(4, 5, 4, 5);
@@ -389,7 +395,7 @@
             cuicmbTipo.MaxDropDownHeight = 240;
             cuicmbTipo.Name = "cuicmbTipo";
             cuicmbTipo.NoSelectionText = "--Seleccione--";
-            cuicmbTipo.OutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuicmbTipo.OutlineColor = Color.FromArgb(186, 194, 222);
             cuicmbTipo.OutlineThickness = 1F;
             cuicmbTipo.Rounding = 8;
             cuicmbTipo.SelectedIndex = -1;
@@ -403,7 +409,8 @@
             cuiLabel3.AutoSize = true;
             cuiLabel3.BackColor = Color.Transparent;
             cuiLabel3.Content = "Tipo\\*";
-            cuiLabel3.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cuiLabel3.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold);
+            cuiLabel3.ForeColor = SystemColors.ActiveCaptionText;
             cuiLabel3.HorizontalAlignment = StringAlignment.Center;
             cuiLabel3.Location = new Point(4, 79);
             cuiLabel3.Margin = new Padding(4, 5, 4, 5);
@@ -417,7 +424,8 @@
             cuiLabel1.AutoSize = true;
             cuiLabel1.BackColor = Color.Transparent;
             cuiLabel1.Content = "Agregar\\ Prenda";
-            cuiLabel1.Font = new Font("Microsoft Sans Serif", 25.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            cuiLabel1.Font = new Font("Microsoft Sans Serif", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cuiLabel1.ForeColor = SystemColors.ActiveCaptionText;
             cuiLabel1.HorizontalAlignment = StringAlignment.Center;
             cuiLabel1.Location = new Point(11, -3);
             cuiLabel1.Margin = new Padding(4, 5, 4, 5);
@@ -438,8 +446,8 @@
             cuiPanelGradient3.OutlineThickness = 1F;
             cuiPanelGradient3.PanelColor1 = Color.White;
             cuiPanelGradient3.PanelColor2 = Color.White;
-            cuiPanelGradient3.PanelOutlineColor1 = Color.Red;
-            cuiPanelGradient3.PanelOutlineColor2 = Color.Red;
+            cuiPanelGradient3.PanelOutlineColor1 = Color.White;
+            cuiPanelGradient3.PanelOutlineColor2 = Color.White;
             cuiPanelGradient3.Rounding = new Padding(8);
             cuiPanelGradient3.Size = new Size(929, 866);
             cuiPanelGradient3.TabIndex = 1;
@@ -448,10 +456,12 @@
             // 
             dtgInventarioRopa.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgInventarioRopa.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dtgInventarioRopa.BackgroundColor = Color.White;
             dtgInventarioRopa.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
             dtgInventarioRopa.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
             dtgInventarioRopa.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgInventarioRopa.Columns.AddRange(new DataGridViewColumn[] { Tipo, Talla, ColumnaColor, Cantidad });
+            dtgInventarioRopa.GridColor = Color.White;
             dtgInventarioRopa.Location = new Point(26, 79);
             dtgInventarioRopa.Name = "dtgInventarioRopa";
             dtgInventarioRopa.ReadOnly = true;
@@ -493,8 +503,8 @@
             // 
             cuiLabel7.AutoSize = true;
             cuiLabel7.BackColor = Color.Transparent;
-            cuiLabel7.Content = "Inventario\\ Actual";
-            cuiLabel7.Font = new Font("Microsoft Sans Serif", 25.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            cuiLabel7.Content = "Inventario\\ actual";
+            cuiLabel7.Font = new Font("Microsoft Sans Serif", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cuiLabel7.HorizontalAlignment = StringAlignment.Center;
             cuiLabel7.Location = new Point(331, -3);
             cuiLabel7.Margin = new Padding(4, 5, 4, 5);
@@ -506,6 +516,7 @@
             // cuiPanelGradient1
             // 
             cuiPanelGradient1.AutoSize = true;
+            cuiPanelGradient1.BackColor = Color.FromArgb(116, 199, 236);
             cuiPanelGradient1.Controls.Add(pictureBox1);
             cuiPanelGradient1.Controls.Add(cuiLabel2);
             cuiPanelGradient1.Dock = DockStyle.Fill;
@@ -513,10 +524,10 @@
             cuiPanelGradient1.Location = new Point(3, 3);
             cuiPanelGradient1.Name = "cuiPanelGradient1";
             cuiPanelGradient1.OutlineThickness = 1F;
-            cuiPanelGradient1.PanelColor1 = Color.FromArgb(234, 153, 156);
-            cuiPanelGradient1.PanelColor2 = Color.FromArgb(210, 15, 57);
-            cuiPanelGradient1.PanelOutlineColor1 = Color.Red;
-            cuiPanelGradient1.PanelOutlineColor2 = Color.Red;
+            cuiPanelGradient1.PanelColor1 = Color.FromArgb(116, 199, 236);
+            cuiPanelGradient1.PanelColor2 = Color.FromArgb(116, 199, 236);
+            cuiPanelGradient1.PanelOutlineColor1 = Color.FromArgb(116, 199, 236);
+            cuiPanelGradient1.PanelOutlineColor2 = Color.FromArgb(116, 199, 236);
             cuiPanelGradient1.Rounding = new Padding(8);
             cuiPanelGradient1.Size = new Size(1329, 116);
             cuiPanelGradient1.TabIndex = 1;
@@ -537,8 +548,9 @@
             // 
             cuiLabel2.AutoSize = true;
             cuiLabel2.BackColor = Color.Transparent;
-            cuiLabel2.Content = "Inventario\\ De\\ Ropa";
+            cuiLabel2.Content = "Inventario\\ de\\ ropa";
             cuiLabel2.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cuiLabel2.ForeColor = Color.White;
             cuiLabel2.HorizontalAlignment = StringAlignment.Center;
             cuiLabel2.Location = new Point(441, 11);
             cuiLabel2.Margin = new Padding(4, 5, 4, 5);
@@ -547,14 +559,14 @@
             cuiLabel2.TabIndex = 0;
             cuiLabel2.VerticalAlignment = StringAlignment.Center;
             // 
-            // frmInventarioDeRopa
+            // fmInventarioRopa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1335, 1000);
             Controls.Add(tableLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "frmInventarioDeRopa";
+            Name = "fmInventarioRopa";
             Text = "frmInventarioDeRopa";
             FormClosing += frmInventarioDeRopa_FormClosing;
             tableLayoutPanel1.ResumeLayout(false);
@@ -578,27 +590,27 @@
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
         private CuoreUI.Controls.cuiPanelGradient cuiPanelGradient1;
-        private CuoreUI.Controls.cuiPanelGradient cuiPanelGradient2;
         private CuoreUI.Controls.cuiPanelGradient cuiPanelGradient3;
         private CuoreUI.Controls.cuiLabel cuiLabel2;
         private PictureBox pictureBox1;
-        private CuoreUI.Controls.cuiLabel cuiLabel1;
-        private CuoreUI.Controls.cuiLabel cuiLabel3;
-        private CuoreUI.Controls.cuiComboBox cuicmbTipo;
-        private CuoreUI.Controls.cuiComboBox cuicmbTalla;
-        private CuoreUI.Controls.cuiLabel cuiLabel4;
-        private CuoreUI.Controls.cuiLabel cuiLabel5;
-        private CuoreUI.Controls.cuiComboBox cuicmbColor;
-        private CuoreUI.Controls.cuiLabel cuiLabel6;
-        private NumericUpDown nudCantidad;
-        private CuoreUI.Controls.cuiButton cuibtnAgregarRopa;
         private CuoreUI.Controls.cuiLabel cuiLabel7;
         private DataGridView dtgInventarioRopa;
-        private CuoreUI.Controls.cuiButton cuibtnEliminar;
-        private CuoreUI.Controls.cuiButton cuibtnGuardar;
         private DataGridViewTextBoxColumn Tipo;
         private DataGridViewTextBoxColumn Talla;
         private DataGridViewTextBoxColumn ColumnaColor;
         private DataGridViewTextBoxColumn Cantidad;
+        private CuoreUI.Controls.cuiPanelGradient cuiPanelGradient2;
+        private CuoreUI.Controls.cuiButton cuibtnGuardar;
+        private CuoreUI.Controls.cuiButton cuibtnEliminar;
+        private CuoreUI.Controls.cuiButton cuibtnAgregarRopa;
+        private CuoreUI.Controls.cuiLabel cuiLabel6;
+        private NumericUpDown nudCantidad;
+        private CuoreUI.Controls.cuiComboBox cuicmbColor;
+        private CuoreUI.Controls.cuiLabel cuiLabel5;
+        private CuoreUI.Controls.cuiComboBox cuicmbTalla;
+        private CuoreUI.Controls.cuiLabel cuiLabel4;
+        private CuoreUI.Controls.cuiComboBox cuicmbTipo;
+        private CuoreUI.Controls.cuiLabel cuiLabel3;
+        private CuoreUI.Controls.cuiLabel cuiLabel1;
     }
 }

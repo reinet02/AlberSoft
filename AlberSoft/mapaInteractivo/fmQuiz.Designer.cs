@@ -69,12 +69,13 @@ namespace AlberSoft.mapaInteractivo
             tablaGeneral.Controls.Add(tablaFila2General, 0, 1);
             tablaGeneral.Dock = DockStyle.Fill;
             tablaGeneral.Location = new Point(0, 0);
+            tablaGeneral.Margin = new Padding(3, 4, 3, 4);
             tablaGeneral.Name = "tablaGeneral";
             tablaGeneral.RowCount = 3;
-            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 10.369318F));
-            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 41.61932F));
+            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 14.6540031F));
+            tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 51.4246941F));
             tablaGeneral.RowStyles.Add(new RowStyle(SizeType.Percent, 32.9545441F));
-            tablaGeneral.Size = new Size(973, 553);
+            tablaGeneral.Size = new Size(1112, 737);
             tablaGeneral.TabIndex = 0;
             // 
             // tablaOpcionesMultiples
@@ -87,12 +88,13 @@ namespace AlberSoft.mapaInteractivo
             tablaOpcionesMultiples.Controls.Add(tableLayoutPanel1, 1, 0);
             tablaOpcionesMultiples.Controls.Add(tablaOpcion1, 0, 0);
             tablaOpcionesMultiples.Dock = DockStyle.Fill;
-            tablaOpcionesMultiples.Location = new Point(3, 340);
+            tablaOpcionesMultiples.Location = new Point(3, 495);
+            tablaOpcionesMultiples.Margin = new Padding(3, 4, 3, 4);
             tablaOpcionesMultiples.Name = "tablaOpcionesMultiples";
             tablaOpcionesMultiples.RowCount = 2;
             tablaOpcionesMultiples.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tablaOpcionesMultiples.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tablaOpcionesMultiples.Size = new Size(967, 210);
+            tablaOpcionesMultiples.Size = new Size(1106, 238);
             tablaOpcionesMultiples.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -102,11 +104,12 @@ namespace AlberSoft.mapaInteractivo
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85.31468F));
             tableLayoutPanel3.Controls.Add(btn4, 1, 0);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(486, 108);
+            tableLayoutPanel3.Location = new Point(556, 123);
+            tableLayoutPanel3.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel3.Size = new Size(478, 99);
+            tableLayoutPanel3.Size = new Size(547, 111);
             tableLayoutPanel3.TabIndex = 20;
             // 
             // btn4
@@ -117,7 +120,7 @@ namespace AlberSoft.mapaInteractivo
             btn4.CheckedForeColor = Color.White;
             btn4.CheckedImageTint = Color.White;
             btn4.CheckedOutline = Color.FromArgb(255, 106, 0);
-            btn4.Content = "Respuesta";
+            btn4.Content = " Respuesta";
             btn4.DialogResult = DialogResult.None;
             btn4.Dock = DockStyle.Fill;
             btn4.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -130,7 +133,8 @@ namespace AlberSoft.mapaInteractivo
             btn4.ImageAutoCenter = true;
             btn4.ImageExpand = new Point(0, 0);
             btn4.ImageOffset = new Point(0, 0);
-            btn4.Location = new Point(3, 3);
+            btn4.Location = new Point(3, 4);
+            btn4.Margin = new Padding(3, 4, 3, 4);
             btn4.Name = "btn4";
             btn4.NormalBackground = Color.FromArgb(166, 209, 137);
             btn4.NormalForeColor = Color.White;
@@ -142,7 +146,7 @@ namespace AlberSoft.mapaInteractivo
             btn4.PressedImageTint = Color.White;
             btn4.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btn4.Rounding = new Padding(8);
-            btn4.Size = new Size(472, 93);
+            btn4.Size = new Size(541, 103);
             btn4.TabIndex = 1;
             btn4.TextAlignment = StringAlignment.Center;
             btn4.TextOffset = new Point(0, 0);
@@ -155,11 +159,12 @@ namespace AlberSoft.mapaInteractivo
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85.31468F));
             tableLayoutPanel2.Controls.Add(btn3, 1, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(3, 108);
+            tableLayoutPanel2.Location = new Point(3, 123);
+            tableLayoutPanel2.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(477, 99);
+            tableLayoutPanel2.Size = new Size(547, 111);
             tableLayoutPanel2.TabIndex = 19;
             // 
             // btn3
@@ -170,7 +175,7 @@ namespace AlberSoft.mapaInteractivo
             btn3.CheckedForeColor = Color.White;
             btn3.CheckedImageTint = Color.White;
             btn3.CheckedOutline = Color.FromArgb(255, 106, 0);
-            btn3.Content = "Respuesta";
+            btn3.Content = " Respuesta";
             btn3.DialogResult = DialogResult.None;
             btn3.Dock = DockStyle.Fill;
             btn3.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -183,7 +188,8 @@ namespace AlberSoft.mapaInteractivo
             btn3.ImageAutoCenter = true;
             btn3.ImageExpand = new Point(0, 0);
             btn3.ImageOffset = new Point(0, 0);
-            btn3.Location = new Point(3, 3);
+            btn3.Location = new Point(3, 4);
+            btn3.Margin = new Padding(3, 4, 3, 4);
             btn3.Name = "btn3";
             btn3.NormalBackground = Color.FromArgb(229, 200, 144);
             btn3.NormalForeColor = Color.White;
@@ -195,7 +201,7 @@ namespace AlberSoft.mapaInteractivo
             btn3.PressedImageTint = Color.White;
             btn3.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btn3.Rounding = new Padding(8);
-            btn3.Size = new Size(471, 93);
+            btn3.Size = new Size(541, 103);
             btn3.TabIndex = 1;
             btn3.TextAlignment = StringAlignment.Center;
             btn3.TextOffset = new Point(0, 0);
@@ -208,11 +214,12 @@ namespace AlberSoft.mapaInteractivo
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85.31468F));
             tableLayoutPanel1.Controls.Add(btn2, 1, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(486, 3);
+            tableLayoutPanel1.Location = new Point(556, 4);
+            tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(478, 99);
+            tableLayoutPanel1.Size = new Size(547, 111);
             tableLayoutPanel1.TabIndex = 18;
             // 
             // btn2
@@ -223,7 +230,7 @@ namespace AlberSoft.mapaInteractivo
             btn2.CheckedForeColor = Color.White;
             btn2.CheckedImageTint = Color.White;
             btn2.CheckedOutline = Color.FromArgb(255, 106, 0);
-            btn2.Content = "Respuesta";
+            btn2.Content = " Respuesta";
             btn2.DialogResult = DialogResult.None;
             btn2.Dock = DockStyle.Fill;
             btn2.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -236,7 +243,8 @@ namespace AlberSoft.mapaInteractivo
             btn2.ImageAutoCenter = true;
             btn2.ImageExpand = new Point(0, 0);
             btn2.ImageOffset = new Point(0, 0);
-            btn2.Location = new Point(3, 3);
+            btn2.Location = new Point(3, 4);
+            btn2.Margin = new Padding(3, 4, 3, 4);
             btn2.Name = "btn2";
             btn2.NormalBackground = Color.FromArgb(140, 170, 238);
             btn2.NormalForeColor = Color.White;
@@ -248,7 +256,7 @@ namespace AlberSoft.mapaInteractivo
             btn2.PressedImageTint = Color.White;
             btn2.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btn2.Rounding = new Padding(8);
-            btn2.Size = new Size(472, 93);
+            btn2.Size = new Size(541, 103);
             btn2.TabIndex = 1;
             btn2.TextAlignment = StringAlignment.Center;
             btn2.TextOffset = new Point(0, 0);
@@ -258,14 +266,15 @@ namespace AlberSoft.mapaInteractivo
             // 
             tablaOpcion1.ColumnCount = 1;
             tablaOpcion1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 99.99999F));
-            tablaOpcion1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tablaOpcion1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 23F));
             tablaOpcion1.Controls.Add(btn1, 0, 0);
             tablaOpcion1.Dock = DockStyle.Fill;
-            tablaOpcion1.Location = new Point(3, 3);
+            tablaOpcion1.Location = new Point(3, 4);
+            tablaOpcion1.Margin = new Padding(3, 4, 3, 4);
             tablaOpcion1.Name = "tablaOpcion1";
             tablaOpcion1.RowCount = 1;
             tablaOpcion1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tablaOpcion1.Size = new Size(477, 99);
+            tablaOpcion1.Size = new Size(547, 111);
             tablaOpcion1.TabIndex = 17;
             // 
             // btn1
@@ -276,7 +285,7 @@ namespace AlberSoft.mapaInteractivo
             btn1.CheckedForeColor = Color.White;
             btn1.CheckedImageTint = Color.White;
             btn1.CheckedOutline = Color.FromArgb(255, 106, 0);
-            btn1.Content = "Respuesta";
+            btn1.Content = " Respuesta";
             btn1.DialogResult = DialogResult.None;
             btn1.Dock = DockStyle.Fill;
             btn1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -289,7 +298,8 @@ namespace AlberSoft.mapaInteractivo
             btn1.ImageAutoCenter = true;
             btn1.ImageExpand = new Point(0, 0);
             btn1.ImageOffset = new Point(0, 0);
-            btn1.Location = new Point(3, 3);
+            btn1.Location = new Point(3, 4);
+            btn1.Margin = new Padding(3, 4, 3, 4);
             btn1.Name = "btn1";
             btn1.NormalBackground = Color.FromArgb(231, 130, 132);
             btn1.NormalForeColor = Color.White;
@@ -301,7 +311,7 @@ namespace AlberSoft.mapaInteractivo
             btn1.PressedImageTint = Color.White;
             btn1.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btn1.Rounding = new Padding(8);
-            btn1.Size = new Size(471, 93);
+            btn1.Size = new Size(541, 103);
             btn1.TabIndex = 1;
             btn1.TextAlignment = StringAlignment.Center;
             btn1.TextOffset = new Point(0, 0);
@@ -313,10 +323,10 @@ namespace AlberSoft.mapaInteractivo
             labelPregunta.Dock = DockStyle.Fill;
             labelPregunta.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelPregunta.HorizontalAlignment = StringAlignment.Center;
-            labelPregunta.Location = new Point(4, 3);
-            labelPregunta.Margin = new Padding(4, 3, 4, 3);
+            labelPregunta.Location = new Point(5, 4);
+            labelPregunta.Margin = new Padding(5, 4, 5, 4);
             labelPregunta.Name = "labelPregunta";
-            labelPregunta.Size = new Size(965, 61);
+            labelPregunta.Size = new Size(1102, 101);
             labelPregunta.TabIndex = 1;
             labelPregunta.VerticalAlignment = StringAlignment.Center;
             // 
@@ -325,25 +335,27 @@ namespace AlberSoft.mapaInteractivo
             tablaFila2General.ColumnCount = 3;
             tablaFila2General.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 28.9473686F));
             tablaFila2General.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 71.0526352F));
-            tablaFila2General.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 195F));
+            tablaFila2General.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 223F));
             tablaFila2General.Controls.Add(imgPregunta, 1, 0);
             tablaFila2General.Controls.Add(tablaGeneralFila2Derecha, 2, 0);
             tablaFila2General.Controls.Add(tablaGeneralFila2Izquierda, 0, 0);
             tablaFila2General.Dock = DockStyle.Fill;
-            tablaFila2General.Location = new Point(3, 70);
+            tablaFila2General.Location = new Point(3, 113);
+            tablaFila2General.Margin = new Padding(3, 4, 3, 4);
             tablaFila2General.Name = "tablaFila2General";
             tablaFila2General.RowCount = 1;
             tablaFila2General.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tablaFila2General.Size = new Size(967, 264);
+            tablaFila2General.Size = new Size(1106, 374);
             tablaFila2General.TabIndex = 2;
             // 
             // imgPregunta
             // 
             imgPregunta.Dock = DockStyle.Fill;
             imgPregunta.Image = Properties.Resources.logo;
-            imgPregunta.Location = new Point(226, 3);
+            imgPregunta.Location = new Point(258, 4);
+            imgPregunta.Margin = new Padding(3, 4, 3, 4);
             imgPregunta.Name = "imgPregunta";
-            imgPregunta.Size = new Size(542, 258);
+            imgPregunta.Size = new Size(621, 366);
             imgPregunta.SizeMode = PictureBoxSizeMode.Zoom;
             imgPregunta.TabIndex = 17;
             imgPregunta.TabStop = false;
@@ -355,13 +367,14 @@ namespace AlberSoft.mapaInteractivo
             tablaGeneralFila2Derecha.Controls.Add(labelContadorRespuestasCorrectas, 0, 1);
             tablaGeneralFila2Derecha.Controls.Add(btnSaltarPregunta, 0, 0);
             tablaGeneralFila2Derecha.Dock = DockStyle.Fill;
-            tablaGeneralFila2Derecha.Location = new Point(774, 3);
+            tablaGeneralFila2Derecha.Location = new Point(885, 4);
+            tablaGeneralFila2Derecha.Margin = new Padding(3, 4, 3, 4);
             tablaGeneralFila2Derecha.Name = "tablaGeneralFila2Derecha";
             tablaGeneralFila2Derecha.RowCount = 3;
             tablaGeneralFila2Derecha.RowStyles.Add(new RowStyle(SizeType.Percent, 28.5F));
             tablaGeneralFila2Derecha.RowStyles.Add(new RowStyle(SizeType.Percent, 71.5F));
-            tablaGeneralFila2Derecha.RowStyles.Add(new RowStyle(SizeType.Absolute, 81F));
-            tablaGeneralFila2Derecha.Size = new Size(190, 258);
+            tablaGeneralFila2Derecha.RowStyles.Add(new RowStyle(SizeType.Absolute, 108F));
+            tablaGeneralFila2Derecha.Size = new Size(218, 366);
             tablaGeneralFila2Derecha.TabIndex = 2;
             tablaGeneralFila2Derecha.Paint += tablaGeneralFila2Derecha_Paint;
             // 
@@ -371,10 +384,10 @@ namespace AlberSoft.mapaInteractivo
             labelContadorRespuestasCorrectas.Dock = DockStyle.Fill;
             labelContadorRespuestasCorrectas.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelContadorRespuestasCorrectas.HorizontalAlignment = StringAlignment.Center;
-            labelContadorRespuestasCorrectas.Location = new Point(4, 53);
-            labelContadorRespuestasCorrectas.Margin = new Padding(4, 3, 4, 3);
+            labelContadorRespuestasCorrectas.Location = new Point(5, 77);
+            labelContadorRespuestasCorrectas.Margin = new Padding(5, 4, 5, 4);
             labelContadorRespuestasCorrectas.Name = "labelContadorRespuestasCorrectas";
-            labelContadorRespuestasCorrectas.Size = new Size(182, 120);
+            labelContadorRespuestasCorrectas.Size = new Size(208, 176);
             labelContadorRespuestasCorrectas.TabIndex = 1;
             labelContadorRespuestasCorrectas.VerticalAlignment = StringAlignment.Center;
             // 
@@ -400,7 +413,8 @@ namespace AlberSoft.mapaInteractivo
             btnSaltarPregunta.ImageAutoCenter = true;
             btnSaltarPregunta.ImageExpand = new Point(0, 0);
             btnSaltarPregunta.ImageOffset = new Point(0, 0);
-            btnSaltarPregunta.Location = new Point(3, 3);
+            btnSaltarPregunta.Location = new Point(3, 4);
+            btnSaltarPregunta.Margin = new Padding(3, 4, 3, 4);
             btnSaltarPregunta.Name = "btnSaltarPregunta";
             btnSaltarPregunta.NormalBackground = Color.FromArgb(153, 209, 219);
             btnSaltarPregunta.NormalForeColor = Color.White;
@@ -412,7 +426,7 @@ namespace AlberSoft.mapaInteractivo
             btnSaltarPregunta.PressedImageTint = Color.White;
             btnSaltarPregunta.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             btnSaltarPregunta.Rounding = new Padding(8);
-            btnSaltarPregunta.Size = new Size(184, 44);
+            btnSaltarPregunta.Size = new Size(212, 65);
             btnSaltarPregunta.TabIndex = 0;
             btnSaltarPregunta.TextAlignment = StringAlignment.Center;
             btnSaltarPregunta.TextOffset = new Point(0, 0);
@@ -424,13 +438,14 @@ namespace AlberSoft.mapaInteractivo
             tablaGeneralFila2Izquierda.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tablaGeneralFila2Izquierda.Controls.Add(labelTiempo, 0, 1);
             tablaGeneralFila2Izquierda.Dock = DockStyle.Fill;
-            tablaGeneralFila2Izquierda.Location = new Point(3, 3);
+            tablaGeneralFila2Izquierda.Location = new Point(3, 4);
+            tablaGeneralFila2Izquierda.Margin = new Padding(3, 4, 3, 4);
             tablaGeneralFila2Izquierda.Name = "tablaGeneralFila2Izquierda";
             tablaGeneralFila2Izquierda.RowCount = 3;
             tablaGeneralFila2Izquierda.RowStyles.Add(new RowStyle(SizeType.Percent, 28.6667347F));
             tablaGeneralFila2Izquierda.RowStyles.Add(new RowStyle(SizeType.Percent, 71.33326F));
-            tablaGeneralFila2Izquierda.RowStyles.Add(new RowStyle(SizeType.Absolute, 81F));
-            tablaGeneralFila2Izquierda.Size = new Size(217, 258);
+            tablaGeneralFila2Izquierda.RowStyles.Add(new RowStyle(SizeType.Absolute, 108F));
+            tablaGeneralFila2Izquierda.Size = new Size(249, 366);
             tablaGeneralFila2Izquierda.TabIndex = 1;
             // 
             // labelTiempo
@@ -439,10 +454,10 @@ namespace AlberSoft.mapaInteractivo
             labelTiempo.Dock = DockStyle.Fill;
             labelTiempo.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelTiempo.HorizontalAlignment = StringAlignment.Center;
-            labelTiempo.Location = new Point(4, 53);
-            labelTiempo.Margin = new Padding(4, 3, 4, 3);
+            labelTiempo.Location = new Point(5, 77);
+            labelTiempo.Margin = new Padding(5, 4, 5, 4);
             labelTiempo.Name = "labelTiempo";
-            labelTiempo.Size = new Size(209, 120);
+            labelTiempo.Size = new Size(239, 176);
             labelTiempo.TabIndex = 0;
             labelTiempo.VerticalAlignment = StringAlignment.Center;
             // 
@@ -453,10 +468,11 @@ namespace AlberSoft.mapaInteractivo
             // 
             // fmQuiz
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(973, 553);
+            ClientSize = new Size(1112, 737);
             Controls.Add(tablaGeneral);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "fmQuiz";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "fmQuiz2";
