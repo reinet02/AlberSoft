@@ -6,13 +6,18 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AlberSoft.actividadesRecreativas.Cocina_Comunitaria
+namespace AlberSoft.actividadesRecreativas
 {
-    public partial class fmTachosReciclaje : Form
+    public partial class fmReferenciasCocinaComunitaria : Form
     {
-        public fmTachosReciclaje()
+        public fmReferenciasCocinaComunitaria()
         {
             InitializeComponent();
+        }
+
+        private void texto1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

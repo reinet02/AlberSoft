@@ -1,4 +1,5 @@
 ﻿using AlberSoft.activadesRecreativas.Cocina_Comunitaria;
+using AlberSoft.actividadesRecreativas.TallerDeReciclaje;
 
 namespace AlberSoft.actividadesRecreativas
 {
@@ -79,6 +80,11 @@ namespace AlberSoft.actividadesRecreativas
         }
         #endregion
 
+        private void btnReferencias_Click(object sender, EventArgs e)
+        {
+            Form referenciasForm = new fmReferenciasTachosReciclaje();
+            referenciasForm.Show();
+        }
 
         #region Funciones para los botones
         private void btnSemilleros_Click(object sender, EventArgs e)

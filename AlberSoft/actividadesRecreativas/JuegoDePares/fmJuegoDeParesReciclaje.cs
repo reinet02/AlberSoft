@@ -184,8 +184,26 @@ namespace AlberSoft.activadesRecreativas
         // Botón reinicio: vuelve a empezar la partida y reordena las cartas
         private void btnReinicio_Click(object? sender, EventArgs e)
         {
+            // Reconfigura el juego (baraja, reinicia contadores)
             IniciarJuego();
             panel1.Enabled = true; // asegurar que el tablero esté habilitado
+
+            // Poner todas las cartas en su parte trasera y habilitarlas
+            foreach (Control c in tablero1.Controls)
+            {
+                if (c is PictureBox pb)
+                {
+                    pb.Image = Properties.Resources.parteTraseraDeCartasReciclaje;
+                    pb.Enabled = true;
+                }
+            }
+
+            // Limpiar estado temporal y detener temporizador por si acaso
+            cartasSeleccionadas?.Clear();
+            cartaTemp1 = null;
+            cartaTemp2 = null;
+            temporizador.Stop();
+            temporizador.Enabled = false;
         }
 
         #region Lógica del juego

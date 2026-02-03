@@ -37,10 +37,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="actividadesRecreativas\Cocina Comunitaria\fmReferenciasCocinaComunitaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="actividadesRecreativas\Huerto Comunitario\fmLogoHuerto.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="actividadesRecreativas\Huerto Comunitario\fmReferenciasHuertoComunitario.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmLogoTaller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmReferenciasManualidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="actividadesRecreativas\TallerDeReciclaje\fmReferenciasTachosReciclaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="mapaInteractivo\fmReferenciasMapaInteractivo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="menuPrincipal\fmInicioSesion.cs">

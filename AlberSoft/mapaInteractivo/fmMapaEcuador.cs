@@ -49,6 +49,12 @@ namespace AlberSoft.mapaInteractivo
         }
         #endregion
 
+        private void btnReferencias_Click(object sender, EventArgs e)
+        {
+            Form referenciasForm = new fmReferenciasMapaInteractivo();
+            referenciasForm.Show();
+        }
+
         private async Task InicializarYMostrarMapaAsync()
         {
             try
@@ -167,7 +173,7 @@ namespace AlberSoft.mapaInteractivo
                     {
                         if (pantallaX >= 0 && pantallaY >= 0)
                         {
-                            formulario.StartPosition = FormStartPosition.Manual;
+                            formulario.StartPosition = FormStartPosition.CenterScreen;
                             formulario.Location = new System.Drawing.Point(pantallaX, Math.Max(0, pantallaY - formulario.Height - 10));
                             formulario.Show(this);
                         }

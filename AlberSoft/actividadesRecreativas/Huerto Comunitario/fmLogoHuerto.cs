@@ -1,4 +1,4 @@
-﻿using AlberSoft.capacitacionesIlustradas;
+﻿using AlberSoft.actividadesRecreativas.HuertoComunitario;
 
 namespace AlberSoft.actividadesRecreativas
 {
@@ -61,7 +61,7 @@ namespace AlberSoft.actividadesRecreativas
 
         private void btnReferencias_Click(object sender, EventArgs e)
         {
-            Form referenciasForm = new fmReferenciasPrimerosAuxilios();
+            Form referenciasForm = new fmReferenciasHuertoComunitario();
             referenciasForm.Show();
         }
 

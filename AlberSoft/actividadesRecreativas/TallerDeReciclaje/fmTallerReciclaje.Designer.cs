@@ -401,12 +401,14 @@
             // btnReferencias
             // 
             btnReferencias.Dock = DockStyle.Fill;
+            btnReferencias.Image = Properties.Resources.bibliografia;
             btnReferencias.Location = new Point(3, 3);
             btnReferencias.Name = "btnReferencias";
             btnReferencias.Size = new Size(119, 63);
             btnReferencias.SizeMode = PictureBoxSizeMode.Zoom;
             btnReferencias.TabIndex = 11;
             btnReferencias.TabStop = false;
+            btnReferencias.Click += btnReferencias_Click;
             // 
             // tablaGeneralTab1F1
             // 
@@ -1149,9 +1151,6 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
-        private TableLayoutPanel tablaGeneralF2Botones;
-        private PictureBox regresar;
-        private PictureBox btnReferencias;
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableGeneral;
         private TableLayoutPanel tableLayoutPanel3;
@@ -1160,5 +1159,8 @@
         private CuoreUI.Controls.cuiButton btnFamilia;
         private CuoreUI.Controls.cuiButton btnCohete;
         private CuoreUI.Controls.cuiPanel panel1;
+        private TableLayoutPanel tablaGeneralF2Botones;
+        private PictureBox regresar;
+        private PictureBox btnReferencias;
     }
 }

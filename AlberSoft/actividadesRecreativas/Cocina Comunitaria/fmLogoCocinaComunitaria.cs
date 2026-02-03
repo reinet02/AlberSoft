@@ -1,13 +1,4 @@
-﻿using AlberSoft.capacitacionesIlustradas;
-using AlberSoft.menuPrincipal;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using System.Linq;
+﻿using AlberSoft.actividadesRecreativas.Cocina_Comunitaria;
 
 namespace AlberSoft.actividadesRecreativas
 {
@@ -70,7 +61,7 @@ namespace AlberSoft.actividadesRecreativas
 
         private void btnReferencias_Click(object sender, EventArgs e)
         {
-            Form referenciasForm = new fmReferenciasPrimerosAuxilios();
+            Form referenciasForm = new fmReferenciasCocinaComunitaria();
             referenciasForm.Show();
         }
 

@@ -1,4 +1,4 @@
-﻿using AlberSoft.capacitacionesIlustradas;
+﻿using AlberSoft.actividadesRecreativas.TallerDeReciclaje;
 
 namespace AlberSoft.actividadesRecreativas
 {
@@ -61,9 +61,8 @@ namespace AlberSoft.actividadesRecreativas
 
         private void btnReferencias_Click(object sender, EventArgs e)
         {
-            Form referenciasForm = new fmReferenciasPrimerosAuxilios();
+            Form referenciasForm = new fmReferenciasManualidades();
             referenciasForm.Show();
         }
-
     }
 }
