@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrusel</title>
+    <style>
+      /* Layout: usar vw para ancho relativo al viewport y evitar scrolls */
+      :root { --card-w: 28vw; --gap: 3.5vw; --dot-gap: 36px; }
+
+      html, body { height: 100%; overflow: hidden; }
+      body {
+        height: 100vh; /* garantizar referencia para porcentajes */
+        margin: 0;
+        display: block;
+        background: #ffffff;
+        overflow: hidden; /* ocultar scrollbars */
+      }
+
+      main#carousel {
+        position: relative; /* contenedor para items absolutos */
+        grid-row: 1 / 2;
+        grid-column: 1 / 8;
+        width: 100%;
+        height: 100%; /* usa porcentaje del body (70% definido arriba) */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 10vw; /* espacio lateral suficiente para evitar recortes */
+        overflow: visible;
+        transform-style: preserve-3d;
+        perspective: 700px;
+        --items: 5;
+        --middle: 3;
+        --position: 1;
+        pointer-events: none;
+      }
+
+      /* Tarjetas del carrusel */
+      div.item {
+        position: absolute;
+        width: var(--card-w); /* porcentaje del contenedor */
+        height: auto;
+        aspect-ratio: 3 / 4; /* mantener proporción sin px */
+        background-color: #f7f7f7;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        /* permitir interacción interna (por ejemplo, scroll de contenido) */
+        pointer-events: auto;
+        --r: calc(var(--position) - var(--offset));
+        --abs: max(calc(var(--r) * -1), var(--r));
+        transition: transform 0.35s ease, z-index 0.35s linear, opacity 0.35s linear;
+        /* desplazar usando porcentajes relativos al ancho de la tarjeta */
+        left: 50%;
+        top: 50%;
+        transform-origin: center center;
+        will-change: transform;
+        /* centrar y luego rotar / desplazar usando vw para evitar recortes */
+        transform: translate(-50%, -50%) rotateY(calc(-8deg * var(--r))) translateX(calc((var(--card-w) + var(--gap)) * var(--r) * -1));
+        /* suavizar elementos lejanos */
+        opacity: calc(1 - (var(--abs) * 0.18));
+        transform: translate(-50%, -50%) rotateY(calc(-8deg * var(--r))) translateX(calc((var(--card-w) + var(--gap)) * var(--r) * -1)) scale(calc(1 - (var(--abs) * 0.06)));
+        z-index: calc((var(--position) - var(--abs)));
+      }
+
+      /* Colores por posición (mantengo tus colores) */
+      div.item:nth-of-type(1) { --offset: 1; background-color: #f38ba8; }
+      div.item:nth-of-type(2) { --offset: 2; background-color: #89dceb; }
+      div.item:nth-of-type(3) { --offset: 3; background-color: #f9e2af; }
+      div.item:nth-of-type(4) { --offset: 4; background-color: #b4befe; }
+      div.item:nth-of-type(5) { --offset: 5; background-color: #fab387; }
+
+      /* Contenido interno de cada tarjeta */
+      div.item .card-content {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: #111;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        overflow: auto;
+      }
+
+
+      div.item .card-content h2 {
+        margin: 0 0 0.6rem 0;
+        font-size: clamp(1rem, 2.2vw, 1.2rem);
+        line-height: 1.15;
+      }
+
+      div.item .card-content ol {
+        padding-left: 1rem;
+        margin: 0;
+      }
+
+      div.item .card-content li { margin-bottom: 0.6rem; font-size: clamp(0.9rem, 1.6vw, 1rem); }
+
+      /* Controles (radios) visibles y táctiles posicionados absolutamente
+         Uso de una variable --tx para mantener la traslación y permitir
+         que el hover solo modifique el scale sin perder la posición. */
+      input[type="radio"] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 2px solid rgba(0,0,0,0.12);
+        background: rgba(0,0,0,0.06);
+        cursor: pointer;
+        pointer-events: auto; /* permitir interacción */
+        display: inline-block;
+        margin: 6px;
+        transition: background 0.2s ease, transform 0.15s ease;
+        position: absolute;
+        bottom: 4%;
+        left: 50%;
+        /* variable que contiene la traslación horizontal específica */
+        --tx: translateX(-50%);
+        transform: var(--tx) scale(1);
+        z-index: 60;
+      }
+
+      /* Al pasar el cursor solo escalamos conservando la traslación */
+      input[type="radio"]:hover { transform: var(--tx) scale(1.05); }
+      input[type="radio"]:checked { background: rgba(0,0,0,0.34); }
+
+      /* distribuir los radios alrededor del centro sin afectar layout mediante --tx */
+      input:nth-of-type(1) { --tx: translateX(calc(-50% - 2 * var(--dot-gap))); }
+      input:nth-of-type(2) { --tx: translateX(calc(-50% - 1 * var(--dot-gap))); }
+      input:nth-of-type(3) { --tx: translateX(-50%); }
+      input:nth-of-type(4) { --tx: translateX(calc(-50% + 1 * var(--dot-gap))); }
+      input:nth-of-type(5) { --tx: translateX(calc(-50% + 2 * var(--dot-gap))); }
+
+      /* Mantener el cambio de posición cuando un radio está checked */
+      input:nth-of-type(1):checked ~ main#carousel { --position: 1; }
+      input:nth-of-type(2):checked ~ main#carousel { --position: 2; }
+      input:nth-of-type(3):checked ~ main#carousel { --position: 3; }
+      input:nth-of-type(4):checked ~ main#carousel { --position: 4; }
+      input:nth-of-type(5):checked ~ main#carousel { --position: 5; }
+
+      /* El cambio de posición se realiza solo al hacer clic (checked). */
+
+      /* Responsive: ajustar para pantallas pequeñas */
+      @media (max-width: 800px) {
+        /* aumentar porcentaje de las tarjetas en pantallas pequeñas */
+        :root { --card-w: 60vw; --gap: 6vw; --dot-gap: 28px; }
+        main#carousel { perspective: 520px; padding-inline: 6vw; }
+        div.item { transform: translate(-50%, -50%) rotateY(calc(-6deg * var(--r))) translateX(calc((var(--card-w) + var(--gap)) * var(--r) * -0.5)); }
+        input[type="radio"] { width: 16px; height: 16px; }
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="position" checked />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+
+    <main id="carousel">
+      <div class="item">
+        <div class="card-content">
+          <h2>En caso de INCENDIO</h2>
+          <ol>
+            <li><strong>Evacuar de inmediato siguiendo rutas seguras.</strong> Todo albergue debe tener rutas de evacuación predefinidas y señalizadas, y el personal debe conocerlas y aplicarlas sin demora.</li>
+            <li><strong>Reunir a todas las personas en un punto seguro.</strong> Identificar un punto de reunión externo, alejado del edificio, y verificar que todas las personas estén presentes.</li>
+            <li><strong>Mantener acceso a extintores y equipo básico.</strong> Los equipos contra incendios deben estar operativos y el personal capacitado para usarlos.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card-content">
+          <h2>En caso de INUNDACIÓN</h2>
+          <ol>
+            <li><strong>Determinar si evacuar o refugiarse en el lugar.</strong> El personal debe saber cuándo evacuar según el nivel de amenaza y cuándo trasladar a las personas a pisos superiores si es más seguro permanecer.</li>
+            <li><strong>Proteger áreas críticas y suministros.</strong> Elevar alimentos, medicinas y documentos; cortar energía si es seguro hacerlo.</li>
+            <li><strong>Mantener agua potable y saneamiento seguro.</strong> Inundaciones incrementan el riesgo sanitario; garantizar agua segura y gestión correcta de residuos.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card-content">
+          <h2>En caso de SISMO</h2>
+          <ol>
+            <li><strong>Aplicar la regla “agacharse, cubrirse y agarrarse”.</strong> Durante el sismo, mantener a las personas alejadas de ventanas y objetos que puedan caer.</li>
+            <li><strong>Evacuar solo después del movimiento.</strong> Moverse a un área abierta y segura una vez que el sismo haya terminado, evitando zonas con cables, muros sueltos o estructuras colapsadas.</li>
+            <li><strong>Revisar condiciones del albergue antes de reingresar.</strong> El personal debe evaluar daños estructurales visibles, riesgo eléctrico, fugas y estabilidad general antes de permitir el retorno.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card-content">
+          <h2>Tormenta eléctrica / tormenta severa</h2>
+          <ol>
+            <li><strong>Refugiarse dentro del albergue.</strong> Durante tormentas con rayos, viento extremo o caída de objetos, debe aplicarse shelter‑in‑place en zonas internas alejadas de ventanas.</li>
+            <li><strong>Evitar el uso de equipos eléctricos.</strong> Desconectar dispositivos no esenciales y mantener a las personas lejos de puntos de riesgo eléctrico.</li>
+            <li><strong>Asegurar puertas, ventanas y objetos sueltos.</strong> Reducir riesgos de impacto por viento fuerte.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card-content">
+          <h2>Ola de calor / temperaturas extremas</h2>
+          <ol>
+            <li><strong>Habilitar áreas frescas y ventiladas.</strong> Asegurar espacios con sombra, ventilación o refrigeración para evitar golpes de calor.</li>
+            <li><strong>Garantizar acceso constante a agua potable.</strong> Incrementar la hidratación y la disponibilidad de agua segura.</li>
+            <li><strong>Priorizar grupos vulnerables.</strong> Revisar con mayor frecuencia a adultos mayores, personas con enfermedades crónicas y niños.</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
